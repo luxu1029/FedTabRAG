@@ -1,0 +1,23 @@
+model: models/bge-base-en-v1.5
+partition: data/processed/federated/company_5clients.json
+output_root: outputs/federated
+clients: 2
+rounds: 1
+local_epochs: 1
+batch_size: 2
+grad_accum: 4
+max_length: 256
+precision: fp16
+learning_rate: 0.0001
+temperature: 1.0
+teacher_mse_weight: 100.0
+lora_rank: 8
+lora_alpha: 16
+lora_dropout: 0.05
+lora_targets: [query, value]
+seed: 42
+save: best_and_last
+eval_batch_size: 128
+device: cuda:0
+resume: true
+smoke_max_examples_per_client: 32

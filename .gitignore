@@ -1,0 +1,53 @@
+# Python caches and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local environments and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.venv/
+venv/
+env/
+.codex/
+.agents/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+*~
+
+# Datasets, generated corpora, models, indexes, and experiment artifacts
+data/
+models/
+outputs/
+
+# Vendored research repositories and their checkpoints/data
+third_party/
+
+# Model/checkpoint formats (defense in depth)
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+
+# Generated archives and manual-analysis workbooks
+*.tar
+*.tar.gz
+*.zip
+*.xlsx
+
+# Historical document snapshots; keep the two current project documents
+*.before_*.docx
+

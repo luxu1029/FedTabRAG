@@ -1,0 +1,28 @@
+model: models/bge-base-en-v1.5
+partition: data/processed/federated/company_5clients.json
+hard_negatives: data/processed/federated/hard_negatives.jsonl
+output_root: outputs/federated
+clients: 5
+rounds: 10
+local_epochs: 1
+batch_size: 2
+grad_accum: 4
+max_length: 256
+precision: fp16
+learning_rate: 0.0001
+temperature: 1.0
+lora_rank: 8
+lora_alpha: 16
+lora_dropout: 0.05
+lora_targets: [query, value]
+hierarchy_weights: {table: 0.2, row: 0.3, cell: 0.5}
+hard_margin: 0.2
+hard_weight: 0.2
+kd_temperature: 2.0
+kd_target_weight: 0.5
+kd_start_round: 2
+kd_warmup_rounds: 2
+seed: 42
+save: best_and_last
+device: cuda:0
+resume: true
