@@ -1,8 +1,8 @@
 # FedTabRAG 工作日志
 
-> 更新时间：2026-08-19（Asia/Shanghai）  
+> 更新时间：2026-08-20（Asia/Shanghai）
 > 信息来源：仓库内现有代码、配置、日志、冻结结果、SHA256 清单，以及两份实验安排文档。  
-> 状态说明：本目录当前不是 Git 仓库，无法通过 commit/branch 还原历史；下述结论只记录有落盘产物支持的事实。
+> 状态说明：本目录当前存在 Git 元数据，但 Day 1–10 冻结元数据中的 `git_commit` 为 `NA`；下述结论只记录有落盘产物和 SHA256 支持的事实。
 
 ## 1. 当前结论
 
@@ -11,8 +11,10 @@
 - 三个 seed（42、7、2026）没有改变排序。Full(R+U) 方差最小，但均值仍低于 Flat。
 - UniTable 的结构识别质量较高（S-TEDS 0.922466），但没有转化为检索收益。后续分桶结果显示，高 S-TEDS 桶仍落后 Flat，更支持“结构序列化/编码链路问题”，而非单纯的结构识别精度不足。
 - Day 8 的 R/U 聚合消融未通过门槛，因此当时的决定是暂停昂贵训练，先诊断 row candidate、多正例权重和客户端采样偏差。
-- 下一阶段诊断任务 1、2 已完成；任务 3 已导出 90 个案例，但人工标注和总结尚未完成；任务 4–9 尚无对应实现或结果目录。
-- 目前最合理的恢复点：先完成人工案例标注，再执行冻结 BGE 的 dev-only 门控与分数融合，不应直接扩大联邦训练预算。
+- 下一阶段任务 1、2 已完成；任务 3 的 90 条人工标注已填写，但 `manual_case_analysis_summary.md` 尚未补写。任务 4 门控、任务 5 融合和任务 6 dev-only 冻结选择均已执行。
+- 任务 6 冻结决定为 `FAIL_NO_DEV_STRATEGY`：通过候选数为 0，`formal_test_authorized=false`，且未生成 `frozen_config.json`。任务 7 正式 test 和任务 8 最小联邦验证按门槛跳过。
+- 任务 9 已完成：当前结构联邦分支作为负结果冻结，不再扩大训练预算，也不再试探学习率、轮数、队列大小、损失权重或聚合策略。
+- 当前恢复点已转向问答端：先人工审核 `outputs/qa_next/qa_numeric_error_cases.xlsx` 中的 47 条 `flat_primary` 案例，再只在 FinQA dev 上开发证据重排序、数值操作数抽取或显式 program generation。
 
 ## 2. 主实验结果
 
@@ -91,13 +93,13 @@
 |---|---|---|
 | 1. Flat vs UniTable 逐 query 配对 | **完成** | dev 883、test 1147 条，无缺失/重复；`outputs/diagnosis/pairwise_*.csv` |
 | 2. 结构质量与任务属性分桶 | **完成** | 6 类 dev/test 分桶及摘要；`outputs/diagnosis/buckets/` |
-| 3. 三类人工案例各 30 条 | **部分完成** | 3 个 XLSX 已导出；90 条人工标签仍为空，尚缺 `manual_case_analysis_summary.md` |
-| 4. 冻结 BGE 置信度门控 | **未开始** | 尚无 `evaluate_confidence_gating.py` 或 `outputs/diagnosis/gating/` |
-| 5. Flat/UniTable 分数后融合 | **未开始** | 尚无 `evaluate_score_fusion.py` 或 `outputs/diagnosis/fusion/` |
-| 6. dev-only 选择与冻结方案 | **未开始** | 必须等待任务 4、5；若无方案过门槛，应冻结 fail decision 并停止 test |
-| 7. 冻结方案正式 test 一次 | **未开始/受门槛阻塞** | 只有任务 6 PASS 后才允许执行一次 |
-| 8. 最小联邦验证 | **未开始/受门槛阻塞** | 只有冻结策略超过 Flat 后才允许启动 |
-| 9. 停止结构分支并转问答端 | **待决策** | 若任务 4–8 失败，整理负结果并转数值推理、重排序或 program generation |
+| 3. 三类人工案例各 30 条 | **人工标注完成/总结待补** | 3 个 `_filled.xlsx` 共 90 条，人工三列无空值；尚缺 `manual_case_analysis_summary.md` |
+| 4. 冻结 BGE 置信度门控 | **完成/FAIL_GATE** | 40 个 dev 配置均未过门槛；`outputs/diagnosis/gating/` |
+| 5. Flat/UniTable 分数后融合 | **完成/仅池内候选** | 33 个 dev 配置；Top-10 union 口径下仅 `f006` 过局部数值筛查，不足以放行；`outputs/diagnosis/fusion/` |
+| 6. dev-only 选择与冻结方案 | **完成/FAIL_NO_DEV_STRATEGY** | 统一 canonical Flat 审查后 0 个候选通过；已生成 `fail_decision.json`，未生成 `frozen_config.json` |
+| 7. 冻结方案正式 test 一次 | **按门槛跳过** | `formal_test_authorized=false`，不得执行 |
+| 8. 最小联邦验证 | **按门槛跳过** | 任务 7 未获授权，不得启动 |
+| 9. 停止结构分支并转问答端 | **完成** | 负结果已冻结；468 个 gold-hit/answer-wrong 方法×query 案例已导出，转向 QA 端 |
 
 ### 已完成诊断的关键事实
 
@@ -107,6 +109,23 @@
 - cell-count mismatch 桶只有 11 条，delta `-0.005784`；exact 桶为 `-0.003434`。
 - hybrid 问题存在小幅局部正值 `+0.000631`，样本证据不足以直接冻结门控规则。
 - 摘要：`outputs/diagnosis/diagnosis_summary.md`。
+
+### 任务 4–6 的 dev-only 冻结结论
+
+- canonical Flat dev：weighted NDCG@10 `0.145597802`、Row Recall@5 `0.327007299`、Cell Recall@5 `0.236496350`、worst-client `0.099247224`。
+- 任务 4：40 个门控配置。最佳 `g008` 仅对 2/883 条 query 使用 UniTable，所有门槛指标与 Flat 持平，增益为 `0`。
+- 任务 5：冻结结果只保存 Top-10 分数，因此按精确 evidence ID 的两路 Top-10 并集重排。Row/Cell 平均池大小为 20，两路表示 ID 不重叠；融合池绝对 NDCG 不得冒充全语料指标。
+- 任务 5 的最高池内 NDCG 配置为 `f016`（min-max，alpha=0.5），但 Row/Cell Recall 均下降；`f006`（z-score，alpha=0.6）只通过池内局部数值筛查。
+- 任务 6 统一对比 canonical Flat 后，`none`、`gating`、`fusion`、`gating_plus_fusion` 均未通过；后者没有独立 dev 网格，未拼接或伪造指标。
+- 冻结产物：`outputs/diagnosis/frozen_selection/fail_decision.json`、`freeze_manifest.json`、`dev_selection_report.md`。
+
+### 任务 9 的停止决定与 QA 转向
+
+- 停止报告：`outputs/diagnosis/stop_structure_branch_report.md`；负结果表：`outputs/diagnosis/negative_result_summary.csv`。
+- `outputs/qa_next/qa_numeric_error_cases.xlsx` 含 468 个“方法×query”的 `gold_hit=true && numerical_em=false` 案例，覆盖 72 个唯一 query；前部包含 47 条 Flat 优先案例。
+- 错误类别总计：format matching 179、number extraction 26、operation 140、structure localization 123。
+- 10 种方法均未输出 program；Program Accuracy 和 Execution Accuracy 继续为 `NA`。
+- QA 计划：`outputs/qa_next/next_stage_qa_plan.md`；复现清单：`outputs/qa_next/task9_sha256_manifest.json`。
 
 ## 5. 预注册门槛与实验纪律
 
@@ -122,30 +141,26 @@
 
 ## 6. 推荐恢复顺序
 
-1. 人工填写以下三个文件中的 `error_type`、`manual_note`、`whether_structure_helpful`：
-   - `outputs/diagnosis/manual_cases_flat_win.xlsx`
-   - `outputs/diagnosis/manual_cases_unitable_win.xlsx`
-   - `outputs/diagnosis/manual_cases_both_fail.xlsx`
-2. 基于人工标注撰写 `outputs/diagnosis/manual_case_analysis_summary.md`，完成任务 3。
-3. 实现任务 4，只读取 dev，运行冻结 BGE 置信度门控网格。
-4. 实现任务 5，只读取 dev，按 evidence ID 对齐后运行 z-score/min-max/rank-score 融合。
-5. 执行任务 6，严格按预注册门槛生成 frozen config 或 fail decision。
-6. 只有任务 6 PASS 才执行任务 7 的一次正式 test；只有任务 7 超过 Flat 才执行任务 8。
-7. 若未过门槛，直接执行任务 9，停止扩大结构联邦预算并转向 QA 数值推理/证据重排序。
+1. 人工审核 `outputs/qa_next/qa_numeric_error_cases.xlsx` 中 `priority=flat_primary` 的 47 条案例，优先补充 `manual_review_note`；固定 QA-100 只作既有错误解释，不得用于调参。
+2. 为保持任务 3 文档闭环，基于三个 `_filled.xlsx` 补写 `outputs/diagnosis/manual_case_analysis_summary.md`；这不改变任务 6/9 的冻结决定。
+3. 只在 FinQA dev 上建立 Flat Top-k 证据重排序基线，优先检查公司/年份一致性、数值覆盖、表头—数值邻接和重复 evidence ID。
+4. 在 dev 上评估数值操作数抽取、单位/百分比归一化和 conditional numerical EM，并预注册继续/停止门槛。
+5. 若开展 program generation，必须真实输出可解析程序并执行后，才报告 Program Exact Match 或 Execution Accuracy；现有历史值保持 `NA`。
+6. 只有 dev 方案达到预注册门槛后才冻结一次 test；不得重新开启当前结构联邦超参搜索，也不得执行已跳过的任务 7/8。
 
 ## 7. 环境、测试与复现入口
 
 ### 当前测试健康度
 
-2026-08-19 验证：
+2026-08-20 验证：
 
 ```bash
 env PYTHONPATH=. conda run -n fedrag-test pytest -q tests
 ```
 
-结果：`22 passed, 2 warnings`。
+结果：`36 passed, 2 warnings`。
 
-直接运行 `conda run -n fedrag-test pytest -q` 会在收集阶段失败：本项目未配置根目录包路径，并会误收集 `third_party/` 中依赖 `flgo`/`llms` 的测试。后续应继续使用上面的限定命令，或另行补充 pytest 配置；这不代表项目自身 22 个测试失败。
+直接运行 `conda run -n fedrag-test pytest -q` 会在收集阶段失败：本项目未配置根目录包路径，并会误收集 `third_party/` 中依赖 `flgo`/`llms` 的测试。后续应继续使用上面的限定命令，或另行补充 pytest 配置；这不代表项目自身 36 个测试失败。
 
 ### 常用只读汇总
 
@@ -155,6 +170,9 @@ sed -n '1,80p' outputs/day10/tables/supplementary_seeds.csv
 sed -n '1,240p' outputs/federated/day8_final_summary.json
 sed -n '1,240p' outputs/day9/ablation_summary.json
 sed -n '1,240p' outputs/diagnosis/diagnosis_summary.md
+sed -n '1,240p' outputs/diagnosis/frozen_selection/dev_selection_report.md
+sed -n '1,240p' outputs/diagnosis/stop_structure_branch_report.md
+sed -n '1,240p' outputs/qa_next/next_stage_qa_plan.md
 ```
 
 ### 关键代码入口
@@ -164,23 +182,27 @@ sed -n '1,240p' outputs/diagnosis/diagnosis_summary.md
 - 索引与检索：`src/retrieval/`
 - 联邦训练与评测：`src/federated/`
 - 诊断与结果合并：`src/evaluation/`
+- 门控与融合：`src/retrieval/evaluate_confidence_gating.py`、`evaluate_score_fusion.py`
+- dev 冻结选择与 QA 转向：`src/evaluation/select_and_freeze_structure_strategy.py`、`finalize_structure_branch_and_plan_qa.py`
 - Day 8–10 编排与冻结：`scripts/`
 - 实验配置：`configs/`
 
 ## 8. 已知风险与未决事项
 
-- **无 Git 历史**：当前目录没有 `.git` 仓库，冻结元数据中的 `git_commit` 也是 `NA`。应在不破坏现有产物的前提下补建版本管理或保存外部快照。
-- **任务 3 依赖人工判断**：Excel 中的人工列不能由脚本自动伪造；完成前不应宣称人工错误归因已通过。
-- **候选粒度公平性**：Day 4 已指出 Flat pseudo-row 与结构化多 row candidates 的粒度差异，后续融合/门控必须显式说明候选对齐方法。
-- **test 污染风险**：test 已用于既有主实验的一次性正式评测和任务 1–3 的描述/人工解释；任务 4–6 的参数搜索必须完全隔离 test。
-- **QA 瓶颈明显**：100 题数值 EM 最高仅 0.07，且无 program 输出。如果结构门控失败，转向 QA 端比继续堆叠结构训练更符合当前证据。
+- **历史提交边界**：当前目录存在 `.git`，但 Day 1–10 冻结元数据中的 `git_commit` 为 `NA`；不能据当前 Git 状态反推所有历史实验代码版本。
+- **任务 3 文档闭环未完成**：90 条人工标签已填写，但 `manual_case_analysis_summary.md` 尚未生成；不得把缺失的汇总文件描述为已落盘。
+- **融合口径限制**：冻结 JSON 只保留 Top-10 分数，Row/Cell 两路 evidence ID 不重叠。任务 5 的池内指标只用于诊断，不能与全语料 canonical Flat 绝对值直接替换。
+- **test 污染风险**：test 已用于既有主实验、任务 1–3 的描述/人工解释和固定 QA-100 审计；后续 reranker、prompt、program 语法和阈值只能在 FinQA dev 上选择。
+- **QA 瓶颈明显**：100 题数值 EM 最高仅 0.07，且无 program 输出。任务 9 已冻结结构分支，后续不得回到当前结构联邦超参搜索。
 
 ## 9. 新会话恢复提示词
 
 ```text
 请先读取 WORKLOG.md、FedTabRAG_下一阶段实验工作安排.docx、
-outputs/day10/tables/main_results.csv、outputs/federated/day8_final_summary.json
-和 outputs/diagnosis/diagnosis_summary.md，再检查当前文件状态。
-严格遵守 dev-only 选模、test 一次正式评测、strict missing 和 SHA256 冻结规则。
-从 WORKLOG.md 的“推荐恢复顺序”继续，不要重复已完成的 Day 1–10 或诊断任务 1–2。
+outputs/day10/tables/main_results.csv、outputs/federated/day8_final_summary.json、
+outputs/diagnosis/frozen_selection/fail_decision.json、
+outputs/diagnosis/stop_structure_branch_report.md 和 outputs/qa_next/next_stage_qa_plan.md，
+再检查当前文件状态。任务6已FAIL，任务7/8已跳过，任务9已完成；不要重新启动当前结构联邦分支。
+严格遵守 dev-only 选模、冻结后test一次、strict missing 和 SHA256 规则。
+从 WORKLOG.md 的“推荐恢复顺序”继续：先审核47条Flat优先QA错误案例，再在FinQA dev上规划重排序、数值抽取或program generation。
 ```
