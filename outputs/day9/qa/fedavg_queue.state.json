@@ -1,0 +1,18 @@
+{
+  "method": "fedavg_queue",
+  "queries": 100,
+  "seed": 42,
+  "top_k": 5,
+  "llm": "qwen2.5:7b",
+  "temperature": 0,
+  "max_output_tokens": 128,
+  "prompt_sha256": "c39b5816d17264f52c5889ca790f3f1a408feec45bda7bde5df4a45fd6f38101",
+  "retrieval_sha256": "7d77406fc40a68b3db68aad235078ee6d0cc882993170dd60917249cc1ebe35e",
+  "numerical_em": 0.05,
+  "program_accuracy": null,
+  "program_accuracy_reason": "no program predicted",
+  "errors": 0,
+  "elapsed_seconds_current_invocation": 26.650898903026246,
+  "output_sha256": "faa799fcb1f258e502dcffaf0bf128378a819310379adc96e8a92c3f7d774d01",
+  "resume_supported": true
+}

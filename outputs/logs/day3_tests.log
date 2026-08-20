@@ -1,0 +1,10 @@
+test_all_positive_references_exist (tests.test_day3_evidence.Day3EvidenceTest) ... ok
+test_cell_text_multisets_are_identical (tests.test_day3_evidence.Day3EvidenceTest) ... ok
+test_mapping_and_manual_sample_are_complete (tests.test_day3_evidence.Day3EvidenceTest) ... ok
+test_no_label_leakage_or_duplicate_ids (tests.test_day3_evidence.Day3EvidenceTest) ... ok
+test_schema_declares_structure_boundaries (tests.test_day3_evidence.Day3EvidenceTest) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK

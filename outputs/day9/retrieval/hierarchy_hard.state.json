@@ -1,0 +1,19 @@
+{
+  "method": "hierarchy_hard",
+  "variant": "predicted_structure",
+  "note": null,
+  "seed": 42,
+  "top_k": 5,
+  "sample_ids_sha256": "60633751a298baf2b1ea88b88527ca1b0d6da483a2c0b7c093d048d04dc800ec",
+  "corpus_sha256": "85df7462a1429d80d383fb4ace61dbc33232d857f1c19b52bb3283c8e63b75f6",
+  "queries_sha256": "d9ae9dc82cc450d52edc1fc50a8a518e455dc08d801383fccde5bc9b6bd7b7b8",
+  "checkpoint": "outputs/federated/fedtabrag_hier_hard_s42/checkpoints/best.pt",
+  "checkpoint_sha256": "4c3330be21f6589b8557cc714cf620915ab21522a38c12cc72b98b4f928746ca",
+  "checkpoint_round": 9,
+  "queries": 100,
+  "corpus_items": 65226,
+  "unified_evidence_recall@5": 0.4,
+  "unified_evidence_mrr@5": 0.20549999999999996,
+  "output_sha256": "384478a49b936af65f0a1729017498132e7f94b037f0ca911024f94ec27b11af",
+  "uses_test_for_selection": false
+}

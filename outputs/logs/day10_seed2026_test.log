@@ -1,0 +1,19 @@
+2026-08-03 14:05:03,217 INFO running /home/hj/anaconda3/envs/fedrag-test/bin/python src/federated/evaluate_fedrag.py --run-dir outputs/federated/day10_flat_s2026 --checkpoint best --variant flat --partition data/processed/federated/company_5clients.json --output outputs/federated/day10_flat_s2026/test_metrics.json --device cuda:0 --batch-size 128 --seed 2026
+2026-08-03 14:05:05,276 INFO Encoding corpus=58724 queries=1147
+2026-08-03 14:05:50,257 INFO Scoring level=table evidence=29492
+2026-08-03 14:05:50,664 INFO Scoring level=row evidence=1147
+2026-08-03 14:05:50,710 INFO Scoring level=cell evidence=28085
+2026-08-03 14:05:51,254 INFO Wrote outputs/federated/day10_flat_s2026/test_metrics.json
+2026-08-03 14:05:51,688 INFO running /home/hj/anaconda3/envs/fedrag-test/bin/python src/federated/evaluate_fedrag.py --run-dir outputs/federated/day10_unitable_s2026 --checkpoint best --variant predicted_structure --partition data/processed/federated/company_5clients.json --output outputs/federated/day10_unitable_s2026/test_metrics.json --device cuda:0 --batch-size 128 --seed 2026
+2026-08-03 14:05:54,454 INFO Encoding corpus=65226 queries=1147
+2026-08-03 14:06:42,753 INFO Scoring level=table evidence=29492
+2026-08-03 14:06:43,201 INFO Scoring level=row evidence=7529
+2026-08-03 14:06:43,318 INFO Scoring level=cell evidence=28205
+2026-08-03 14:06:43,868 INFO Wrote outputs/federated/day10_unitable_s2026/test_metrics.json
+2026-08-03 14:06:44,315 INFO running /home/hj/anaconda3/envs/fedrag-test/bin/python src/federated/evaluate_fedrag.py --run-dir outputs/federated/day10_r_plus_u_s2026 --checkpoint best --variant predicted_structure --partition data/processed/federated/company_5clients.json --output outputs/federated/day10_r_plus_u_s2026/test_metrics.json --device cuda:0 --batch-size 128 --seed 2026
+2026-08-03 14:06:46,431 INFO Encoding corpus=65226 queries=1147
+2026-08-03 14:07:34,882 INFO Scoring level=table evidence=29492
+2026-08-03 14:07:35,281 INFO Scoring level=row evidence=7529
+2026-08-03 14:07:35,397 INFO Scoring level=cell evidence=28205
+2026-08-03 14:07:35,936 INFO Wrote outputs/federated/day10_r_plus_u_s2026/test_metrics.json
+

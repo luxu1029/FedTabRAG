@@ -1,0 +1,3 @@
+2026-07-31 19:15:29,553 INFO encoding method=flat corpus=58724 queries=100
+2026-07-31 19:16:20,288 INFO wrote outputs/day9/retrieval/flat.jsonl recall@5=0.5300
+

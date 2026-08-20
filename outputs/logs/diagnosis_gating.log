@@ -1,0 +1,2 @@
+2026-08-20 10:53:59,759 INFO Starting Task 4 seed=42; dev-only frozen-result gating
+2026-08-20 10:54:01,274 INFO Task 4 complete configs=40 best=g008 weighted_ndcg=0.145597802

@@ -1,0 +1,47 @@
+{
+  "teacher_or_kd_present": false,
+  "aggregation": "sample_weighted_vanilla_fedavg",
+  "clients_sequential": true,
+  "checkpoint_policy": "best_and_last",
+  "stage": "single_client",
+  "features": "hierarchy,hard_negative",
+  "client_metrics": [
+    {
+      "round": 1,
+      "loss": 0.5089071710824966,
+      "hier_loss": 0.47973669039011,
+      "hard_loss": 0.14585240074396133,
+      "table_loss": 0.5880795157909393,
+      "table_pos_sim": 0.6346078125,
+      "table_neg_sim": 0.3398106994628906,
+      "row_loss": 0.4097358760356903,
+      "row_pos_sim": 0.5748381100681489,
+      "row_neg_sim": 0.3220665553711342,
+      "cell_loss": 0.44668612031936644,
+      "cell_pos_sim": 0.4577859907007929,
+      "cell_neg_sim": 0.31060879424239074,
+      "table_valid": 1250,
+      "row_valid": 1019,
+      "cell_valid": 1019,
+      "hard_hits": 1250,
+      "grad_norm_table": 0.06323888366495514,
+      "grad_norm_row": 0.05807205137109588,
+      "grad_norm_cell": 0.03866972789308499,
+      "grad_norm_hard": 0.16661388622774959,
+      "client": 0,
+      "examples": 1250,
+      "seconds": 84.27542954299133,
+      "fp16_overflow_skips": 0,
+      "loss_first": 0.742518424987793,
+      "loss_last": 0.47391900420188904
+    }
+  ],
+  "completed_rounds": 1,
+  "checkpoints": [
+    "best.pt",
+    "last.pt"
+  ],
+  "lora_parameter_bytes": 1179648,
+  "total_communication_bytes": 2359296,
+  "accepted": true
+}

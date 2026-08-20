@@ -1,0 +1,3 @@
+2026-07-31 19:27:06,534 INFO encoding method=fedavg_queue corpus=65226 queries=100
+2026-07-31 19:27:54,410 INFO wrote outputs/day9/retrieval/fedavg_queue.jsonl recall@5=0.6000
+

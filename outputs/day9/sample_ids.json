@@ -1,0 +1,845 @@
+{
+  "seed": 42,
+  "size": 100,
+  "source_split": "test",
+  "selection_uses_method_performance": false,
+  "stratification": [
+    "program_type",
+    "table_size_bin",
+    "structure_quality_bin"
+  ],
+  "thresholds": {
+    "table_cells": [
+      20,
+      50
+    ],
+    "s_teds": [
+      0.9,
+      0.95
+    ]
+  },
+  "finqa_test_sha256": "831dbfb2e785dbc227f895ce3f24046433467aec67b09db2bd6ac7692a8a30dc",
+  "structure_metrics_sha256": "f1b466d2141689c93faed63d3d2b4ea0b6b31e077396c6d5a8cbd9fa221d4fe9",
+  "distribution": {
+    "program_type": {
+      "add": 15,
+      "subtract": 41,
+      "divide": 35,
+      "greater": 2,
+      "multiply": 6,
+      "table_average": 1
+    },
+    "table_size_bin": {
+      "large": 4,
+      "small": 51,
+      "medium": 45
+    },
+    "structure_quality_bin": {
+      "high": 25,
+      "medium": 62,
+      "low": 13
+    }
+  },
+  "samples": [
+    {
+      "query_id": "test:AAPL/2006/page_131.pdf-2:95",
+      "sample_id": "AAPL/2006/page_131.pdf-2",
+      "program_type": "add",
+      "table_size_bin": "large",
+      "structure_quality_bin": "high",
+      "s_teds": 0.9722222222222222
+    },
+    {
+      "query_id": "test:ABMD/2005/page_29.pdf-4:1083",
+      "sample_id": "ABMD/2005/page_29.pdf-4",
+      "program_type": "subtract",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9259259259259259
+    },
+    {
+      "query_id": "test:ABMD/2006/page_43.pdf-1:749",
+      "sample_id": "ABMD/2006/page_43.pdf-1",
+      "program_type": "divide",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9333333333333333
+    },
+    {
+      "query_id": "test:ABMD/2008/page_86.pdf-2:573",
+      "sample_id": "ABMD/2008/page_86.pdf-2",
+      "program_type": "divide",
+      "table_size_bin": "small",
+      "structure_quality_bin": "low",
+      "s_teds": 0.8181818181818181
+    },
+    {
+      "query_id": "test:ABMD/2012/page_41.pdf-1:511",
+      "sample_id": "ABMD/2012/page_41.pdf-1",
+      "program_type": "greater",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9411764705882353
+    },
+    {
+      "query_id": "test:ABMD/2012/page_41.pdf-4:1142",
+      "sample_id": "ABMD/2012/page_41.pdf-4",
+      "program_type": "subtract",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9411764705882353
+    },
+    {
+      "query_id": "test:ABMD/2012/page_79.pdf-1:595",
+      "sample_id": "ABMD/2012/page_79.pdf-1",
+      "program_type": "add",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9230769230769231
+    },
+    {
+      "query_id": "test:ADBE/2008/page_89.pdf-3:18",
+      "sample_id": "ADBE/2008/page_89.pdf-3",
+      "program_type": "divide",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9130434782608696
+    },
+    {
+      "query_id": "test:AES/2001/page_33.pdf-2:163",
+      "sample_id": "AES/2001/page_33.pdf-2",
+      "program_type": "subtract",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9333333333333333
+    },
+    {
+      "query_id": "test:AES/2001/page_85.pdf-4:659",
+      "sample_id": "AES/2001/page_85.pdf-4",
+      "program_type": "divide",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9130434782608696
+    },
+    {
+      "query_id": "test:ALXN/2016/page_153.pdf-2:29",
+      "sample_id": "ALXN/2016/page_153.pdf-2",
+      "program_type": "divide",
+      "table_size_bin": "small",
+      "structure_quality_bin": "low",
+      "s_teds": 0.6666666666666667
+    },
+    {
+      "query_id": "test:AMAT/2018/page_33.pdf-2:482",
+      "sample_id": "AMAT/2018/page_33.pdf-2",
+      "program_type": "subtract",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9411764705882353
+    },
+    {
+      "query_id": "test:AMT/2007/page_127.pdf-1:716",
+      "sample_id": "AMT/2007/page_127.pdf-1",
+      "program_type": "subtract",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9459459459459459
+    },
+    {
+      "query_id": "test:AMT/2008/page_107.pdf-3:784",
+      "sample_id": "AMT/2008/page_107.pdf-3",
+      "program_type": "subtract",
+      "table_size_bin": "small",
+      "structure_quality_bin": "low",
+      "s_teds": 0.5
+    },
+    {
+      "query_id": "test:AMT/2012/page_118.pdf-3:961",
+      "sample_id": "AMT/2012/page_118.pdf-3",
+      "program_type": "divide",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9473684210526316
+    },
+    {
+      "query_id": "test:AON/2007/page_171.pdf-1:138",
+      "sample_id": "AON/2007/page_171.pdf-1",
+      "program_type": "subtract",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9375
+    },
+    {
+      "query_id": "test:AON/2010/page_86.pdf-2:957",
+      "sample_id": "AON/2010/page_86.pdf-2",
+      "program_type": "divide",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "high",
+      "s_teds": 0.9545454545454546
+    },
+    {
+      "query_id": "test:AWK/2017/page_148.pdf-2:827",
+      "sample_id": "AWK/2017/page_148.pdf-2",
+      "program_type": "subtract",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9090909090909091
+    },
+    {
+      "query_id": "test:AWK/2017/page_148.pdf-3:850",
+      "sample_id": "AWK/2017/page_148.pdf-3",
+      "program_type": "subtract",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9090909090909091
+    },
+    {
+      "query_id": "test:AWK/2018/page_146.pdf-3:421",
+      "sample_id": "AWK/2018/page_146.pdf-3",
+      "program_type": "divide",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9
+    },
+    {
+      "query_id": "test:AWK/2018/page_146.pdf-4:386",
+      "sample_id": "AWK/2018/page_146.pdf-4",
+      "program_type": "add",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9
+    },
+    {
+      "query_id": "test:BKR/2017/page_56.pdf-1:564",
+      "sample_id": "BKR/2017/page_56.pdf-1",
+      "program_type": "multiply",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9090909090909091
+    },
+    {
+      "query_id": "test:BKR/2017/page_56.pdf-3:1081",
+      "sample_id": "BKR/2017/page_56.pdf-3",
+      "program_type": "add",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9090909090909091
+    },
+    {
+      "query_id": "test:BLK/2017/page_121.pdf-2:662",
+      "sample_id": "BLK/2017/page_121.pdf-2",
+      "program_type": "divide",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "high",
+      "s_teds": 0.96
+    },
+    {
+      "query_id": "test:BLL/2006/page_67.pdf-2:396",
+      "sample_id": "BLL/2006/page_67.pdf-2",
+      "program_type": "divide",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "high",
+      "s_teds": 0.9523809523809523
+    },
+    {
+      "query_id": "test:C/2008/page_22.pdf-3:680",
+      "sample_id": "C/2008/page_22.pdf-3",
+      "program_type": "divide",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9375
+    },
+    {
+      "query_id": "test:C/2008/page_65.pdf-1:418",
+      "sample_id": "C/2008/page_65.pdf-1",
+      "program_type": "subtract",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "high",
+      "s_teds": 0.9523809523809523
+    },
+    {
+      "query_id": "test:C/2008/page_65.pdf-3:581",
+      "sample_id": "C/2008/page_65.pdf-3",
+      "program_type": "subtract",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "high",
+      "s_teds": 0.9523809523809523
+    },
+    {
+      "query_id": "test:C/2009/page_243.pdf-1:516",
+      "sample_id": "C/2009/page_243.pdf-1",
+      "program_type": "divide",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9
+    },
+    {
+      "query_id": "test:C/2015/page_96.pdf-2:920",
+      "sample_id": "C/2015/page_96.pdf-2",
+      "program_type": "subtract",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9259259259259259
+    },
+    {
+      "query_id": "test:C/2015/page_96.pdf-3:737",
+      "sample_id": "C/2015/page_96.pdf-3",
+      "program_type": "subtract",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9259259259259259
+    },
+    {
+      "query_id": "test:CB/2008/page_229.pdf-3:676",
+      "sample_id": "CB/2008/page_229.pdf-3",
+      "program_type": "divide",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9230769230769231
+    },
+    {
+      "query_id": "test:CMCSA/2008/page_36.pdf-3:1126",
+      "sample_id": "CMCSA/2008/page_36.pdf-3",
+      "program_type": "divide",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "high",
+      "s_teds": 0.9523809523809523
+    },
+    {
+      "query_id": "test:CME/2017/page_89.pdf-2:632",
+      "sample_id": "CME/2017/page_89.pdf-2",
+      "program_type": "subtract",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "high",
+      "s_teds": 0.9615384615384616
+    },
+    {
+      "query_id": "test:CME/2017/page_89.pdf-3:361",
+      "sample_id": "CME/2017/page_89.pdf-3",
+      "program_type": "divide",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "high",
+      "s_teds": 0.9615384615384616
+    },
+    {
+      "query_id": "test:EMR/2017/page_78.pdf-1:517",
+      "sample_id": "EMR/2017/page_78.pdf-1",
+      "program_type": "add",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9230769230769231
+    },
+    {
+      "query_id": "test:ETFC/2011/page_144.pdf-2:51",
+      "sample_id": "ETFC/2011/page_144.pdf-2",
+      "program_type": "divide",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "high",
+      "s_teds": 0.9615384615384616
+    },
+    {
+      "query_id": "test:ETR/2004/page_212.pdf-3:980",
+      "sample_id": "ETR/2004/page_212.pdf-3",
+      "program_type": "subtract",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9310344827586207
+    },
+    {
+      "query_id": "test:ETR/2004/page_239.pdf-4:590",
+      "sample_id": "ETR/2004/page_239.pdf-4",
+      "program_type": "add",
+      "table_size_bin": "small",
+      "structure_quality_bin": "low",
+      "s_teds": 0.8823529411764706
+    },
+    {
+      "query_id": "test:ETR/2008/page_298.pdf-1:843",
+      "sample_id": "ETR/2008/page_298.pdf-1",
+      "program_type": "multiply",
+      "table_size_bin": "small",
+      "structure_quality_bin": "low",
+      "s_teds": 0.8823529411764706
+    },
+    {
+      "query_id": "test:ETR/2008/page_298.pdf-3:173",
+      "sample_id": "ETR/2008/page_298.pdf-3",
+      "program_type": "subtract",
+      "table_size_bin": "small",
+      "structure_quality_bin": "low",
+      "s_teds": 0.8823529411764706
+    },
+    {
+      "query_id": "test:ETR/2017/page_372.pdf-3:913",
+      "sample_id": "ETR/2017/page_372.pdf-3",
+      "program_type": "divide",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9
+    },
+    {
+      "query_id": "test:FIS/2006/page_31.pdf-2:402",
+      "sample_id": "FIS/2006/page_31.pdf-2",
+      "program_type": "add",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9310344827586207
+    },
+    {
+      "query_id": "test:FIS/2016/page_31.pdf-2:21",
+      "sample_id": "FIS/2016/page_31.pdf-2",
+      "program_type": "subtract",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9411764705882353
+    },
+    {
+      "query_id": "test:FIS/2016/page_45.pdf-3:943",
+      "sample_id": "FIS/2016/page_45.pdf-3",
+      "program_type": "subtract",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "high",
+      "s_teds": 0.9607843137254902
+    },
+    {
+      "query_id": "test:FIS/2016/page_9.pdf-2:727",
+      "sample_id": "FIS/2016/page_9.pdf-2",
+      "program_type": "subtract",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9259259259259259
+    },
+    {
+      "query_id": "test:GIS/2019/page_68.pdf-1:360",
+      "sample_id": "GIS/2019/page_68.pdf-1",
+      "program_type": "subtract",
+      "table_size_bin": "small",
+      "structure_quality_bin": "low",
+      "s_teds": 0.8571428571428572
+    },
+    {
+      "query_id": "test:GPN/2008/page_78.pdf-2:112",
+      "sample_id": "GPN/2008/page_78.pdf-2",
+      "program_type": "divide",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9375
+    },
+    {
+      "query_id": "test:GPN/2014/page_92.pdf-2:834",
+      "sample_id": "GPN/2014/page_92.pdf-2",
+      "program_type": "multiply",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9090909090909091
+    },
+    {
+      "query_id": "test:GRMN/2008/page_73.pdf-1:291",
+      "sample_id": "GRMN/2008/page_73.pdf-1",
+      "program_type": "divide",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9333333333333333
+    },
+    {
+      "query_id": "test:GS/2012/page_142.pdf-3:630",
+      "sample_id": "GS/2012/page_142.pdf-3",
+      "program_type": "subtract",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9090909090909091
+    },
+    {
+      "query_id": "test:GS/2013/page_126.pdf-1:303",
+      "sample_id": "GS/2013/page_126.pdf-1",
+      "program_type": "subtract",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "high",
+      "s_teds": 0.967741935483871
+    },
+    {
+      "query_id": "test:GS/2014/page_40.pdf-1:557",
+      "sample_id": "GS/2014/page_40.pdf-1",
+      "program_type": "subtract",
+      "table_size_bin": "large",
+      "structure_quality_bin": "high",
+      "s_teds": 0.9701492537313433
+    },
+    {
+      "query_id": "test:GS/2015/page_171.pdf-1:755",
+      "sample_id": "GS/2015/page_171.pdf-1",
+      "program_type": "subtract",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9090909090909091
+    },
+    {
+      "query_id": "test:GS/2015/page_171.pdf-3:902",
+      "sample_id": "GS/2015/page_171.pdf-3",
+      "program_type": "divide",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9090909090909091
+    },
+    {
+      "query_id": "test:GS/2018/page_69.pdf-3:379",
+      "sample_id": "GS/2018/page_69.pdf-3",
+      "program_type": "add",
+      "table_size_bin": "small",
+      "structure_quality_bin": "low",
+      "s_teds": 0.8333333333333334
+    },
+    {
+      "query_id": "test:GS/2018/page_78.pdf-3:227",
+      "sample_id": "GS/2018/page_78.pdf-3",
+      "program_type": "add",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9459459459459459
+    },
+    {
+      "query_id": "test:HUM/2009/page_105.pdf-2:532",
+      "sample_id": "HUM/2009/page_105.pdf-2",
+      "program_type": "subtract",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9375
+    },
+    {
+      "query_id": "test:ILMN/2008/page_86.pdf-2:839",
+      "sample_id": "ILMN/2008/page_86.pdf-2",
+      "program_type": "subtract",
+      "table_size_bin": "small",
+      "structure_quality_bin": "low",
+      "s_teds": 0.8181818181818181
+    },
+    {
+      "query_id": "test:IP/2006/page_30.pdf-1:91",
+      "sample_id": "IP/2006/page_30.pdf-1",
+      "program_type": "divide",
+      "table_size_bin": "small",
+      "structure_quality_bin": "low",
+      "s_teds": 0.8823529411764706
+    },
+    {
+      "query_id": "test:IP/2006/page_35.pdf-2:237",
+      "sample_id": "IP/2006/page_35.pdf-2",
+      "program_type": "divide",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "high",
+      "s_teds": 0.9574468085106383
+    },
+    {
+      "query_id": "test:IPG/2006/page_77.pdf-3:670",
+      "sample_id": "IPG/2006/page_77.pdf-3",
+      "program_type": "subtract",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9130434782608696
+    },
+    {
+      "query_id": "test:JKHY/2017/page_26.pdf-1:166",
+      "sample_id": "JKHY/2017/page_26.pdf-1",
+      "program_type": "subtract",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9411764705882353
+    },
+    {
+      "query_id": "test:JKHY/2017/page_26.pdf-3:822",
+      "sample_id": "JKHY/2017/page_26.pdf-3",
+      "program_type": "subtract",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9411764705882353
+    },
+    {
+      "query_id": "test:JPM/2003/page_106.pdf-1:345",
+      "sample_id": "JPM/2003/page_106.pdf-1",
+      "program_type": "divide",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9090909090909091
+    },
+    {
+      "query_id": "test:JPM/2009/page_175.pdf-5:281",
+      "sample_id": "JPM/2009/page_175.pdf-5",
+      "program_type": "add",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9259259259259259
+    },
+    {
+      "query_id": "test:JPM/2014/page_122.pdf-2:870",
+      "sample_id": "JPM/2014/page_122.pdf-2",
+      "program_type": "subtract",
+      "table_size_bin": "large",
+      "structure_quality_bin": "high",
+      "s_teds": 0.972972972972973
+    },
+    {
+      "query_id": "test:JPM/2018/page_90.pdf-1:33",
+      "sample_id": "JPM/2018/page_90.pdf-1",
+      "program_type": "divide",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "high",
+      "s_teds": 0.9615384615384616
+    },
+    {
+      "query_id": "test:KHC/2018/page_132.pdf-1:785",
+      "sample_id": "KHC/2018/page_132.pdf-1",
+      "program_type": "subtract",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "high",
+      "s_teds": 0.9523809523809523
+    },
+    {
+      "query_id": "test:L/2009/page_84.pdf-1:1007",
+      "sample_id": "L/2009/page_84.pdf-1",
+      "program_type": "divide",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9411764705882353
+    },
+    {
+      "query_id": "test:LKQ/2016/page_87.pdf-2:1033",
+      "sample_id": "LKQ/2016/page_87.pdf-2",
+      "program_type": "subtract",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9130434782608696
+    },
+    {
+      "query_id": "test:LKQ/2016/page_87.pdf-4:1125",
+      "sample_id": "LKQ/2016/page_87.pdf-4",
+      "program_type": "divide",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9130434782608696
+    },
+    {
+      "query_id": "test:MAS/2012/page_26.pdf-3:826",
+      "sample_id": "MAS/2012/page_26.pdf-3",
+      "program_type": "subtract",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9459459459459459
+    },
+    {
+      "query_id": "test:MKTX/2012/page_42.pdf-3:666",
+      "sample_id": "MKTX/2012/page_42.pdf-3",
+      "program_type": "subtract",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "high",
+      "s_teds": 0.9523809523809523
+    },
+    {
+      "query_id": "test:MMM/2007/page_23.pdf-1:199",
+      "sample_id": "MMM/2007/page_23.pdf-1",
+      "program_type": "divide",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9090909090909091
+    },
+    {
+      "query_id": "test:MO/2014/page_39.pdf-4:1139",
+      "sample_id": "MO/2014/page_39.pdf-4",
+      "program_type": "divide",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9375
+    },
+    {
+      "query_id": "test:MRO/2004/page_46.pdf-2:879",
+      "sample_id": "MRO/2004/page_46.pdf-2",
+      "program_type": "add",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9473684210526316
+    },
+    {
+      "query_id": "test:MRO/2013/page_39.pdf-1:625",
+      "sample_id": "MRO/2013/page_39.pdf-1",
+      "program_type": "greater",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9090909090909091
+    },
+    {
+      "query_id": "test:MRO/2017/page_96.pdf-3:335",
+      "sample_id": "MRO/2017/page_96.pdf-3",
+      "program_type": "table_average",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9090909090909091
+    },
+    {
+      "query_id": "test:MSI/2007/page_70.pdf-3:627",
+      "sample_id": "MSI/2007/page_70.pdf-3",
+      "program_type": "multiply",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9130434782608696
+    },
+    {
+      "query_id": "test:MSI/2014/page_76.pdf-1:308",
+      "sample_id": "MSI/2014/page_76.pdf-1",
+      "program_type": "subtract",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9259259259259259
+    },
+    {
+      "query_id": "test:NKE/2009/page_43.pdf-1:315",
+      "sample_id": "NKE/2009/page_43.pdf-1",
+      "program_type": "add",
+      "table_size_bin": "small",
+      "structure_quality_bin": "low",
+      "s_teds": 0.8181818181818181
+    },
+    {
+      "query_id": "test:NWS/2019/page_116.pdf-2:571",
+      "sample_id": "NWS/2019/page_116.pdf-2",
+      "program_type": "subtract",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9
+    },
+    {
+      "query_id": "test:PKG/2002/page_52.pdf-1:963",
+      "sample_id": "PKG/2002/page_52.pdf-1",
+      "program_type": "multiply",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "high",
+      "s_teds": 0.9655172413793104
+    },
+    {
+      "query_id": "test:PKG/2013/page_88.pdf-1:251",
+      "sample_id": "PKG/2013/page_88.pdf-1",
+      "program_type": "divide",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9090909090909091
+    },
+    {
+      "query_id": "test:PPG/2008/page_52.pdf-2:668",
+      "sample_id": "PPG/2008/page_52.pdf-2",
+      "program_type": "divide",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "high",
+      "s_teds": 0.9523809523809523
+    },
+    {
+      "query_id": "test:RSG/2010/page_98.pdf-2:520",
+      "sample_id": "RSG/2010/page_98.pdf-2",
+      "program_type": "divide",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9375
+    },
+    {
+      "query_id": "test:RSG/2016/page_139.pdf-1:731",
+      "sample_id": "RSG/2016/page_139.pdf-1",
+      "program_type": "subtract",
+      "table_size_bin": "small",
+      "structure_quality_bin": "low",
+      "s_teds": 0.8888888888888888
+    },
+    {
+      "query_id": "test:SLG/2011/page_91.pdf-1:188",
+      "sample_id": "SLG/2011/page_91.pdf-1",
+      "program_type": "add",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "high",
+      "s_teds": 0.9523809523809523
+    },
+    {
+      "query_id": "test:SLG/2011/page_91.pdf-4:302",
+      "sample_id": "SLG/2011/page_91.pdf-4",
+      "program_type": "add",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "high",
+      "s_teds": 0.9523809523809523
+    },
+    {
+      "query_id": "test:SNA/2013/page_83.pdf-3:948",
+      "sample_id": "SNA/2013/page_83.pdf-3",
+      "program_type": "subtract",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9473684210526316
+    },
+    {
+      "query_id": "test:SNA/2013/page_84.pdf-1:338",
+      "sample_id": "SNA/2013/page_84.pdf-1",
+      "program_type": "divide",
+      "table_size_bin": "small",
+      "structure_quality_bin": "low",
+      "s_teds": 0.8888888888888888
+    },
+    {
+      "query_id": "test:UNP/2007/page_25.pdf-1:108",
+      "sample_id": "UNP/2007/page_25.pdf-1",
+      "program_type": "divide",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9259259259259259
+    },
+    {
+      "query_id": "test:UNP/2007/page_25.pdf-3:1088",
+      "sample_id": "UNP/2007/page_25.pdf-3",
+      "program_type": "subtract",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9259259259259259
+    },
+    {
+      "query_id": "test:UPS/2007/page_98.pdf-2:223",
+      "sample_id": "UPS/2007/page_98.pdf-2",
+      "program_type": "multiply",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9375
+    },
+    {
+      "query_id": "test:UPS/2010/page_52.pdf-2:582",
+      "sample_id": "UPS/2010/page_52.pdf-2",
+      "program_type": "divide",
+      "table_size_bin": "large",
+      "structure_quality_bin": "high",
+      "s_teds": 0.9759036144578314
+    },
+    {
+      "query_id": "test:V/2008/page_180.pdf-2:363",
+      "sample_id": "V/2008/page_180.pdf-2",
+      "program_type": "divide",
+      "table_size_bin": "small",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9230769230769231
+    },
+    {
+      "query_id": "test:VRTX/2006/page_111.pdf-1:1018",
+      "sample_id": "VRTX/2006/page_111.pdf-1",
+      "program_type": "subtract",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "medium",
+      "s_teds": 0.9411764705882353
+    },
+    {
+      "query_id": "test:ZBH/2007/page_67.pdf-2:131",
+      "sample_id": "ZBH/2007/page_67.pdf-2",
+      "program_type": "subtract",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "high",
+      "s_teds": 0.967741935483871
+    },
+    {
+      "query_id": "test:ZBH/2008/page_57.pdf-3:656",
+      "sample_id": "ZBH/2008/page_57.pdf-3",
+      "program_type": "add",
+      "table_size_bin": "medium",
+      "structure_quality_bin": "high",
+      "s_teds": 0.9607843137254902
+    }
+  ]
+}

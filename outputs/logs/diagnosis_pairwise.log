@@ -1,0 +1,8 @@
+2026-08-04 17:14:09,599 INFO Starting split=all seed=42 (deterministic comparison; no training)
+2026-08-04 17:14:10,219 INFO Wrote split=dev rows=883 winners={'unitable_win': 74, 'flat_win': 105, 'tie': 196, 'both_fail': 508} path=outputs/diagnosis/pairwise_flat_unitable_dev.csv
+2026-08-04 17:14:10,610 INFO Wrote split=test rows=1147 winners={'unitable_win': 114, 'flat_win': 113, 'tie': 241, 'both_fail': 679} path=outputs/diagnosis/pairwise_flat_unitable_test.csv
+2026-08-04 17:14:10,667 INFO Wrote SHA256 manifest outputs/diagnosis/pairwise_input_sha256.json
+2026-08-04 17:15:37,511 INFO Starting split=all seed=42 (deterministic comparison; no training)
+2026-08-04 17:15:38,134 INFO Wrote split=dev rows=883 winners={'unitable_win': 74, 'flat_win': 105, 'tie': 196, 'both_fail': 508} path=outputs/diagnosis/pairwise_flat_unitable_dev.csv
+2026-08-04 17:15:38,533 INFO Wrote split=test rows=1147 winners={'unitable_win': 114, 'flat_win': 113, 'tie': 241, 'both_fail': 679} path=outputs/diagnosis/pairwise_flat_unitable_test.csv
+2026-08-04 17:15:38,582 INFO Wrote SHA256 manifest outputs/diagnosis/pairwise_input_sha256.json

@@ -1,0 +1,52 @@
+{
+  "seed": 42,
+  "selection_split": "dev",
+  "selection_metric": "0.2*table_ndcg@10+0.3*row_ndcg@10+0.5*cell_ndcg@10",
+  "formal_test_evaluations_at_freeze": 0,
+  "runs": {
+    "fedavg": {
+      "run": "day75_queue_lr1e5_pilot_s42",
+      "best_round": 4,
+      "dev_weighted_ndcg": 0.23749736594849535,
+      "dev_table_ndcg": 0.33696068403450724,
+      "dev_row_ndcg": 0.3333199903868811,
+      "dev_cell_ndcg": 0.14021846405105917,
+      "dev_worst_ndcg": 0.1266723035200968,
+      "checkpoint_sha256": "44132ad9066bebbba5600683e1f66f1cbe678780ca9f83f413f4e77efa5eff7a",
+      "frozen_dir": "outputs/federated/day75_queue_lr1e5_pilot_s42/frozen_day8_best_round4"
+    },
+    "r_only": {
+      "run": "day8_r_only_s42",
+      "best_round": 4,
+      "dev_weighted_ndcg": 0.23741696511984364,
+      "dev_table_ndcg": 0.3389973557700464,
+      "dev_row_ndcg": 0.33337299210363747,
+      "dev_cell_ndcg": 0.13921119266948623,
+      "dev_worst_ndcg": 0.1261467509292379,
+      "checkpoint_sha256": "1e648b7d70c8b821a2bb7917b37c5bc036f1981e49c51253f3c141db22ea315d",
+      "frozen_dir": "outputs/federated/day8_r_only_s42/frozen_day8_best_round4"
+    },
+    "u_only": {
+      "run": "day8_u_only_s42",
+      "best_round": 4,
+      "dev_weighted_ndcg": 0.2378794002096452,
+      "dev_table_ndcg": 0.33862130892428943,
+      "dev_row_ndcg": 0.3330998115624388,
+      "dev_cell_ndcg": 0.1404503899121113,
+      "dev_worst_ndcg": 0.12622280943758682,
+      "checkpoint_sha256": "81fd951c6536fad83f84eeb3f9ceb8f3877ee4877df0fac044c5c4c6981bc1da",
+      "frozen_dir": "outputs/federated/day8_u_only_s42/frozen_day8_best_round4"
+    },
+    "r_plus_u": {
+      "run": "day8_r_plus_u_s42",
+      "best_round": 4,
+      "dev_weighted_ndcg": 0.23717485497450158,
+      "dev_table_ndcg": 0.33835854737903737,
+      "dev_row_ndcg": 0.3321317122609103,
+      "dev_cell_ndcg": 0.139727263640842,
+      "dev_worst_ndcg": 0.12585184492677043,
+      "checkpoint_sha256": "09842264748c035e4530aa2a5d1563783b859656ed7bc0e061ca38ed38a2b220",
+      "frozen_dir": "outputs/federated/day8_r_plus_u_s42/frozen_day8_best_round4"
+    }
+  }
+}

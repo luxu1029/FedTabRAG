@@ -1,0 +1,27 @@
+{
+  "rate_percent": 10,
+  "seed": 42,
+  "rate_unit": "fraction of test tables selected",
+  "nested_selection": true,
+  "selected_tables": 115,
+  "total_tables": 1147,
+  "applied_tables": 115,
+  "skipped_tables": 0,
+  "operation_counts": {
+    "adjacent_row_swap": 39,
+    "adjacent_col_swap": 38,
+    "slot_rotation": 38
+  },
+  "structure_fields_changed_only": [
+    "row",
+    "col",
+    "row_cell_texts",
+    "text"
+  ],
+  "evidence_ids_unchanged": true,
+  "cell_text_fields_unchanged": true,
+  "cell_text_multiset_equal": true,
+  "cell_text_count": 28205,
+  "source_sha256": "85df7462a1429d80d383fb4ace61dbc33232d857f1c19b52bb3283c8e63b75f6",
+  "output_sha256": "b6175a2aac9eaabdc7bcf50fe55a68bddf0cb8f217cf70726c0ada80813c45e7"
+}

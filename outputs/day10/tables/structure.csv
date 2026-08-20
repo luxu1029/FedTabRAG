@@ -1,0 +1,4 @@
+method,split,s_teds,valid_html_rate,cell_count_exact_rate,source
+Flat,test,NA,NA,NA,NA
+GT-oracle,test,NA,NA,NA,NA
+UniTable,test,0.9224658394390737,1.0,0.977332170880558,outputs/unitable/structure_metrics.json

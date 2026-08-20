@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "task": 6,
+  "selection_split": "dev",
+  "test_accessed": false,
+  "decision": "fail",
+  "inputs": [
+    {
+      "path": "outputs/diagnosis/gating/gating_dev_grid.csv",
+      "bytes": 19079,
+      "sha256": "be55cc5ab5e05f502617ed0c82ddbbcb318ab7cb0e16cd96060da7b63d64771a"
+    },
+    {
+      "path": "outputs/diagnosis/gating/gating_dev_best_config.json",
+      "bytes": 3042,
+      "sha256": "15a29db80e73494b1e0c215eaa9271d97db0c8b7b8d010bacef82d07419bca17"
+    },
+    {
+      "path": "outputs/diagnosis/gating/gating_sha256_manifest.json",
+      "bytes": 1771,
+      "sha256": "7f4bc0e8a71eba2a5277eebe7230784294d7a8edcfe877029175fd6ab3613eb0"
+    },
+    {
+      "path": "outputs/diagnosis/fusion/fusion_dev_grid.csv",
+      "bytes": 18031,
+      "sha256": "4e63f799de1c3eb210988090797bb4504a8353301f6d0beee9f5e43e534c731b"
+    },
+    {
+      "path": "outputs/diagnosis/fusion/fusion_dev_best_config.json",
+      "bytes": 5211,
+      "sha256": "a18d8a89229608797c0d52f39e29c49a9bbfffea1e0af9f0f4788f56d7d39b1d"
+    },
+    {
+      "path": "outputs/diagnosis/fusion/fusion_sha256_manifest.json",
+      "bytes": 1760,
+      "sha256": "c1163e6b73a6937d80dec24b836763a60802487ca0c91a7e720d84b8ebbb92cc"
+    },
+    {
+      "path": "/home/hj/data/lx/FedTabRAG/src/evaluation/select_and_freeze_structure_strategy.py",
+      "bytes": 15151,
+      "sha256": "c232f94b5baf4dcbd6b4d31517554f3e9e0806d6fff2882ae736b106c6c71fd2"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "outputs/diagnosis/frozen_selection/fail_decision.json",
+      "bytes": 3591,
+      "sha256": "ee2f8490b4bc830903bb6dd8bebfc5432f5c6bf0874132f65a6680207f3e8856"
+    },
+    {
+      "path": "outputs/diagnosis/frozen_selection/dev_selection_report.md",
+      "bytes": 1156,
+      "sha256": "dd0733a461e1365c896ceb7c1da8b8d020e62bc6c69a704ae8eab29494bf476d"
+    }
+  ],
+  "manifest_self_hash_excluded": true
+}

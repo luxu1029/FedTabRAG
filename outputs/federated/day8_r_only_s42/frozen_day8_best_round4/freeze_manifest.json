@@ -1,0 +1,38 @@
+{
+  "mode": "r_only",
+  "run": "day8_r_only_s42",
+  "seed": 42,
+  "selection_split": "dev",
+  "best_round": 4,
+  "best_dev_weighted_ndcg": 0.23741696511984364,
+  "test_evaluations_before_freeze": 0,
+  "files": {
+    "checkpoints/best.pt": {
+      "sha256": "1e648b7d70c8b821a2bb7917b37c5bc036f1981e49c51253f3c141db22ea315d",
+      "bytes": 1196678
+    },
+    "resolved_config.json": {
+      "sha256": "75b65d66b33fe2cc1aa878d54dab590372c6ec7416cb0621bfcdf8812b36f074",
+      "bytes": 1267
+    },
+    "convergence.csv": {
+      "sha256": "2947268b78484477a1955089cdb82209ab29d675da21b0b9af4179135182c388",
+      "bytes": 5748
+    },
+    "training_audit.json": {
+      "sha256": "35441cda3a7d993ce6ebf8699d83e5f073c22be1f4abe3690901d5b936c605a9",
+      "bytes": 101541
+    },
+    "dev_metrics_round_4.json": {
+      "sha256": "375a6788cc7dcd9bcba51abf65cef3afd42ebe0702ff9879225c071e4b499860",
+      "bytes": 4278
+    }
+  },
+  "formal_test_evaluations": 1,
+  "formal_test_result": {
+    "path": "../formal_test_best_round4_once.json",
+    "sha256": "cc4eca7d785014c6b1319549a49f3c20b806d27cd4b22218d440f179198e827d",
+    "bytes": 7324,
+    "checkpoint_round": 4
+  }
+}

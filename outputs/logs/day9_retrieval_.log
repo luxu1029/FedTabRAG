@@ -1,0 +1,15 @@
+2026-07-31 19:13:59,185 ERROR Day-9 retrieval failed
+Traceback (most recent call last):
+  File "/home/hj/data/lx/FedTabRAG/scripts/run_day9_retrieval.py", line 153, in <module>
+    main()
+  File "/home/hj/data/lx/FedTabRAG/scripts/run_day9_retrieval.py", line 55, in main
+    raise KeyError(args.method)
+KeyError: ''
+Traceback (most recent call last):
+  File "/home/hj/data/lx/FedTabRAG/scripts/run_day9_retrieval.py", line 153, in <module>
+    main()
+  File "/home/hj/data/lx/FedTabRAG/scripts/run_day9_retrieval.py", line 55, in main
+    raise KeyError(args.method)
+KeyError: ''
+
+ERROR conda.cli.main_run:execute(125): `conda run python scripts/run_day9_retrieval.py --method  --device cuda:0 --batch-size 128 --seed 42` failed. (See above for error)

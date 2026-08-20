@@ -1,0 +1,10 @@
+Fri Jul 24 15:31:23 CST 2026
+hj-MS-7D50
+NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
+
+文件系统        容量  已用  可用 已用% 挂载点
+/dev/sdd2       3.6T  1.6T  1.9T   45% /home/hj/data/lx/FedTabRAG
+              总计         已用        空闲      共享    缓冲/缓存    可用
+内存：       125Gi       6.4Gi        32Gi       144Mi        87Gi       117Gi
+交换：        30Gi          0B        30Gi
+Python 3.8.10

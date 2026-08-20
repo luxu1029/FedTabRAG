@@ -1,0 +1,30 @@
+{
+  "batch_size": 2,
+  "clients": 5,
+  "device": "cuda:0",
+  "eval_batch_size": 128,
+  "grad_accum": 4,
+  "learning_rate": 0.0001,
+  "local_epochs": 1,
+  "lora_alpha": 16,
+  "lora_dropout": 0.05,
+  "lora_rank": 8,
+  "lora_targets": [
+    "query",
+    "value"
+  ],
+  "max_length": 256,
+  "model": "models/bge-base-en-v1.5",
+  "output_root": "outputs/federated",
+  "partition": "data/processed/federated/company_5clients.json",
+  "partition_sha256": "4779868cb08297d1b0c31f71b0b53edefd720aaa8f3083c9046ce01a31278a34",
+  "precision": "fp16",
+  "resume": true,
+  "rounds": 10,
+  "run_name": "fedrag_unitable_s42",
+  "save": "best_and_last",
+  "seed": 42,
+  "teacher_mse_weight": 100.0,
+  "temperature": 1.0,
+  "variant": "predicted_structure"
+}

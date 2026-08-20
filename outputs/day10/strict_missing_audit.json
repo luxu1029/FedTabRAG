@@ -1,0 +1,60 @@
+{
+  "policy": "strict missing: never impute; render as NA",
+  "missing_count": 9,
+  "items": [
+    {
+      "artifact": "convergence",
+      "method": "FedE4RAG-Flat",
+      "field": "per-round dev weighted NDCG",
+      "reason": "not recorded in original log"
+    },
+    {
+      "artifact": "convergence",
+      "method": "FedE4RAG-Flat",
+      "field": "per-round Cell Recall@5",
+      "reason": "not recorded in original log"
+    },
+    {
+      "artifact": "convergence",
+      "method": "FedE4RAG-UniTable",
+      "field": "per-round dev weighted NDCG",
+      "reason": "not recorded in original log"
+    },
+    {
+      "artifact": "convergence",
+      "method": "FedE4RAG-UniTable",
+      "field": "per-round Cell Recall@5",
+      "reason": "not recorded in original log"
+    },
+    {
+      "artifact": "convergence",
+      "method": "FedTabRAG-Full(R+U)",
+      "field": "per-round Cell Recall@5",
+      "reason": "not recorded in original log"
+    },
+    {
+      "artifact": "structure_table",
+      "method": "Flat",
+      "field": "all",
+      "reason": "no structure-recognition output; not inferred"
+    },
+    {
+      "artifact": "structure_table",
+      "method": "GT-oracle",
+      "field": "all",
+      "reason": "no measured structure-evaluation file; not filled with assumed 1.0"
+    },
+    {
+      "artifact": "repository",
+      "method": "project",
+      "field": "git_commit",
+      "reason": "workspace is not a Git repository"
+    },
+    {
+      "artifact": "qa",
+      "method": "all",
+      "field": "Program/Execution Accuracy",
+      "reason": "no method predicted programs"
+    }
+  ]
+}

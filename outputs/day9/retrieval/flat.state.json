@@ -1,0 +1,19 @@
+{
+  "method": "flat",
+  "variant": "flat",
+  "note": null,
+  "seed": 42,
+  "top_k": 5,
+  "sample_ids_sha256": "60633751a298baf2b1ea88b88527ca1b0d6da483a2c0b7c093d048d04dc800ec",
+  "corpus_sha256": "2a88bb4777b31d4b378acacbdaa081b9d48f85fc4cc5d01a495fbda9c69a9226",
+  "queries_sha256": "ec8627a740cbf1037234b88929e64187535057474aadbb3ae3f02e7822b85ab8",
+  "checkpoint": "outputs/federated/fedrag_flat_s42/checkpoints/best.pt",
+  "checkpoint_sha256": "cf1221f9d4ab20bb57a14c74e88242ae356a77adabbe475774915e55b05bc0e5",
+  "checkpoint_round": 9,
+  "queries": 100,
+  "corpus_items": 58724,
+  "unified_evidence_recall@5": 0.53,
+  "unified_evidence_mrr@5": 0.29833333333333334,
+  "output_sha256": "60eb53fe4461b14b33e9843fffa92b49c1873af46edd010668409aef034d45de",
+  "uses_test_for_selection": false
+}

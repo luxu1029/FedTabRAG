@@ -1,0 +1,132 @@
+{
+  "manifest": "data/interim/render_manifest_smoke.jsonl",
+  "seed": 42,
+  "entry_count": 100,
+  "status_counts": {
+    "ok": 100
+  },
+  "failure_count": 0,
+  "failures": [],
+  "visual_inspection_sample": [
+    {
+      "sample_key": "train:SLG/2009/page_84.pdf-2:3587",
+      "image_path": "data/interim/rendered_tables/train_ccc6ae24be384d760819aa88.png",
+      "rows": 20,
+      "cols": 7
+    },
+    {
+      "sample_key": "test:AWK/2014/page_121.pdf-2:14",
+      "image_path": "data/interim/rendered_tables/test_71faf6668a25cc28b90135d7.png",
+      "rows": 7,
+      "cols": 2
+    },
+    {
+      "sample_key": "dev:ETR/2011/page_341.pdf-3:3",
+      "image_path": "data/interim/rendered_tables/dev_910ff96e4b2c3eb362422874.png",
+      "rows": 5,
+      "cols": 2
+    },
+    {
+      "sample_key": "train:RCL/2016/page_7.pdf-2:4893",
+      "image_path": "data/interim/rendered_tables/train_149b5f5fb584bbc9183735a5.png",
+      "rows": 6,
+      "cols": 7
+    },
+    {
+      "sample_key": "train:IPG/2018/page_26.pdf-4:121",
+      "image_path": "data/interim/rendered_tables/train_6d5b070ba2445ce6bb409dc1.png",
+      "rows": 5,
+      "cols": 5
+    },
+    {
+      "sample_key": "train:GIS/2019/page_45.pdf-1:7",
+      "image_path": "data/interim/rendered_tables/train_ed296ac4bbbca689142977a5.png",
+      "rows": 20,
+      "cols": 2
+    },
+    {
+      "sample_key": "train:AAL/2018/page_13.pdf-2:2",
+      "image_path": "data/interim/rendered_tables/train_fcea54cab438c4ffdf5fece4.png",
+      "rows": 4,
+      "cols": 5
+    },
+    {
+      "sample_key": "test:AMT/2005/page_102.pdf-3:297",
+      "image_path": "data/interim/rendered_tables/test_12970ff1cd031cd21de9048d.png",
+      "rows": 4,
+      "cols": 11
+    },
+    {
+      "sample_key": "test:MAS/2017/page_27.pdf-2:4",
+      "image_path": "data/interim/rendered_tables/test_f95025643b1b2e390fb496dd.png",
+      "rows": 5,
+      "cols": 6
+    },
+    {
+      "sample_key": "train:DISH/2015/page_142.pdf-1:4049",
+      "image_path": "data/interim/rendered_tables/train_e3b7f1bf1382ceed2d7fe6b0.png",
+      "rows": 13,
+      "cols": 2
+    },
+    {
+      "sample_key": "train:AAL/2017/page_33.pdf-1:2476",
+      "image_path": "data/interim/rendered_tables/train_a76ec8b4b9f33806cba318c5.png",
+      "rows": 17,
+      "cols": 6
+    },
+    {
+      "sample_key": "test:ADI/2011/page_61.pdf-2:2",
+      "image_path": "data/interim/rendered_tables/test_cb98cc35b591334297f9ea8f.png",
+      "rows": 2,
+      "cols": 7
+    },
+    {
+      "sample_key": "train:IPG/2003/page_89.pdf-2:2972",
+      "image_path": "data/interim/rendered_tables/train_8dcc229615b04e3c56a7631d.png",
+      "rows": 6,
+      "cols": 2
+    },
+    {
+      "sample_key": "train:AON/2015/page_72.pdf-1:1246",
+      "image_path": "data/interim/rendered_tables/train_e0575df1f26b37b556e74302.png",
+      "rows": 20,
+      "cols": 3
+    },
+    {
+      "sample_key": "dev:ETR/2004/page_213.pdf-2:4",
+      "image_path": "data/interim/rendered_tables/dev_1adf24b17782932596922cd3.png",
+      "rows": 8,
+      "cols": 2
+    },
+    {
+      "sample_key": "train:ABMD/2012/page_75.pdf-1:1",
+      "image_path": "data/interim/rendered_tables/train_236743536e36848a69fb1c21.png",
+      "rows": 6,
+      "cols": 3
+    },
+    {
+      "sample_key": "train:INTC/2013/page_71.pdf-4:3",
+      "image_path": "data/interim/rendered_tables/train_d20fbb4c60d197d654479854.png",
+      "rows": 9,
+      "cols": 3
+    },
+    {
+      "sample_key": "train:IPG/2012/page_21.pdf-1:2118",
+      "image_path": "data/interim/rendered_tables/train_14f2c4019b0ae4c04dff88dd.png",
+      "rows": 5,
+      "cols": 5
+    },
+    {
+      "sample_key": "train:K/2013/page_27.pdf-4:3235",
+      "image_path": "data/interim/rendered_tables/train_52552cc50b0968becb2415e4.png",
+      "rows": 5,
+      "cols": 4
+    },
+    {
+      "sample_key": "train:ETR/2013/page_15.pdf-4:2583",
+      "image_path": "data/interim/rendered_tables/train_5b1463db06386c30ca62ebdd.png",
+      "rows": 8,
+      "cols": 2
+    }
+  ]
+}

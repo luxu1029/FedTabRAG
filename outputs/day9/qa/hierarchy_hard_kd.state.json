@@ -1,0 +1,18 @@
+{
+  "method": "hierarchy_hard_kd",
+  "queries": 100,
+  "seed": 42,
+  "top_k": 5,
+  "llm": "qwen2.5:7b",
+  "temperature": 0,
+  "max_output_tokens": 128,
+  "prompt_sha256": "c39b5816d17264f52c5889ca790f3f1a408feec45bda7bde5df4a45fd6f38101",
+  "retrieval_sha256": "319442bc50e5eea001619e96ec797993ac9e0a1abc9da052b3aeae0c211d0e3c",
+  "numerical_em": 0.02,
+  "program_accuracy": null,
+  "program_accuracy_reason": "no program predicted",
+  "errors": 0,
+  "elapsed_seconds_current_invocation": 25.87786773405969,
+  "output_sha256": "6491c701677fdf76bd3245bfd2b0f117f823f011135c9fae7d8227f2a189c549",
+  "resume_supported": true
+}

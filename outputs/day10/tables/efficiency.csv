@@ -1,0 +1,4 @@
+method,rounds,training_seconds,peak_gpu_mib,lora_parameter_bytes,total_communication_bytes,source
+FedE4RAG-Flat,10,1846.3855349818477,1436.24072265625,1179648,117964800,outputs/federated/fedrag_flat_s42/convergence.csv
+FedE4RAG-UniTable,10,1868.4503310783766,1414.6943359375,1179648,117964800,outputs/federated/fedrag_unitable_s42/convergence.csv
+FedTabRAG-Full(R+U),10,5737.8059956278885,14750.2578125,1179648,117964800,outputs/federated/day8_r_plus_u_s42/convergence.csv

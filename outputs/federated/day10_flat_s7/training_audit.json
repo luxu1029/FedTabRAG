@@ -1,0 +1,519 @@
+{
+  "teacher_logits_detached": true,
+  "teacher_no_grad": true,
+  "grad_finite": true,
+  "clients_sequential": true,
+  "max_concurrent_clients": 1,
+  "checkpoint_policy": "best_and_last",
+  "client_events": [
+    {
+      "round": 1,
+      "client": 0,
+      "event": "start"
+    },
+    {
+      "round": 1,
+      "client": 0,
+      "event": "end"
+    },
+    {
+      "round": 1,
+      "client": 1,
+      "event": "start"
+    },
+    {
+      "round": 1,
+      "client": 1,
+      "event": "end"
+    },
+    {
+      "round": 1,
+      "client": 2,
+      "event": "start"
+    },
+    {
+      "round": 1,
+      "client": 2,
+      "event": "end"
+    },
+    {
+      "round": 1,
+      "client": 3,
+      "event": "start"
+    },
+    {
+      "round": 1,
+      "client": 3,
+      "event": "end"
+    },
+    {
+      "round": 1,
+      "client": 4,
+      "event": "start"
+    },
+    {
+      "round": 1,
+      "client": 4,
+      "event": "end"
+    },
+    {
+      "round": 2,
+      "client": 0,
+      "event": "start"
+    },
+    {
+      "round": 2,
+      "client": 0,
+      "event": "end"
+    },
+    {
+      "round": 2,
+      "client": 1,
+      "event": "start"
+    },
+    {
+      "round": 2,
+      "client": 1,
+      "event": "end"
+    },
+    {
+      "round": 2,
+      "client": 2,
+      "event": "start"
+    },
+    {
+      "round": 2,
+      "client": 2,
+      "event": "end"
+    },
+    {
+      "round": 2,
+      "client": 3,
+      "event": "start"
+    },
+    {
+      "round": 2,
+      "client": 3,
+      "event": "end"
+    },
+    {
+      "round": 2,
+      "client": 4,
+      "event": "start"
+    },
+    {
+      "round": 2,
+      "client": 4,
+      "event": "end"
+    },
+    {
+      "round": 3,
+      "client": 0,
+      "event": "start"
+    },
+    {
+      "round": 3,
+      "client": 0,
+      "event": "end"
+    },
+    {
+      "round": 3,
+      "client": 1,
+      "event": "start"
+    },
+    {
+      "round": 3,
+      "client": 1,
+      "event": "end"
+    },
+    {
+      "round": 3,
+      "client": 2,
+      "event": "start"
+    },
+    {
+      "round": 3,
+      "client": 2,
+      "event": "end"
+    },
+    {
+      "round": 3,
+      "client": 3,
+      "event": "start"
+    },
+    {
+      "round": 3,
+      "client": 3,
+      "event": "end"
+    },
+    {
+      "round": 3,
+      "client": 4,
+      "event": "start"
+    },
+    {
+      "round": 3,
+      "client": 4,
+      "event": "end"
+    },
+    {
+      "round": 4,
+      "client": 0,
+      "event": "start"
+    },
+    {
+      "round": 4,
+      "client": 0,
+      "event": "end"
+    },
+    {
+      "round": 4,
+      "client": 1,
+      "event": "start"
+    },
+    {
+      "round": 4,
+      "client": 1,
+      "event": "end"
+    },
+    {
+      "round": 4,
+      "client": 2,
+      "event": "start"
+    },
+    {
+      "round": 4,
+      "client": 2,
+      "event": "end"
+    },
+    {
+      "round": 4,
+      "client": 3,
+      "event": "start"
+    },
+    {
+      "round": 4,
+      "client": 3,
+      "event": "end"
+    },
+    {
+      "round": 4,
+      "client": 4,
+      "event": "start"
+    },
+    {
+      "round": 4,
+      "client": 4,
+      "event": "end"
+    },
+    {
+      "round": 5,
+      "client": 0,
+      "event": "start"
+    },
+    {
+      "round": 5,
+      "client": 0,
+      "event": "end"
+    },
+    {
+      "round": 5,
+      "client": 1,
+      "event": "start"
+    },
+    {
+      "round": 5,
+      "client": 1,
+      "event": "end"
+    },
+    {
+      "round": 5,
+      "client": 2,
+      "event": "start"
+    },
+    {
+      "round": 5,
+      "client": 2,
+      "event": "end"
+    },
+    {
+      "round": 5,
+      "client": 3,
+      "event": "start"
+    },
+    {
+      "round": 5,
+      "client": 3,
+      "event": "end"
+    },
+    {
+      "round": 5,
+      "client": 4,
+      "event": "start"
+    },
+    {
+      "round": 5,
+      "client": 4,
+      "event": "end"
+    },
+    {
+      "round": 6,
+      "client": 0,
+      "event": "start"
+    },
+    {
+      "round": 6,
+      "client": 0,
+      "event": "end"
+    },
+    {
+      "round": 6,
+      "client": 1,
+      "event": "start"
+    },
+    {
+      "round": 6,
+      "client": 1,
+      "event": "end"
+    },
+    {
+      "round": 6,
+      "client": 2,
+      "event": "start"
+    },
+    {
+      "round": 6,
+      "client": 2,
+      "event": "end"
+    },
+    {
+      "round": 6,
+      "client": 3,
+      "event": "start"
+    },
+    {
+      "round": 6,
+      "client": 3,
+      "event": "end"
+    },
+    {
+      "round": 6,
+      "client": 4,
+      "event": "start"
+    },
+    {
+      "round": 6,
+      "client": 4,
+      "event": "end"
+    },
+    {
+      "round": 7,
+      "client": 0,
+      "event": "start"
+    },
+    {
+      "round": 7,
+      "client": 0,
+      "event": "end"
+    },
+    {
+      "round": 7,
+      "client": 1,
+      "event": "start"
+    },
+    {
+      "round": 7,
+      "client": 1,
+      "event": "end"
+    },
+    {
+      "round": 7,
+      "client": 2,
+      "event": "start"
+    },
+    {
+      "round": 7,
+      "client": 2,
+      "event": "end"
+    },
+    {
+      "round": 7,
+      "client": 3,
+      "event": "start"
+    },
+    {
+      "round": 7,
+      "client": 3,
+      "event": "end"
+    },
+    {
+      "round": 7,
+      "client": 4,
+      "event": "start"
+    },
+    {
+      "round": 7,
+      "client": 4,
+      "event": "end"
+    },
+    {
+      "round": 8,
+      "client": 0,
+      "event": "start"
+    },
+    {
+      "round": 8,
+      "client": 0,
+      "event": "end"
+    },
+    {
+      "round": 8,
+      "client": 1,
+      "event": "start"
+    },
+    {
+      "round": 8,
+      "client": 1,
+      "event": "end"
+    },
+    {
+      "round": 8,
+      "client": 2,
+      "event": "start"
+    },
+    {
+      "round": 8,
+      "client": 2,
+      "event": "end"
+    },
+    {
+      "round": 8,
+      "client": 3,
+      "event": "start"
+    },
+    {
+      "round": 8,
+      "client": 3,
+      "event": "end"
+    },
+    {
+      "round": 8,
+      "client": 4,
+      "event": "start"
+    },
+    {
+      "round": 8,
+      "client": 4,
+      "event": "end"
+    },
+    {
+      "round": 9,
+      "client": 0,
+      "event": "start"
+    },
+    {
+      "round": 9,
+      "client": 0,
+      "event": "end"
+    },
+    {
+      "round": 9,
+      "client": 1,
+      "event": "start"
+    },
+    {
+      "round": 9,
+      "client": 1,
+      "event": "end"
+    },
+    {
+      "round": 9,
+      "client": 2,
+      "event": "start"
+    },
+    {
+      "round": 9,
+      "client": 2,
+      "event": "end"
+    },
+    {
+      "round": 9,
+      "client": 3,
+      "event": "start"
+    },
+    {
+      "round": 9,
+      "client": 3,
+      "event": "end"
+    },
+    {
+      "round": 9,
+      "client": 4,
+      "event": "start"
+    },
+    {
+      "round": 9,
+      "client": 4,
+      "event": "end"
+    },
+    {
+      "round": 10,
+      "client": 0,
+      "event": "start"
+    },
+    {
+      "round": 10,
+      "client": 0,
+      "event": "end"
+    },
+    {
+      "round": 10,
+      "client": 1,
+      "event": "start"
+    },
+    {
+      "round": 10,
+      "client": 1,
+      "event": "end"
+    },
+    {
+      "round": 10,
+      "client": 2,
+      "event": "start"
+    },
+    {
+      "round": 10,
+      "client": 2,
+      "event": "end"
+    },
+    {
+      "round": 10,
+      "client": 3,
+      "event": "start"
+    },
+    {
+      "round": 10,
+      "client": 3,
+      "event": "end"
+    },
+    {
+      "round": 10,
+      "client": 4,
+      "event": "start"
+    },
+    {
+      "round": 10,
+      "client": 4,
+      "event": "end"
+    }
+  ],
+  "accepted": true,
+  "checkpoints": [
+    "best.pt",
+    "last.pt"
+  ],
+  "lora_parameter_bytes": 1179648,
+  "total_communication_bytes": 117964800,
+  "total_seconds": 1903.9799756319262,
+  "completed_rounds": 10
+}

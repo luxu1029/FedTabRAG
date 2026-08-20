@@ -1,0 +1,3 @@
+2026-07-31 19:34:30,503 INFO encoding method=hierarchy corpus=65226 queries=100
+2026-07-31 19:35:23,370 INFO wrote outputs/day9/retrieval/hierarchy.jsonl recall@5=0.2200
+

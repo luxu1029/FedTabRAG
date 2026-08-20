@@ -1,0 +1,19 @@
+{
+  "query_count": 6251,
+  "queries_with_negative": 6251,
+  "negative_count": 25004,
+  "type_counts": {
+    "same_metric_wrong_period": 12724,
+    "same_table_wrong_row": 11483,
+    "same_row_wrong_cell": 797
+  },
+  "per_query": 4,
+  "source_split": "train",
+  "cross_client_violation_count": 0,
+  "non_train_violation_count": 0,
+  "positive_as_negative_count": 0,
+  "cache_sha256": "56236aad43ac00645c244ade822549300cb713e94044a2bcb3d528c135c0745b",
+  "manual_sample_path": "outputs/audit/hard_negative_sample_100.jsonl",
+  "manual_sample_count": 100,
+  "accepted": true
+}

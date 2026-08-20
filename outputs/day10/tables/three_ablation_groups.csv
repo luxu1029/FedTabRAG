@@ -1,0 +1,12 @@
+group,method,retrieval_recall@5,retrieval_mrr@5,qa100_numerical_em,program_accuracy,source
+input_structure,flat,0.53,0.29833333333333334,0.07,NA,outputs/day9/ablation_summary.json
+input_structure,gt_zero_shot,0.5,0.31299999999999994,0.06,NA,outputs/day9/ablation_summary.json
+input_structure,unitable,0.56,0.3721666666666667,0.07,NA,outputs/day9/ablation_summary.json
+learning_components,unitable,0.56,0.3721666666666667,0.07,NA,outputs/day9/ablation_summary.json
+learning_components,hierarchy,0.22,0.12666666666666665,0.02,NA,outputs/day9/ablation_summary.json
+learning_components,hierarchy_hard,0.4,0.20549999999999996,0.02,NA,outputs/day9/ablation_summary.json
+learning_components,hierarchy_hard_kd,0.4,0.19699999999999998,0.02,NA,outputs/day9/ablation_summary.json
+aggregation,fedavg_queue,0.6,0.36550000000000005,0.05,NA,outputs/day9/ablation_summary.json
+aggregation,r_only,0.6,0.36550000000000005,0.05,NA,outputs/day9/ablation_summary.json
+aggregation,u_only,0.61,0.36916666666666664,0.05,NA,outputs/day9/ablation_summary.json
+aggregation,r_plus_u,0.61,0.36416666666666664,0.05,NA,outputs/day9/ablation_summary.json

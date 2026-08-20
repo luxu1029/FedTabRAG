@@ -1,0 +1,6 @@
+2026-08-03 11:00:57,718 INFO Encoding corpus=65226 queries=1147
+2026-08-03 11:01:51,224 INFO Scoring level=table evidence=29492
+2026-08-03 11:01:51,611 INFO Scoring level=row evidence=7529
+2026-08-03 11:01:51,719 INFO Scoring level=cell evidence=28205
+2026-08-03 11:01:52,259 INFO Wrote outputs/day10/robustness/rate_20.json
+

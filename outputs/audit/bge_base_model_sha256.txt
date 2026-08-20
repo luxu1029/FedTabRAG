@@ -1,0 +1,9 @@
+bc00af31a4a31b74040d73370aa83b62da34c90b75eb77bfa7db039d90abd591  models/bge-base-en-v1.5/config.json
+940d5f50db195fa6e5e6a4f122c095f77880de259d74b14a65779ed48bdd7c56  models/bge-base-en-v1.5/config_sentence_transformers.json
+c7c1988aae201f80cf91a5dbbd5866409503b89dcaba877ca6dba7dd0a5167d7  models/bge-base-en-v1.5/model.safetensors
+84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf  models/bge-base-en-v1.5/modules.json
+84e39fda68ccbff05bfa723ae9c0e70e23e2ec373b76e0f8c6e71af72a693cbf  models/bge-base-en-v1.5/sentence_bert_config.json
+b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3  models/bge-base-en-v1.5/special_tokens_map.json
+d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66  models/bge-base-en-v1.5/tokenizer.json
+9261e7d79b44c8195c1cada2b453e55b00aeb81e907a6664974b4d7776172ab3  models/bge-base-en-v1.5/tokenizer_config.json
+07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3  models/bge-base-en-v1.5/vocab.txt

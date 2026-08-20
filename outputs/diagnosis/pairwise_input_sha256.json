@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "seed": 42,
+  "split": "all",
+  "inputs": [
+    {
+      "path": "data/processed/evidence_map.jsonl",
+      "bytes": 35147703,
+      "sha256": "424ae482396d00d65990ab254dd6897848fac7b3976c995a069e9fca88dfe37f"
+    },
+    {
+      "path": "data/processed/flat/queries_dev.jsonl",
+      "bytes": 268059,
+      "sha256": "ec0a51800a4390f28fabcaa727d3f6f0daf13c20fe9acf71a8d202cf9fb8b2df"
+    },
+    {
+      "path": "data/processed/flat/queries_test.jsonl",
+      "bytes": 355130,
+      "sha256": "ec8627a740cbf1037234b88929e64187535057474aadbb3ae3f02e7822b85ab8"
+    },
+    {
+      "path": "data/processed/predicted_structure/queries_dev.jsonl",
+      "bytes": 281304,
+      "sha256": "169d51ffb7f1c4a9600e36c39d6edb7ccde3a1cdfbe9a60eae8ba6f3ad2379fc"
+    },
+    {
+      "path": "data/processed/predicted_structure/queries_test.jsonl",
+      "bytes": 372335,
+      "sha256": "d9ae9dc82cc450d52edc1fc50a8a518e455dc08d801383fccde5bc9b6bd7b7b8"
+    },
+    {
+      "path": "data/raw/finqa/dev.json",
+      "bytes": 10954658,
+      "sha256": "a847fb7e0d61a3125a1e2909852df6b89f1ee64d2c5ff1bf689e332214deee51"
+    },
+    {
+      "path": "data/raw/finqa/test.json",
+      "bytes": 14395143,
+      "sha256": "831dbfb2e785dbc227f895ce3f24046433467aec67b09db2bd6ac7692a8a30dc"
+    },
+    {
+      "path": "outputs/retrieval/zero_shot_flat.json",
+      "bytes": 7006434,
+      "sha256": "d7c1dfb6d1b28d8833d71698fd827a239526cd34ae3e1d4df6251d9a78a2e862"
+    },
+    {
+      "path": "outputs/retrieval/zero_shot_flat_dev.json",
+      "bytes": 5475701,
+      "sha256": "561fc76b83fe9c57e0cd5fac7ced0826a2c0dd937550fac57c2f82fecaeb8a70"
+    },
+    {
+      "path": "outputs/retrieval/zero_shot_predicted_structure.json",
+      "bytes": 6990459,
+      "sha256": "5a7231998edade25c5fc4ba1e9b84f3566801bfc4efd60a87e54ecee03edc74c"
+    },
+    {
+      "path": "outputs/retrieval/zero_shot_predicted_structure_dev.json",
+      "bytes": 5463300,
+      "sha256": "102fdc2a9d49b94c171e0fd07a74acd6f0a3706a99122e482550e21c5d7cf59b"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "outputs/diagnosis/pairwise_flat_unitable_dev.csv",
+      "rows": 883,
+      "bytes": 687078,
+      "sha256": "6c316937e2903e4722bcdab2fc6f5dc615635ceda6063bdece6308302b818542"
+    },
+    {
+      "path": "outputs/diagnosis/pairwise_flat_unitable_test.csv",
+      "rows": 1147,
+      "bytes": 893166,
+      "sha256": "3c68eada8fbdb2cb7033176211642e1264805d66db91cdb47dc0fe04db993671"
+    }
+  ],
+  "winner_definition": {
+    "both_fail": "both best positive ranks are > 10",
+    "win": "larger NDCG@10; on equal NDCG, lower best-positive rank",
+    "tie": "NDCG@10 within tolerance and equal best-positive rank",
+    "tie_tolerance": 1e-12
+  },
+  "evidence_level_definition": "finest level eligible in both variants: cell > row > table",
+  "gold_evidence_id_encoding": "JSON object with flat and unitable positive-ID arrays"
+}

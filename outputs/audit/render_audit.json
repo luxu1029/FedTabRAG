@@ -1,0 +1,132 @@
+{
+  "manifest": "data/interim/render_manifest.jsonl",
+  "seed": 42,
+  "entry_count": 8281,
+  "status_counts": {
+    "ok": 8281
+  },
+  "failure_count": 0,
+  "failures": [],
+  "visual_inspection_sample": [
+    {
+      "sample_key": "train:AON/2013/page_32.pdf-2:1824",
+      "image_path": "data/interim/rendered_tables/train_47325129299125dd00a1c6ab.png",
+      "rows": 8,
+      "cols": 3
+    },
+    {
+      "sample_key": "train:BLK/2015/page_35.pdf-1:409",
+      "image_path": "data/interim/rendered_tables/train_c3fa2168a3947143156f37e0.png",
+      "rows": 6,
+      "cols": 7
+    },
+    {
+      "sample_key": "train:C/2009/page_38.pdf-4:4506",
+      "image_path": "data/interim/rendered_tables/train_5310b8c9cc1b928671068d13.png",
+      "rows": 7,
+      "cols": 3
+    },
+    {
+      "sample_key": "train:IP/2013/page_101.pdf-1:4012",
+      "image_path": "data/interim/rendered_tables/train_477302deffc88955598cf7cf.png",
+      "rows": 4,
+      "cols": 7
+    },
+    {
+      "sample_key": "train:MA/2010/page_107.pdf-3:3657",
+      "image_path": "data/interim/rendered_tables/train_d54400384d8fd7dadaad9918.png",
+      "rows": 10,
+      "cols": 2
+    },
+    {
+      "sample_key": "train:BLL/2007/page_46.pdf-2:2286",
+      "image_path": "data/interim/rendered_tables/train_b1e922fdd47d44b272ee131e.png",
+      "rows": 6,
+      "cols": 4
+    },
+    {
+      "sample_key": "train:STZ/2010/page_51.pdf-2:1679",
+      "image_path": "data/interim/rendered_tables/train_c7b6e1f032706a92306b8153.png",
+      "rows": 10,
+      "cols": 2
+    },
+    {
+      "sample_key": "train:CDW/2013/page_103.pdf-1:1424",
+      "image_path": "data/interim/rendered_tables/train_de9786d053b3619a01a3dcca.png",
+      "rows": 6,
+      "cols": 2
+    },
+    {
+      "sample_key": "dev:GPN/2017/page_77.pdf-1:661",
+      "image_path": "data/interim/rendered_tables/dev_709b2916f9fac26d2a8addb3.png",
+      "rows": 10,
+      "cols": 2
+    },
+    {
+      "sample_key": "train:INTC/2015/page_122.pdf-4:520",
+      "image_path": "data/interim/rendered_tables/train_59c0fe6a977f39d5fc95f229.png",
+      "rows": 4,
+      "cols": 5
+    },
+    {
+      "sample_key": "train:SNA/2007/page_80.pdf-4:488",
+      "image_path": "data/interim/rendered_tables/train_3e01fe805e2e2697da54e86f.png",
+      "rows": 8,
+      "cols": 2
+    },
+    {
+      "sample_key": "train:FIS/2006/page_88.pdf-1:1535",
+      "image_path": "data/interim/rendered_tables/train_2a3e14cb0db913bff93664a8.png",
+      "rows": 8,
+      "cols": 3
+    },
+    {
+      "sample_key": "train:GPN/2007/page_39.pdf-3:3582",
+      "image_path": "data/interim/rendered_tables/train_803b0cd7a4e7333e96a9a2e0.png",
+      "rows": 7,
+      "cols": 4
+    },
+    {
+      "sample_key": "train:DVN/2013/page_78.pdf-2:3811",
+      "image_path": "data/interim/rendered_tables/train_f6732b76e0a36455502a0c5e.png",
+      "rows": 7,
+      "cols": 2
+    },
+    {
+      "sample_key": "test:HOLX/2009/page_127.pdf-4:1145",
+      "image_path": "data/interim/rendered_tables/test_a010f8af06dd23ca71908e81.png",
+      "rows": 6,
+      "cols": 2
+    },
+    {
+      "sample_key": "train:GPN/2009/page_69.pdf-2:434",
+      "image_path": "data/interim/rendered_tables/train_03916685b1430ad933961197.png",
+      "rows": 8,
+      "cols": 2
+    },
+    {
+      "sample_key": "train:PNC/2012/page_96.pdf-2:3257",
+      "image_path": "data/interim/rendered_tables/train_4150f222d6c6a0e54c419e93.png",
+      "rows": 4,
+      "cols": 2
+    },
+    {
+      "sample_key": "dev:PM/2018/page_31.pdf-2:622",
+      "image_path": "data/interim/rendered_tables/dev_ed935bb9489fe1b58bf4ad7f.png",
+      "rows": 3,
+      "cols": 3
+    },
+    {
+      "sample_key": "train:JPM/2010/page_132.pdf-1:3611",
+      "image_path": "data/interim/rendered_tables/train_d12afe5f006fa3c7ed88ce05.png",
+      "rows": 6,
+      "cols": 5
+    },
+    {
+      "sample_key": "test:MRO/2006/page_93.pdf-4:225",
+      "image_path": "data/interim/rendered_tables/test_1483618d15111b09665915f0.png",
+      "rows": 3,
+      "cols": 2
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "method": "unitable",
+  "queries": 100,
+  "seed": 42,
+  "top_k": 5,
+  "llm": "qwen2.5:7b",
+  "temperature": 0,
+  "max_output_tokens": 128,
+  "prompt_sha256": "c39b5816d17264f52c5889ca790f3f1a408feec45bda7bde5df4a45fd6f38101",
+  "retrieval_sha256": "6aee541c45b1cd36a739b58972cfc5b44f32c844471fe71d9d3ae9bf4a9e5bee",
+  "numerical_em": 0.07,
+  "program_accuracy": null,
+  "program_accuracy_reason": "no program predicted",
+  "errors": 0,
+  "elapsed_seconds_current_invocation": 26.604680767981336,
+  "output_sha256": "4b34bf7769a26e9fa7bc357240963d5aeb3dbcb3d930ad7b874da13f0e356aa7",
+  "resume_supported": true
+}

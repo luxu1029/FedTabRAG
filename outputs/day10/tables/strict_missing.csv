@@ -1,0 +1,10 @@
+artifact,method,field,reason
+convergence,FedE4RAG-Flat,per-round dev weighted NDCG,not recorded in original log
+convergence,FedE4RAG-Flat,per-round Cell Recall@5,not recorded in original log
+convergence,FedE4RAG-UniTable,per-round dev weighted NDCG,not recorded in original log
+convergence,FedE4RAG-UniTable,per-round Cell Recall@5,not recorded in original log
+convergence,FedTabRAG-Full(R+U),per-round Cell Recall@5,not recorded in original log
+structure_table,Flat,all,no structure-recognition output; not inferred
+structure_table,GT-oracle,all,no measured structure-evaluation file; not filled with assumed 1.0
+repository,project,git_commit,workspace is not a Git repository
+qa,all,Program/Execution Accuracy,no method predicted programs

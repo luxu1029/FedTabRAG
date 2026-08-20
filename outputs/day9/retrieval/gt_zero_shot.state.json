@@ -1,0 +1,19 @@
+{
+  "method": "gt_zero_shot",
+  "variant": "oracle_structure",
+  "note": "zero-shot oracle; no GT federated checkpoint exists",
+  "seed": 42,
+  "top_k": 5,
+  "sample_ids_sha256": "60633751a298baf2b1ea88b88527ca1b0d6da483a2c0b7c093d048d04dc800ec",
+  "corpus_sha256": "6fa93516b7f3272484f37fe5b0ea41f86f91e1989499cccc9fa655ccfe6f18f0",
+  "queries_sha256": "798f87a22683b30169c5ed12bad52e896e0afbcae487b98a03ced3d924a8f167",
+  "checkpoint": null,
+  "checkpoint_sha256": null,
+  "checkpoint_round": null,
+  "queries": 100,
+  "corpus_items": 65094,
+  "unified_evidence_recall@5": 0.5,
+  "unified_evidence_mrr@5": 0.31299999999999994,
+  "output_sha256": "18f5c80c6b6f0912f949f968a4c0a2e828b4775f821fff5fc2f5d54d8f581baa",
+  "uses_test_for_selection": false
+}

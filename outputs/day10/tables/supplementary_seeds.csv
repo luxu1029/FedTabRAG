@@ -1,0 +1,13 @@
+method,row_type,seed,weighted_global_ndcg@10,mean_across_seeds,std_across_seeds,source
+FedE4RAG-Flat,seed,42,0.25615365121310774,NA,NA,outputs/federated/fedrag_flat_s42/test_metrics.json
+FedE4RAG-Flat,seed,7,0.2553856226842444,NA,NA,outputs/federated/day10_flat_s7/test_metrics.json
+FedE4RAG-Flat,seed,2026,0.2500187779242442,NA,NA,outputs/federated/day10_flat_s2026/test_metrics.json
+FedE4RAG-Flat,summary,all_available,NA,0.2538526839405321,0.0027290527613787513,n=3
+FedE4RAG-UniTable,seed,42,0.2299139335653528,NA,NA,outputs/federated/fedrag_unitable_s42/test_metrics.json
+FedE4RAG-UniTable,seed,7,0.22531180265605172,NA,NA,outputs/federated/day10_unitable_s7/test_metrics.json
+FedE4RAG-UniTable,seed,2026,0.22943924744107047,NA,NA,outputs/federated/day10_unitable_s2026/test_metrics.json
+FedE4RAG-UniTable,summary,all_available,NA,0.228221661220825,0.002066686458945794,n=3
+FedTabRAG-Full(R+U),seed,42,0.22652105169521053,NA,NA,outputs/federated/day8_r_plus_u_s42/formal_test_best_round4_once.json
+FedTabRAG-Full(R+U),seed,7,0.22698853415228082,NA,NA,outputs/federated/day10_r_plus_u_s7/test_metrics.json
+FedTabRAG-Full(R+U),seed,2026,0.22673210174084385,NA,NA,outputs/federated/day10_r_plus_u_s2026/test_metrics.json
+FedTabRAG-Full(R+U),summary,all_available,NA,0.22674722919611176,0.00019114844466065306,n=3

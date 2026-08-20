@@ -1,0 +1,15 @@
+{
+  "model": "/home/hj/data/lx/FedTabRAG/models/bge-base-en-v1.5",
+  "model_fingerprint": "6e75d8de9fd7c65890d9af7df280e1a39e720ccc0720280a98c1637586f48c7b",
+  "corpus": "/home/hj/data/lx/FedTabRAG/data/processed/flat/corpus.jsonl",
+  "corpus_count": 413975,
+  "dimension": 768,
+  "dtype": "float16",
+  "max_length": 256,
+  "pooling": "cls",
+  "normalize": true,
+  "seed": 42,
+  "processed": 413975,
+  "complete": true,
+  "elapsed_seconds": 650.9851631460479
+}

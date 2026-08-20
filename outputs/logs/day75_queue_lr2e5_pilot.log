@@ -1,0 +1,29 @@
+2026-07-29 15:52:04,653 INFO round=1 client=0 loss=3.89252 table=4.49841 row=4.18309 cell=3.16376 hard=0.16015
+2026-07-29 15:53:51,998 INFO round=1 client=1 loss=3.82619 table=4.47457 row=4.14460 cell=2.98358 hard=0.15497
+2026-07-29 15:55:37,780 INFO round=1 client=2 loss=3.85872 table=4.50816 row=4.02692 cell=3.00025 hard=0.14764
+2026-07-29 15:57:22,481 INFO round=1 client=3 loss=3.88488 table=4.47229 row=3.95738 cell=2.96076 hard=0.15416
+2026-07-29 15:59:10,528 INFO round=1 client=4 loss=3.88443 table=4.51486 row=4.20895 cell=3.12327 hard=0.15929
+2026-07-29 16:01:38,456 INFO round=2 client=0 loss=3.88492 table=4.50893 row=4.19349 cell=3.15779 hard=0.16116
+2026-07-29 16:03:25,686 INFO round=2 client=1 loss=3.83794 table=4.48023 row=4.11927 cell=2.98106 hard=0.15745
+2026-07-29 16:05:12,112 INFO round=2 client=2 loss=3.84430 table=4.50277 row=4.03241 cell=2.99997 hard=0.15407
+2026-07-29 16:06:58,100 INFO round=2 client=3 loss=3.90062 table=4.47786 row=3.92676 cell=2.94377 hard=0.15539
+2026-07-29 16:08:46,426 INFO round=2 client=4 loss=3.88642 table=4.51787 row=4.19947 cell=3.10549 hard=0.16095
+2026-07-29 16:11:15,847 INFO round=3 client=0 loss=3.88405 table=4.51038 row=4.21594 cell=3.18459 hard=0.16287
+2026-07-29 16:13:02,794 INFO round=3 client=1 loss=3.83763 table=4.48037 row=4.09801 cell=2.95636 hard=0.15800
+2026-07-29 16:14:48,347 INFO round=3 client=2 loss=3.86237 table=4.49903 row=3.97958 cell=2.96924 hard=0.15534
+2026-07-29 16:16:34,548 INFO round=3 client=3 loss=3.89163 table=4.47955 row=3.94894 cell=2.94843 hard=0.15918
+2026-07-29 16:18:22,366 INFO round=3 client=4 loss=3.88793 table=4.51992 row=4.17858 cell=3.08731 hard=0.16141
+2026-07-29 16:19:02,293 INFO complete accepted=True
+
+2026-07-29 16:49:12,398 INFO round=4 client=0 loss=3.89051 table=4.48954 row=4.17978 cell=3.16581 hard=0.15795
+2026-07-29 16:50:57,818 INFO round=4 client=1 loss=3.82007 table=4.46064 row=4.13291 cell=2.97431 hard=0.15222
+2026-07-29 16:52:43,692 INFO round=4 client=2 loss=3.84328 table=4.49364 row=4.05649 cell=3.01843 hard=0.15316
+2026-07-29 16:54:28,151 INFO round=4 client=3 loss=3.89085 table=4.47557 row=3.91114 cell=2.93097 hard=0.15539
+2026-07-29 16:56:15,611 INFO round=4 client=4 loss=3.87069 table=4.49873 row=4.19722 cell=3.10991 hard=0.15686
+2026-07-29 16:58:42,985 INFO round=5 client=0 loss=3.86110 table=4.46378 row=4.18929 cell=3.16310 hard=0.14712
+2026-07-29 17:00:29,836 INFO round=5 client=1 loss=3.79360 table=4.43921 row=4.10317 cell=2.95876 hard=0.14384
+2026-07-29 17:02:14,331 INFO round=5 client=2 loss=3.82418 table=4.46032 row=4.01268 cell=2.98755 hard=0.14018
+2026-07-29 17:03:58,740 INFO round=5 client=3 loss=3.85875 table=4.43591 row=3.86728 cell=2.91289 hard=0.14714
+2026-07-29 17:05:45,864 INFO round=5 client=4 loss=3.84185 table=4.46565 row=4.14660 cell=3.07115 hard=0.14918
+2026-07-29 17:06:25,686 INFO complete accepted=True
+

@@ -1,0 +1,6 @@
+2026-07-30 20:28:41,167 INFO Encoding corpus=65226 queries=1147
+2026-07-30 20:29:34,167 INFO Scoring level=table evidence=29492
+2026-07-30 20:29:34,574 INFO Scoring level=row evidence=7529
+2026-07-30 20:29:34,696 INFO Scoring level=cell evidence=28205
+2026-07-30 20:29:35,248 INFO Wrote outputs/federated/day8_r_only_s42/formal_test_best_round4_once.json
+

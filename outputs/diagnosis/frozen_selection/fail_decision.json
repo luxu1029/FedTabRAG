@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "task": 6,
+  "decision": "FAIL_NO_DEV_STRATEGY",
+  "selection_split": "dev",
+  "test_accessed": false,
+  "formal_test_authorized": false,
+  "frozen_config_created": false,
+  "canonical_flat_dev_baseline": {
+    "weighted_ndcg@10": 0.14559780241782574,
+    "row_recall@5": 0.327007299270073,
+    "cell_recall@5": 0.2364963503649635,
+    "worst_client_weighted_ndcg@10": 0.09924722401935726
+  },
+  "thresholds": {
+    "weighted_ndcg_min_improvement": 0.003,
+    "row_or_cell_recall5_min_improvement": 0.01,
+    "worst_client_max_degradation": 0.005
+  },
+  "candidate_counts": {
+    "none": 1,
+    "gating": 38,
+    "fusion": 33,
+    "gating_plus_fusion": 1
+  },
+  "passing_candidate_count": 0,
+  "best_gating": {
+    "strategy": "gating",
+    "config_id": "g008",
+    "parameters": {
+      "gate_family": "s_teds",
+      "s_teds_threshold": "0.978494623655914",
+      "cell_count_consistency_threshold": "",
+      "require_valid_html": "False",
+      "confidence_threshold": "",
+      "composite_r_threshold": ""
+    },
+    "metrics": {
+      "weighted_ndcg@10": 0.14559780241782574,
+      "row_recall@5": 0.327007299270073,
+      "cell_recall@5": 0.2364963503649635,
+      "worst_client_weighted_ndcg@10": 0.09924722401935726
+    },
+    "protocol_comparable_to_canonical_flat": true,
+    "deltas_vs_canonical_flat": {
+      "weighted_ndcg@10": 0.0,
+      "row_recall@5": 0.0,
+      "cell_recall@5": 0.0,
+      "worst_client_weighted_ndcg@10": 0.0
+    },
+    "checks": {
+      "weighted_ndcg": false,
+      "row_or_cell_recall5": false,
+      "worst_client": true
+    },
+    "passes": false
+  },
+  "best_fusion_by_weighted_ndcg": {
+    "strategy": "fusion",
+    "config_id": "f016",
+    "parameters": {
+      "normalization": "min-max",
+      "alpha": 0.5,
+      "candidate_alignment": "exact_evidence_id_top10_union"
+    },
+    "metrics": {
+      "weighted_ndcg@10": 0.11548370940049324,
+      "row_recall@5": 0.29781021897810217,
+      "cell_recall@5": 0.1897810218978102,
+      "worst_client_weighted_ndcg@10": 0.07587380712639287
+    },
+    "protocol_comparable_to_canonical_flat": false,
+    "comparability_note": "Frozen Top-10 union uses two non-overlapping row/cell representation-ID pools; absolute NDCG is not protocol-identical to canonical full-corpus Flat.",
+    "deltas_vs_canonical_flat": {
+      "weighted_ndcg@10": -0.030114093017332505,
+      "row_recall@5": -0.029197080291970823,
+      "cell_recall@5": -0.04671532846715329,
+      "worst_client_weighted_ndcg@10": -0.02337341689296439
+    },
+    "checks": {
+      "weighted_ndcg": false,
+      "row_or_cell_recall5": false,
+      "worst_client": false
+    },
+    "passes": false,
+    "raw_thresholds_pass": false
+  },
+  "gating_plus_fusion": {
+    "strategy": "gating_plus_fusion",
+    "config_id": null,
+    "metrics": null,
+    "protocol_comparable_to_canonical_flat": false,
+    "passes": false,
+    "unavailable_reason": "No independently evaluated dev grid exists for the composed strategy. Task 6 does not invent metrics or search a new composition."
+  },
+  "reasons": [
+    "No gating candidate improves canonical Flat weighted NDCG@10 by at least 0.003 while satisfying recall and worst-client constraints.",
+    "Fusion Top-10-union metrics are not protocol-comparable to canonical full-corpus Flat; when numerically compared to the canonical baseline, no fusion candidate passes all thresholds.",
+    "No dev result exists for gating_plus_fusion, so Task 6 cannot freeze that strategy."
+  ],
+  "required_action": "Do not run Task 7 formal test. Freeze the negative dev decision."
+}

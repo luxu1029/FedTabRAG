@@ -1,0 +1,19 @@
+{
+  "method": "r_only",
+  "variant": "predicted_structure",
+  "note": null,
+  "seed": 42,
+  "top_k": 5,
+  "sample_ids_sha256": "60633751a298baf2b1ea88b88527ca1b0d6da483a2c0b7c093d048d04dc800ec",
+  "corpus_sha256": "85df7462a1429d80d383fb4ace61dbc33232d857f1c19b52bb3283c8e63b75f6",
+  "queries_sha256": "d9ae9dc82cc450d52edc1fc50a8a518e455dc08d801383fccde5bc9b6bd7b7b8",
+  "checkpoint": "outputs/federated/day8_r_only_s42/frozen_day8_best_round4/checkpoints/best.pt",
+  "checkpoint_sha256": "1e648b7d70c8b821a2bb7917b37c5bc036f1981e49c51253f3c141db22ea315d",
+  "checkpoint_round": 4,
+  "queries": 100,
+  "corpus_items": 65226,
+  "unified_evidence_recall@5": 0.6,
+  "unified_evidence_mrr@5": 0.36550000000000005,
+  "output_sha256": "206f31a3bdd38634211942ad2bcf16d8102bbb752804e9875dab2665665ced29",
+  "uses_test_for_selection": false
+}

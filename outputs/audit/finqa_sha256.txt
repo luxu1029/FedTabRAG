@@ -1,0 +1,4 @@
+a847fb7e0d61a3125a1e2909852df6b89f1ee64d2c5ff1bf689e332214deee51  data/raw/finqa/dev.json
+94dfd3f82aeeb91835da7a161c5d64b9223ed3c630a27457cf5695da2ee24756  data/raw/finqa/private_test.json
+831dbfb2e785dbc227f895ce3f24046433467aec67b09db2bd6ac7692a8a30dc  data/raw/finqa/test.json
+49f237eb9779b569473b26b08048867d04635a7cc39ad6a7a5664c55bb428db6  data/raw/finqa/train.json

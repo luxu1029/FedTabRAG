@@ -1,0 +1,69 @@
+{
+  "seed": 42,
+  "query_count": 8281,
+  "mapping_entry_count": 8281,
+  "coverage": {
+    "dev": {
+      "flat": {
+        "queries": 883,
+        "table_query_coverage": 1.0,
+        "row_query_coverage": 0.7757644394110985,
+        "cell_query_coverage": 0.7757644394110985
+      },
+      "oracle_structure": {
+        "queries": 883,
+        "table_query_coverage": 1.0,
+        "row_query_coverage": 0.7757644394110985,
+        "cell_query_coverage": 0.7757644394110985
+      },
+      "predicted_structure": {
+        "queries": 883,
+        "table_query_coverage": 1.0,
+        "row_query_coverage": 0.7757644394110985,
+        "cell_query_coverage": 0.7757644394110985
+      }
+    },
+    "test": {
+      "flat": {
+        "queries": 1147,
+        "table_query_coverage": 1.0,
+        "row_query_coverage": 0.7532693984306887,
+        "cell_query_coverage": 0.7532693984306887
+      },
+      "oracle_structure": {
+        "queries": 1147,
+        "table_query_coverage": 1.0,
+        "row_query_coverage": 0.7532693984306887,
+        "cell_query_coverage": 0.7532693984306887
+      },
+      "predicted_structure": {
+        "queries": 1147,
+        "table_query_coverage": 1.0,
+        "row_query_coverage": 0.7532693984306887,
+        "cell_query_coverage": 0.7532693984306887
+      }
+    },
+    "train": {
+      "flat": {
+        "queries": 6251,
+        "table_query_coverage": 1.0,
+        "row_query_coverage": 0.7667573188289873,
+        "cell_query_coverage": 0.7667573188289873
+      },
+      "oracle_structure": {
+        "queries": 6251,
+        "table_query_coverage": 1.0,
+        "row_query_coverage": 0.7667573188289873,
+        "cell_query_coverage": 0.7667573188289873
+      },
+      "predicted_structure": {
+        "queries": 6251,
+        "table_query_coverage": 1.0,
+        "row_query_coverage": 0.7667573188289873,
+        "cell_query_coverage": 0.7667573188289873
+      }
+    }
+  },
+  "unmapped_variant_records": 0,
+  "unmapped": []
+}

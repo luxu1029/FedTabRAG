@@ -1,0 +1,67 @@
+{
+  "decision": "NO_GO_PENDING_FLAT_ROW_GRANULARITY_CONTROL",
+  "reason": "GT and UniTable do not show a clear stable structural advantage over Flat; Flat uses one pseudo-row while structured variants use many row candidates.",
+  "minimum_condition": {
+    "gt_stable_core_level_gain": false,
+    "unitable_systematic_misalignment": false
+  },
+  "deltas_vs_flat": {
+    "oracle_structure": {
+      "table": {
+        "recall@1": -0.001743679163034001,
+        "recall@5": 0.0008718395815169866,
+        "mrr": -0.0015057795574420774,
+        "map": -0.0013206813988788924,
+        "ndcg@10": -0.0005513896716530242
+      },
+      "row": {
+        "recall@1": -0.0324074074074074,
+        "recall@5": -0.12037037037037038,
+        "mrr": -0.067499413342406,
+        "map": -0.09395645264752363,
+        "ndcg@10": -0.11346808947035186
+      },
+      "cell": {
+        "recall@1": 0.003472222222222217,
+        "recall@5": 0.0,
+        "mrr": 0.0052651459755474195,
+        "map": 0.00138068148739217,
+        "ndcg@10": 0.0025824412792533336
+      }
+    },
+    "predicted_structure": {
+      "table": {
+        "recall@1": 0.0008718395815170005,
+        "recall@5": 0.0,
+        "mrr": 4.564303432078032e-05,
+        "map": -0.0002897658039669737,
+        "ndcg@10": 0.00030606779823852404
+      },
+      "row": {
+        "recall@1": -0.03472222222222221,
+        "recall@5": -0.11458333333333334,
+        "mrr": -0.066259155840839,
+        "map": -0.09168211052120888,
+        "ndcg@10": -0.11035600115157987
+      },
+      "cell": {
+        "recall@1": -0.0011574074074074125,
+        "recall@5": -0.0011574074074074125,
+        "mrr": -0.0005111028966224285,
+        "map": 0.0001479445684937422,
+        "ndcg@10": 0.0004976422171745001
+      }
+    }
+  },
+  "required_before_federated_training": [
+    "Add an equal-candidate-granularity Flat row control without exposing row labels/headers",
+    "Rerun the same frozen BGE evaluation",
+    "Require a stable GT improvement on a core level and verify UniTable has no systematic reconstruction error"
+  ],
+  "error_case_file": "outputs/retrieval/error_analysis/three_case_groups.json",
+  "error_case_counts": {
+    "unitable_better_than_flat": 30,
+    "flat_better_than_unitable": 30,
+    "gt_better_than_unitable": 30
+  }
+}

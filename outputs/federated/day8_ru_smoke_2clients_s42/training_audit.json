@@ -1,0 +1,369 @@
+{
+  "teacher_or_kd_present": true,
+  "aggregation": "r_plus_u",
+  "clients_sequential": true,
+  "checkpoint_policy": "best_and_last",
+  "stage": "day8_smoke",
+  "features": "hierarchy,hard_negative,hierarchical_kd,local_queue",
+  "client_metrics": [
+    {
+      "round": 1,
+      "loss": 3.0652277702465653,
+      "hier_loss": 3.031809268053621,
+      "hard_loss": 0.16709242947399616,
+      "kd_loss": 6.796834202305035e-05,
+      "kd_weight": 0.0,
+      "table_loss": 3.2042129412293434,
+      "table_pos_sim": 0.7535552978515625,
+      "table_neg_sim": 0.633544921875,
+      "kd_table_loss": 7.214467041194439e-05,
+      "row_loss": 2.943324439227581,
+      "row_pos_sim": 0.710417716733871,
+      "row_neg_sim": 0.6255670362903226,
+      "kd_row_loss": 7.670535705983639e-05,
+      "cell_loss": 2.8133608363568783,
+      "cell_pos_sim": 0.6410502772177419,
+      "cell_neg_sim": 0.6023185483870968,
+      "kd_cell_loss": 5.761231295764446e-05,
+      "table_valid": 64,
+      "row_valid": 52,
+      "cell_valid": 52,
+      "hard_hits": 64,
+      "grad_norm_table": 0.07996053882165956,
+      "grad_norm_row": 0.0,
+      "grad_norm_cell": 0.0,
+      "grad_norm_hard": 0.1136013423614779,
+      "grad_norm_kd": 0.000620892501101607,
+      "client": 0,
+      "examples": 64,
+      "seconds": 6.088056895998307,
+      "fp16_overflow_skips": 0,
+      "loss_first": 0.17190054059028625,
+      "loss_last": 3.9306209087371826,
+      "teacher_eval": true,
+      "teacher_no_grad": true,
+      "queue_candidates": 5654,
+      "queue_cross_client_violations": 0,
+      "queue_non_train_violations": 0,
+      "queue_final_sizes": {
+        "table": 81,
+        "row": 89,
+        "cell": 128
+      }
+    },
+    {
+      "round": 1,
+      "loss": 3.0230452958494425,
+      "hier_loss": 2.995484661310911,
+      "hard_loss": 0.13780322019010782,
+      "kd_loss": 7.309229238217085e-05,
+      "kd_weight": 0.0,
+      "table_loss": 3.1593740917742252,
+      "table_pos_sim": 0.7806854248046875,
+      "table_neg_sim": 0.6533355712890625,
+      "kd_table_loss": 8.511054329574108e-05,
+      "row_loss": 2.634038357064128,
+      "row_pos_sim": 0.7271012931034483,
+      "row_neg_sim": 0.6360789331896551,
+      "kd_row_loss": 7.570022717118263e-05,
+      "cell_loss": 2.632320996373892,
+      "cell_pos_sim": 0.6442618534482759,
+      "cell_neg_sim": 0.6141567887931034,
+      "kd_cell_loss": 5.232682451605797e-05,
+      "table_valid": 64,
+      "row_valid": 48,
+      "cell_valid": 48,
+      "hard_hits": 64,
+      "grad_norm_table": 0.06906554169418877,
+      "grad_norm_row": 0.06403676945040389,
+      "grad_norm_cell": 0.03283650986601495,
+      "grad_norm_hard": 0.14824677073184356,
+      "grad_norm_kd": 0.0007419351767157937,
+      "client": 1,
+      "examples": 64,
+      "seconds": 5.156190157984383,
+      "fp16_overflow_skips": 0,
+      "loss_first": 0.6797855496406555,
+      "loss_last": 3.871203899383545,
+      "teacher_eval": true,
+      "teacher_no_grad": true,
+      "queue_candidates": 5155,
+      "queue_cross_client_violations": 0,
+      "queue_non_train_violations": 0,
+      "queue_final_sizes": {
+        "table": 86,
+        "row": 67,
+        "cell": 128
+      }
+    },
+    {
+      "round": 2,
+      "loss": 3.0325513910502195,
+      "hier_loss": 2.999881539493799,
+      "hard_loss": 0.16326684225350618,
+      "kd_loss": 6.579309763310448e-05,
+      "kd_weight": 0.25,
+      "table_loss": 3.2049951665103436,
+      "table_pos_sim": 0.7548980712890625,
+      "table_neg_sim": 0.64190673828125,
+      "kd_table_loss": 7.575028575956821e-05,
+      "row_loss": 3.0251722037792206,
+      "row_pos_sim": 0.7067718505859375,
+      "row_neg_sim": 0.631103515625,
+      "kd_row_loss": 6.71574380248785e-05,
+      "cell_loss": 2.9026615992188454,
+      "cell_pos_sim": 0.6386566162109375,
+      "cell_neg_sim": 0.60638427734375,
+      "kd_cell_loss": 6.0991616919636726e-05,
+      "table_valid": 64,
+      "row_valid": 52,
+      "cell_valid": 52,
+      "hard_hits": 64,
+      "grad_norm_table": 0.06660951048649384,
+      "grad_norm_row": 0.049587399782249124,
+      "grad_norm_cell": 0.026208783987519926,
+      "grad_norm_hard": 0.11336514562001956,
+      "grad_norm_kd": 0.00011125458823197976,
+      "client": 0,
+      "examples": 64,
+      "seconds": 5.607336584012955,
+      "fp16_overflow_skips": 0,
+      "loss_first": 0.7232418656349182,
+      "loss_last": 3.577021598815918,
+      "teacher_eval": true,
+      "teacher_no_grad": true,
+      "queue_candidates": 5712,
+      "queue_cross_client_violations": 0,
+      "queue_non_train_violations": 0,
+      "queue_final_sizes": {
+        "table": 81,
+        "row": 89,
+        "cell": 128
+      }
+    },
+    {
+      "round": 2,
+      "loss": 3.055790776386857,
+      "hier_loss": 3.026893302798271,
+      "hard_loss": 0.14440204575657845,
+      "kd_loss": 6.8225480390538e-05,
+      "kd_weight": 0.25,
+      "table_loss": 3.2745176553726196,
+      "table_pos_sim": 0.7799835205078125,
+      "table_neg_sim": 0.6617431640625,
+      "kd_table_loss": 7.521011866629124e-05,
+      "row_loss": 2.938326623290777,
+      "row_pos_sim": 0.7234438004032258,
+      "row_neg_sim": 0.6378685735887096,
+      "kd_row_loss": 7.904879748821259e-05,
+      "cell_loss": 2.8535195365548134,
+      "cell_pos_sim": 0.6399162046370968,
+      "cell_neg_sim": 0.6140530493951613,
+      "kd_cell_loss": 5.450006574392319e-05,
+      "table_valid": 64,
+      "row_valid": 48,
+      "cell_valid": 48,
+      "hard_hits": 64,
+      "grad_norm_table": 0.07275351567151823,
+      "grad_norm_row": 0.039493694434184635,
+      "grad_norm_cell": 0.026862158293872566,
+      "grad_norm_hard": 0.12672372058452971,
+      "grad_norm_kd": 9.225636108313812e-06,
+      "client": 1,
+      "examples": 64,
+      "seconds": 5.477268683025613,
+      "fp16_overflow_skips": 0,
+      "loss_first": 0.7749143242835999,
+      "loss_last": 3.5980069637298584,
+      "teacher_eval": true,
+      "teacher_no_grad": true,
+      "queue_candidates": 5600,
+      "queue_cross_client_violations": 0,
+      "queue_non_train_violations": 0,
+      "queue_final_sizes": {
+        "table": 86,
+        "row": 67,
+        "cell": 128
+      }
+    }
+  ],
+  "reliability": {
+    "clients": {
+      "0": {
+        "value": 0.9658858715588907,
+        "fallback": null,
+        "dev_tables": 204,
+        "components": {
+          "s_teds": 0.914823113558987,
+          "valid_html": 1.0,
+          "confidence": 0.9997831306764792
+        },
+        "eta": {
+          "s_teds": 0.4,
+          "valid_html": 0.4,
+          "confidence": 0.2
+        }
+      },
+      "1": {
+        "value": 0.9724792220463071,
+        "fallback": null,
+        "dev_tables": 176,
+        "components": {
+          "s_teds": 0.9313646566468229,
+          "valid_html": 1.0,
+          "confidence": 0.9996667969378895
+        },
+        "eta": {
+          "s_teds": 0.4,
+          "valid_html": 0.4,
+          "confidence": 0.2
+        }
+      }
+    },
+    "confidence_s_teds_spearman": 0.36502581381256005,
+    "confidence_enabled": true,
+    "correlation_threshold": 0.3,
+    "source": "outputs/unitable/structure_metrics_per_sample.jsonl",
+    "split": "dev"
+  },
+  "aggregation_rounds": [
+    {
+      "round": 1,
+      "mode": "r_plus_u",
+      "clients": [
+        0,
+        1
+      ],
+      "sample_counts": [
+        64,
+        64
+      ],
+      "reliability": [
+        0.9658858715588907,
+        0.9724792220463071
+      ],
+      "utility": [
+        0.22005380875426042,
+        0.252454615492824
+      ],
+      "utility_details": [
+        {
+          "client": 0,
+          "value": 0.22005380875426042,
+          "eligible_queries": {
+            "table": 204,
+            "row": 158,
+            "cell": 158
+          }
+        },
+        {
+          "client": 1,
+          "value": 0.252454615492824,
+          "eligible_queries": {
+            "table": 176,
+            "row": 140,
+            "cell": 140
+          }
+        }
+      ],
+      "utility_fallbacks": [
+        null,
+        null
+      ],
+      "quality": [
+        0.5929698401565756,
+        0.6124669187695655
+      ],
+      "raw": [
+        37.95006977002084,
+        39.19788280125219
+      ],
+      "raw_normalized": [
+        0.49191285711647004,
+        0.5080871428835299
+      ],
+      "clipped": [
+        0.49999999999999994,
+        0.5
+      ],
+      "min_weight": 0.05,
+      "max_weight": 0.5,
+      "weight_sum": 1.0,
+      "uses_test": false
+    },
+    {
+      "round": 2,
+      "mode": "r_plus_u",
+      "clients": [
+        0,
+        1
+      ],
+      "sample_counts": [
+        64,
+        64
+      ],
+      "reliability": [
+        0.9658858715588907,
+        0.9724792220463071
+      ],
+      "utility": [
+        0.22078081764530672,
+        0.2518978050958104
+      ],
+      "utility_details": [
+        {
+          "client": 0,
+          "value": 0.22078081764530672,
+          "eligible_queries": {
+            "table": 204,
+            "row": 158,
+            "cell": 158
+          }
+        },
+        {
+          "client": 1,
+          "value": 0.2518978050958104,
+          "eligible_queries": {
+            "table": 176,
+            "row": 140,
+            "cell": 140
+          }
+        }
+      ],
+      "utility_fallbacks": [
+        null,
+        null
+      ],
+      "quality": [
+        0.5933333446020987,
+        0.6121885135710587
+      ],
+      "raw": [
+        37.97333405453432,
+        39.18006486854776
+      ],
+      "raw_normalized": [
+        0.49217966524574963,
+        0.5078203347542504
+      ],
+      "clipped": [
+        0.49999999999999994,
+        0.5
+      ],
+      "min_weight": 0.05,
+      "max_weight": 0.5,
+      "weight_sum": 1.0,
+      "uses_test": false
+    }
+  ],
+  "aggregation_uses_test": false,
+  "completed_rounds": 2,
+  "checkpoints": [
+    "best.pt",
+    "last.pt"
+  ],
+  "lora_parameter_bytes": 1179648,
+  "total_communication_bytes": 9437184,
+  "queue_boundary_ok": true,
+  "accepted": true
+}

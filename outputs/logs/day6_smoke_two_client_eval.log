@@ -1,0 +1,6 @@
+2026-07-28 11:00:21,731 INFO Encoding corpus=65226 queries=1147
+2026-07-28 11:01:15,355 INFO Scoring level=table evidence=29492
+2026-07-28 11:01:15,742 INFO Scoring level=row evidence=7529
+2026-07-28 11:01:15,852 INFO Scoring level=cell evidence=28205
+2026-07-28 11:01:16,383 INFO Wrote outputs/federated/day6_smoke_two_client/test_metrics.json
+

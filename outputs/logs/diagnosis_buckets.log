@@ -1,0 +1,14 @@
+2026-08-04 17:29:51,643 INFO Starting Task-2 diagnosis seed=42; dev defines buckets, test is explanatory only
+2026-08-04 17:29:51,751 INFO Wrote split=dev dimension=steds buckets=4
+2026-08-04 17:29:51,754 INFO Wrote split=dev dimension=cell_count buckets=2
+2026-08-04 17:29:51,757 INFO Wrote split=dev dimension=table_size buckets=3
+2026-08-04 17:29:51,760 INFO Wrote split=dev dimension=question_type buckets=3
+2026-08-04 17:29:51,764 INFO Wrote split=dev dimension=program_type buckets=9
+2026-08-04 17:29:51,767 INFO Wrote split=dev dimension=evidence_level buckets=2
+2026-08-04 17:29:51,794 INFO Wrote split=test dimension=steds buckets=4
+2026-08-04 17:29:51,798 INFO Wrote split=test dimension=cell_count buckets=2
+2026-08-04 17:29:51,802 INFO Wrote split=test dimension=table_size buckets=3
+2026-08-04 17:29:51,806 INFO Wrote split=test dimension=question_type buckets=3
+2026-08-04 17:29:51,810 INFO Wrote split=test dimension=program_type buckets=9
+2026-08-04 17:29:51,814 INFO Wrote split=test dimension=evidence_level buckets=2
+2026-08-04 17:29:51,821 INFO Task-2 complete outputs=15 manifest=outputs/diagnosis/bucket_input_sha256.json

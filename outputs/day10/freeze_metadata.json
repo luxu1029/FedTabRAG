@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-08-03T06:08:49.198006+00:00",
+  "seed": 42,
+  "git_commit": "NA",
+  "git_commit_reason": "workspace is not a Git repository",
+  "weight_files_included": 0,
+  "excluded": [
+    "model/checkpoint weights",
+    "perturbation corpus copies"
+  ]
+}

@@ -1,0 +1,340 @@
+{
+  "algorithm": "SHA256",
+  "files": [
+    {
+      "path": "configs/federated/day10_seed2026.yaml",
+      "bytes": 668,
+      "sha256": "867967f0d12c4556344a1e4e4d10712f6f7748e2b1ecde325e6a6ff6be7b5d02"
+    },
+    {
+      "path": "configs/federated/day10_seed7.yaml",
+      "bytes": 665,
+      "sha256": "472b3479481eb00becda568942339d39099c1793482fdb0482bd20f65c98305b"
+    },
+    {
+      "path": "outputs/day10/figures/three_method_convergence.pdf",
+      "bytes": 17962,
+      "sha256": "a2c312e32aa66366fdab64704d8d86e212aa35fdd12ba009bac679f5a60688a7"
+    },
+    {
+      "path": "outputs/day10/figures/three_method_convergence.png",
+      "bytes": 125058,
+      "sha256": "8d7aaf42e43d3eba13d1a51fe6ee17255760caf8abe3a03adbc17ae47a0afc6f"
+    },
+    {
+      "path": "outputs/day10/freeze_metadata.json",
+      "bytes": 268,
+      "sha256": "afcb881073811edf6b16058e8b0274063167e7ca5afa907a52f20c23723ceb9a"
+    },
+    {
+      "path": "outputs/day10/perturbations/rate_05/audit.json",
+      "bytes": 731,
+      "sha256": "f8bbe476905f2ffb27465c8b0d595bc776b13079af9265bfd15d3d73a2ebb74d"
+    },
+    {
+      "path": "outputs/day10/perturbations/rate_10/audit.json",
+      "bytes": 734,
+      "sha256": "be682badfa1e9c3f7529bdd1daab53c3ad7391972b358f19327a40f692e95300"
+    },
+    {
+      "path": "outputs/day10/perturbations/rate_20/audit.json",
+      "bytes": 734,
+      "sha256": "38524c789acf7b302853f2d8db6d26e65d8ead4aff31cca04d95e78a6612b282"
+    },
+    {
+      "path": "outputs/day10/perturbations/rate_30/audit.json",
+      "bytes": 737,
+      "sha256": "255f7cafa66aeebdf81c72f5a05a5a041a98afdad77f6ea96c904f7f2012c6d4"
+    },
+    {
+      "path": "outputs/day10/perturbations/summary.json",
+      "bytes": 3576,
+      "sha256": "7e43c49a1df477cdec2a86a797e7aadc9c7a6db65ae584715c92598a32bd2ae8"
+    },
+    {
+      "path": "outputs/day10/robustness/rate_05.json",
+      "bytes": 7385,
+      "sha256": "6ab167eac1268df287e3754538b69928d5054c4e28e1c36a813c2988045a9bbc"
+    },
+    {
+      "path": "outputs/day10/robustness/rate_10.json",
+      "bytes": 7378,
+      "sha256": "fd4062eb07b6636a8408db60d042ab72a4cb0de5dd3a644587474c101813ac83"
+    },
+    {
+      "path": "outputs/day10/robustness/rate_20.json",
+      "bytes": 7394,
+      "sha256": "ce7f026f593f1fed0df66ce7fcf8e1354701c1fd0bf4be8ca70f24b351b5a9dd"
+    },
+    {
+      "path": "outputs/day10/robustness/rate_30.json",
+      "bytes": 7402,
+      "sha256": "04fb7eca8d3b52a10ba7fb34da12f58734d947e4c71ff9705c165a2c700ba412"
+    },
+    {
+      "path": "outputs/day10/strict_missing_audit.json",
+      "bytes": 1613,
+      "sha256": "0893c84971e08fd8652069f9176325ae627707fdc89c2f1d0034d5d75a66dcf6"
+    },
+    {
+      "path": "outputs/day10/tables/convergence_source.csv",
+      "bytes": 2139,
+      "sha256": "077c47a97eaf54aa5d6b9a01c689f23cc17cff2b0c36f188b1835c6ad53a8945"
+    },
+    {
+      "path": "outputs/day10/tables/efficiency.csv",
+      "bytes": 477,
+      "sha256": "7d7c64076900f1e3bf59f4889a7f42b2d007ef30f57daff76fc9718cc660dbe2"
+    },
+    {
+      "path": "outputs/day10/tables/main_results.csv",
+      "bytes": 935,
+      "sha256": "cf2c290bfd46d8e1cd28d2d0dd94bf31218762084b6f1d41260561b329418748"
+    },
+    {
+      "path": "outputs/day10/tables/robustness.csv",
+      "bytes": 986,
+      "sha256": "41b49d0072ccd8e60c8ec992fb10faa1a051a8d4a1ba81266678d485d61f5b49"
+    },
+    {
+      "path": "outputs/day10/tables/strict_missing.csv",
+      "bytes": 751,
+      "sha256": "4f183fbde6a6218320088cab7d73a6fa17526317d7fc951b3c66c13310ae09e1"
+    },
+    {
+      "path": "outputs/day10/tables/structure.csv",
+      "bytes": 213,
+      "sha256": "e6470a6ed9bfad3b5f5ab788b334f743c33f902c4f5a148ae3319a9325bc27fa"
+    },
+    {
+      "path": "outputs/day10/tables/supplementary_seeds.csv",
+      "bytes": 1327,
+      "sha256": "2314537679d34e534bc93b401376f3c8b9623144ca6051f27e66faee1ac9eacf"
+    },
+    {
+      "path": "outputs/day10/tables/three_ablation_groups.csv",
+      "bytes": 1135,
+      "sha256": "fabc2f190dff1c6439991bb313a03eacdcbf8efc027d61d58ba3ebcaf0fbb366"
+    },
+    {
+      "path": "outputs/day9/ablation_summary.json",
+      "bytes": 7507,
+      "sha256": "838346ddb3637559b6f91bb3c8a5e6bb79f99a7bed19711036478bd57addf00d"
+    },
+    {
+      "path": "outputs/federated/day10_flat_s2026/convergence.csv",
+      "bytes": 1206,
+      "sha256": "c848bcf26905138de8a17f93c6fd893405c9b53149b8010387be9e10ece237a6"
+    },
+    {
+      "path": "outputs/federated/day10_flat_s2026/resolved_config.json",
+      "bytes": 1018,
+      "sha256": "d1c37a530f6d46d5c8f23aa192219bd5754cfb7966910b209f1c989d5d2e3b8c"
+    },
+    {
+      "path": "outputs/federated/day10_flat_s2026/test_metrics.json",
+      "bytes": 7339,
+      "sha256": "95fd16f7d52002b6fd3f4fdcad55c66be5269301ed9518fb178bfdd1616daea5"
+    },
+    {
+      "path": "outputs/federated/day10_flat_s2026/training_audit.json",
+      "bytes": 7639,
+      "sha256": "791e78943c5ac6ec91caa06e92f579c4f74b01d4cf4e63e02618d56be835c101"
+    },
+    {
+      "path": "outputs/federated/day10_flat_s7/convergence.csv",
+      "bytes": 1202,
+      "sha256": "4cf8f8c152f248d93b2bfeb8b84036e01c9d385e5ca0516d766d2b605ed499d9"
+    },
+    {
+      "path": "outputs/federated/day10_flat_s7/resolved_config.json",
+      "bytes": 1012,
+      "sha256": "613a218e416ef3e40e54bdbe561bea534a9f2e5a42c86a44f2b4efe8667ab3fa"
+    },
+    {
+      "path": "outputs/federated/day10_flat_s7/test_metrics.json",
+      "bytes": 7341,
+      "sha256": "165bad48936e5f728c2214cffaa2fe028e7f906bc5639b7c7c3c80b02f3c2639"
+    },
+    {
+      "path": "outputs/federated/day10_flat_s7/training_audit.json",
+      "bytes": 7639,
+      "sha256": "026e3a689fc2a7085b08f9d23800dfe11c61d3cb8f3a8beb88cd5c5daba9cbcc"
+    },
+    {
+      "path": "outputs/federated/day10_r_plus_u_s2026/convergence.csv",
+      "bytes": 5777,
+      "sha256": "8f4f56ba5388c1097af14b97bd3519a08e7d46f9c3838ad511d1ced70dd75ca1"
+    },
+    {
+      "path": "outputs/federated/day10_r_plus_u_s2026/resolved_config.json",
+      "bytes": 1328,
+      "sha256": "43ac17cffaa2e50b5b299f9ab7591690b39ec2e8ceffc0eb7958e59af8b06676"
+    },
+    {
+      "path": "outputs/federated/day10_r_plus_u_s2026/test_metrics.json",
+      "bytes": 7384,
+      "sha256": "60982659c89ede2ff923f4eb67f818c0072570e619580b942cc159e81753ce68"
+    },
+    {
+      "path": "outputs/federated/day10_r_plus_u_s2026/training_audit.json",
+      "bytes": 101388,
+      "sha256": "aae8a28b8c810bda38b6df1b3c53a7482b64a458e9690765089175cbf91b8151"
+    },
+    {
+      "path": "outputs/federated/day10_r_plus_u_s7/convergence.csv",
+      "bytes": 5744,
+      "sha256": "c9cef4daf3543722d66d72ed499a4eb680e38cfc2e192dea48da83cc13760854"
+    },
+    {
+      "path": "outputs/federated/day10_r_plus_u_s7/resolved_config.json",
+      "bytes": 1325,
+      "sha256": "ec8fd092390a4f4e4fd4ded2638a8f4ad841236866336451f9a6b8f1d0bb627c"
+    },
+    {
+      "path": "outputs/federated/day10_r_plus_u_s7/test_metrics.json",
+      "bytes": 7402,
+      "sha256": "dbb96a6397a06a943671111c46aded8852377af111a3ec98a43f2a1d9d44ce61"
+    },
+    {
+      "path": "outputs/federated/day10_r_plus_u_s7/training_audit.json",
+      "bytes": 101208,
+      "sha256": "76d882455a9e1e80d20ce9ff5238299b127d66f75941d44afe1c34f9251dd6ac"
+    },
+    {
+      "path": "outputs/federated/day10_unitable_s2026/convergence.csv",
+      "bytes": 1199,
+      "sha256": "a56b96f775ef929fbe719b30e8ccec38ae4333bff71c11acb483f542c2bcb6b8"
+    },
+    {
+      "path": "outputs/federated/day10_unitable_s2026/resolved_config.json",
+      "bytes": 1037,
+      "sha256": "891cdf8eb6bbb0920184486b26b25223b7e77f41508d29fecfb333d7a747a387"
+    },
+    {
+      "path": "outputs/federated/day10_unitable_s2026/test_metrics.json",
+      "bytes": 7407,
+      "sha256": "078adebb45e4390273cb840f7026fdce8fe555f0d23e6f8716c034894afbe911"
+    },
+    {
+      "path": "outputs/federated/day10_unitable_s2026/training_audit.json",
+      "bytes": 7639,
+      "sha256": "4c556e2c3fa0e153a38ce7551a46ac7a4d6371e0105a80bab462d6f8ea539060"
+    },
+    {
+      "path": "outputs/federated/day10_unitable_s7/convergence.csv",
+      "bytes": 1205,
+      "sha256": "aa4b7a043cec4241d02510d32e796c06f6b561d11f0afe232fb94ddadebece42"
+    },
+    {
+      "path": "outputs/federated/day10_unitable_s7/resolved_config.json",
+      "bytes": 1031,
+      "sha256": "b2699a14b6a62bd605e2903d755f7d61f1988e5d5c17a58b0449dfe0dd1e1978"
+    },
+    {
+      "path": "outputs/federated/day10_unitable_s7/test_metrics.json",
+      "bytes": 7402,
+      "sha256": "78c53e80f0056b570cf67f32d9d626ec28b227e71c3f607d0b476df428500d37"
+    },
+    {
+      "path": "outputs/federated/day10_unitable_s7/training_audit.json",
+      "bytes": 7639,
+      "sha256": "854f975e44ba925e6e02a12486401dc599b34b0beba69a89a53fea224aee0059"
+    },
+    {
+      "path": "outputs/federated/day8_r_plus_u_s42/convergence.csv",
+      "bytes": 5750,
+      "sha256": "9df9a9aa20895b9764280f6720f6bb879737fe08d948e125f3d49ffd607b4b2f"
+    },
+    {
+      "path": "outputs/federated/day8_r_plus_u_s42/formal_test_best_round4_once.json",
+      "bytes": 7324,
+      "sha256": "80923a0531739c87e1bf191b3c9be45232d166b8f6d218d3d823dc4e9b1a964e"
+    },
+    {
+      "path": "outputs/federated/day8_r_plus_u_s42/resolved_config.json",
+      "bytes": 1269,
+      "sha256": "3b89b8dac68460b5456d48f5c625a6920ed5f1e21acee284a4da3d307684a8bf"
+    },
+    {
+      "path": "outputs/federated/day8_r_plus_u_s42/training_audit.json",
+      "bytes": 101585,
+      "sha256": "313c7b06466b614de24d0df58214d719a1a68965ca0a2cfec7aa14a49b64025e"
+    },
+    {
+      "path": "outputs/federated/fedrag_flat_s42/convergence.csv",
+      "bytes": 1207,
+      "sha256": "b9ce504b9731163d5d0b6ed095a7f0db989f6ffd936ab66e08d3a433d800017e"
+    },
+    {
+      "path": "outputs/federated/fedrag_flat_s42/resolved_config.json",
+      "bytes": 722,
+      "sha256": "1e27bca628eafe11141193415fd8535559410a4e7f22b7e0b1c8a47f8056a72e"
+    },
+    {
+      "path": "outputs/federated/fedrag_flat_s42/test_metrics.json",
+      "bytes": 7320,
+      "sha256": "75ec027edac3b25e2f3bdf70c884130c67b80a46775241419c55a31fa599d725"
+    },
+    {
+      "path": "outputs/federated/fedrag_flat_s42/training_audit.json",
+      "bytes": 6199,
+      "sha256": "0e73c2e57073f70a1ec58bfcee5269c6bad98abdce269f8b0154a339a5a30eda"
+    },
+    {
+      "path": "outputs/federated/fedrag_unitable_s42/convergence.csv",
+      "bytes": 1202,
+      "sha256": "e83e7b9330bf2ec9f6785fa5fc50b788e3ee44302272f8068a1a3de66defb48d"
+    },
+    {
+      "path": "outputs/federated/fedrag_unitable_s42/resolved_config.json",
+      "bytes": 741,
+      "sha256": "8decd2852fb1caf95a8dd5f59e7b96dd27ce3c498c481f3256b0b499fcfca94e"
+    },
+    {
+      "path": "outputs/federated/fedrag_unitable_s42/test_metrics.json",
+      "bytes": 7333,
+      "sha256": "a99792a270168584d691994f5106eb4ff9385bbbf70a929883fb7526357154d1"
+    },
+    {
+      "path": "outputs/federated/fedrag_unitable_s42/training_audit.json",
+      "bytes": 7638,
+      "sha256": "b662a9c72137128f65e5171690604837e50d881795e448b8108b74efb231be60"
+    },
+    {
+      "path": "outputs/unitable/structure_metrics.json",
+      "bytes": 1261,
+      "sha256": "f968c2dd1c85516a98f7c1077e532260ee3efa85536fdfe357225c58e6718004"
+    },
+    {
+      "path": "scripts/build_day10_artifacts.py",
+      "bytes": 13930,
+      "sha256": "9c5871a291febc9d87cb8fde40646a088e20fc7320ef43129844f3f52ed0156a"
+    },
+    {
+      "path": "scripts/build_day10_perturbations.py",
+      "bytes": 6955,
+      "sha256": "e95a3ca7e7e9ca6381851d3ae63a21091eb83bf51194b27c5978629274ec82f1"
+    },
+    {
+      "path": "scripts/evaluate_day10_seed.py",
+      "bytes": 1800,
+      "sha256": "ec7fd29f89df2bd4e3f726c57e55e9b888d6e5ef243fcfd4f1544ef3e102adb8"
+    },
+    {
+      "path": "scripts/freeze_day10_results.py",
+      "bytes": 4183,
+      "sha256": "783d6747f5941c354483a15917ea8360ec9d25077850fdd1382c191960e24862"
+    },
+    {
+      "path": "scripts/run_day10_seed.py",
+      "bytes": 1685,
+      "sha256": "8dc951486c244d0687fc2cc83f131aa41d82d458d76043501ddbc1eda99242c4"
+    },
+    {
+      "path": "src/federated/evaluate_fedrag.py",
+      "bytes": 8276,
+      "sha256": "5f67058d59b170c59a6c76f6285625f8e237fec90de95f4897523a9a6eded247"
+    }
+  ]
+}

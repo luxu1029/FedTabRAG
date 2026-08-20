@@ -1,0 +1,88 @@
+{
+  "acceptance": true,
+  "company_count": 137,
+  "company_overlap_count": 0,
+  "cross_split_owner_mismatch_count": 0,
+  "mapping_sha256": "4779868cb08297d1b0c31f71b0b53edefd720aaa8f3083c9046ce01a31278a34",
+  "per_client": {
+    "0": {
+      "companies": 26,
+      "dev_queries": 204,
+      "question_types": {
+        "hybrid": 212,
+        "table": 968,
+        "text": 506
+      },
+      "structure_s_teds_mean": 0.9201144425470188,
+      "structure_s_teds_min": 0.41666666666666663,
+      "table_cols_mean": 3.6073546856465004,
+      "table_rows_mean": 6.301897983392645,
+      "test_queries": 232,
+      "train_queries": 1250
+    },
+    "1": {
+      "companies": 27,
+      "dev_queries": 176,
+      "question_types": {
+        "hybrid": 289,
+        "table": 883,
+        "text": 452
+      },
+      "structure_s_teds_mean": 0.930297419018512,
+      "structure_s_teds_min": 0.6666666666666667,
+      "table_cols_mean": 4.264778325123153,
+      "table_rows_mean": 6.3399014778325125,
+      "test_queries": 197,
+      "train_queries": 1251
+    },
+    "2": {
+      "companies": 27,
+      "dev_queries": 200,
+      "question_types": {
+        "hybrid": 185,
+        "table": 990,
+        "text": 517
+      },
+      "structure_s_teds_mean": 0.9235845194169979,
+      "structure_s_teds_min": 0.46153846153846156,
+      "table_cols_mean": 3.7470449172576834,
+      "table_rows_mean": 6.259456264775413,
+      "test_queries": 242,
+      "train_queries": 1250
+    },
+    "3": {
+      "companies": 28,
+      "dev_queries": 140,
+      "question_types": {
+        "hybrid": 206,
+        "table": 801,
+        "text": 616
+      },
+      "structure_s_teds_mean": 0.9215597404027438,
+      "structure_s_teds_min": 0.46875,
+      "table_cols_mean": 3.660505237215034,
+      "table_rows_mean": 6.517560073937154,
+      "test_queries": 232,
+      "train_queries": 1251
+    },
+    "4": {
+      "companies": 29,
+      "dev_queries": 163,
+      "question_types": {
+        "hybrid": 102,
+        "table": 1118,
+        "text": 436
+      },
+      "structure_s_teds_mean": 0.9268071589344082,
+      "structure_s_teds_min": 0.33333333333333337,
+      "table_cols_mean": 4.039251207729468,
+      "table_rows_mean": 6.393719806763285,
+      "test_queries": 244,
+      "train_queries": 1249
+    }
+  },
+  "query_count": 8281,
+  "train_load_max": 1251,
+  "train_load_min": 1249,
+  "train_min_max_ratio": 0.9984012789768185
+}

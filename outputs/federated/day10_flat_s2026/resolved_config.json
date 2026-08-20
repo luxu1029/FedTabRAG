@@ -1,0 +1,42 @@
+{
+  "batch_size": 2,
+  "clients": 5,
+  "device": "cuda:0",
+  "eval_batch_size": 128,
+  "grad_accum": 4,
+  "hard_margin": 0.2,
+  "hard_negatives": "data/processed/federated/hard_negatives.jsonl",
+  "hard_weight": 0.2,
+  "hierarchy_weights": {
+    "cell": 0.5,
+    "row": 0.3,
+    "table": 0.2
+  },
+  "kd_start_round": 2,
+  "kd_target_weight": 0.5,
+  "kd_temperature": 2.0,
+  "kd_warmup_rounds": 2,
+  "learning_rate": 0.0001,
+  "local_epochs": 1,
+  "lora_alpha": 16,
+  "lora_dropout": 0.05,
+  "lora_rank": 8,
+  "lora_targets": [
+    "query",
+    "value"
+  ],
+  "max_length": 256,
+  "model": "models/bge-base-en-v1.5",
+  "output_root": "outputs/federated",
+  "partition": "data/processed/federated/company_5clients.json",
+  "partition_sha256": "4779868cb08297d1b0c31f71b0b53edefd720aaa8f3083c9046ce01a31278a34",
+  "precision": "fp16",
+  "resume": true,
+  "rounds": 10,
+  "run_name": "day10_flat_s2026",
+  "save": "best_and_last",
+  "seed": 2026,
+  "teacher_mse_weight": 100.0,
+  "temperature": 1.0,
+  "variant": "flat"
+}

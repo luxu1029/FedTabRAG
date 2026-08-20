@@ -1,0 +1,6 @@
+2026-08-20 11:02:48,223 INFO Starting Task 5 seed=42; dev-only frozen Top-10 score fusion
+2026-08-20 11:02:52,524 INFO Task 5 complete configs=33 best=f016 weighted_ndcg=0.115483709 passed=1
+2026-08-20 11:03:55,745 INFO Starting Task 5 seed=42; dev-only frozen Top-10 score fusion
+2026-08-20 11:03:59,992 INFO Task 5 complete configs=33 best=f016 weighted_ndcg=0.115483709 passed=1
+2026-08-20 11:04:41,376 INFO Starting Task 5 seed=42; dev-only frozen Top-10 score fusion
+2026-08-20 11:04:45,570 INFO Task 5 complete configs=33 best=f016 weighted_ndcg=0.115483709 passed=1

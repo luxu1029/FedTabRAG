@@ -1,0 +1,21 @@
+{
+  "protocol": {
+    "top_k": 5,
+    "llm": "qwen2.5:7b",
+    "temperature": 0,
+    "max_output_tokens": 128,
+    "seed": 42
+  },
+  "methods": {
+    "flat": {"variant": "flat", "run": "fedrag_flat_s42", "group": ["input_structure"]},
+    "gt_zero_shot": {"variant": "oracle_structure", "run": null, "group": ["input_structure"], "note": "zero-shot oracle; no GT federated checkpoint exists"},
+    "unitable": {"variant": "predicted_structure", "run": "fedrag_unitable_s42", "group": ["input_structure", "learning_components"]},
+    "hierarchy": {"variant": "predicted_structure", "run": "fedtabrag_hier_s42", "group": ["learning_components"]},
+    "hierarchy_hard": {"variant": "predicted_structure", "run": "fedtabrag_hier_hard_s42", "group": ["learning_components"]},
+    "hierarchy_hard_kd": {"variant": "predicted_structure", "run": "fedtabrag_hier_hard_kd_s42", "group": ["learning_components"]},
+    "fedavg_queue": {"variant": "predicted_structure", "run": "day75_queue_lr1e5_pilot_s42", "checkpoint": "frozen_best_round4/checkpoints/best.pt", "group": ["aggregation"]},
+    "r_only": {"variant": "predicted_structure", "run": "day8_r_only_s42", "checkpoint": "frozen_day8_best_round4/checkpoints/best.pt", "group": ["aggregation"]},
+    "u_only": {"variant": "predicted_structure", "run": "day8_u_only_s42", "checkpoint": "frozen_day8_best_round4/checkpoints/best.pt", "group": ["aggregation"]},
+    "r_plus_u": {"variant": "predicted_structure", "run": "day8_r_plus_u_s42", "checkpoint": "frozen_day8_best_round4/checkpoints/best.pt", "group": ["aggregation"]}
+  }
+}

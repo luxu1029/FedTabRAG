@@ -1,0 +1,18 @@
+{
+  "method": "r_plus_u",
+  "queries": 100,
+  "seed": 42,
+  "top_k": 5,
+  "llm": "qwen2.5:7b",
+  "temperature": 0,
+  "max_output_tokens": 128,
+  "prompt_sha256": "c39b5816d17264f52c5889ca790f3f1a408feec45bda7bde5df4a45fd6f38101",
+  "retrieval_sha256": "8c9a1ad9f40f0f5ae4ae3f67d206078add192bd66a0dafedeaaa7dce231ed670",
+  "numerical_em": 0.05,
+  "program_accuracy": null,
+  "program_accuracy_reason": "no program predicted",
+  "errors": 0,
+  "elapsed_seconds_current_invocation": 26.62760586407967,
+  "output_sha256": "4fe94d64455e17b4fefb2afb56fcfe27c5d0736e59fd7ab270d26378210c69b8",
+  "resume_supported": true
+}

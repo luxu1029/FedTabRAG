@@ -1,0 +1,6 @@
+2026-07-24 17:33:12,914 INFO Evaluated count=100 valid_html=100 mean_s_teds=0.9227723743905091 output=outputs/unitable/smoke_structure_metrics.json
+
+['/home/hj/data/lx/FedTabRAG/third_party/unitable', '/home/hj/data/lx/FedTabRAG/src/evaluation', '/home/hj/anaconda3/envs/lx_Unitable/lib/python310.zip', '/home/hj/anaconda3/envs/lx_Unitable/lib/python3.10', '/home/hj/anaconda3/envs/lx_Unitable/lib/python3.10/lib-dynload', '/home/hj/anaconda3/envs/lx_Unitable/lib/python3.10/site-packages', '/root/autodl-tmp/unitable']
+['/home/hj/data/lx/FedTabRAG/third_party/unitable', '/home/hj/data/lx/FedTabRAG/src/evaluation', '/home/hj/anaconda3/envs/lx_Unitable/lib/python310.zip', '/home/hj/anaconda3/envs/lx_Unitable/lib/python3.10', '/home/hj/anaconda3/envs/lx_Unitable/lib/python3.10/lib-dynload', '/home/hj/anaconda3/envs/lx_Unitable/lib/python3.10/site-packages', '/root/autodl-tmp/unitable', '/root/autodl-tmp/unitable']
+['/home/hj/data/lx/FedTabRAG/third_party/unitable', '/home/hj/data/lx/FedTabRAG/src/evaluation', '/home/hj/anaconda3/envs/lx_Unitable/lib/python310.zip', '/home/hj/anaconda3/envs/lx_Unitable/lib/python3.10', '/home/hj/anaconda3/envs/lx_Unitable/lib/python3.10/lib-dynload', '/home/hj/anaconda3/envs/lx_Unitable/lib/python3.10/site-packages', '/root/autodl-tmp/unitable', '/root/autodl-tmp/unitable', '/root/autodl-tmp/unitable']
+

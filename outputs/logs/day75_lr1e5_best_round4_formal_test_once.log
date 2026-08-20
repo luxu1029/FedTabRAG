@@ -1,0 +1,6 @@
+2026-07-30 12:17:30,137 INFO Encoding corpus=65226 queries=1147
+2026-07-30 12:18:22,838 INFO Scoring level=table evidence=29492
+2026-07-30 12:18:23,230 INFO Scoring level=row evidence=7529
+2026-07-30 12:18:23,337 INFO Scoring level=cell evidence=28205
+2026-07-30 12:18:23,882 INFO Wrote outputs/federated/day75_queue_lr1e5_pilot_s42/formal_test_best_round4_once.json
+

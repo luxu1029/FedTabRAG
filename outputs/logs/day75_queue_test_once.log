@@ -1,0 +1,6 @@
+2026-07-29 14:21:13,389 INFO Encoding corpus=65226 queries=1147
+2026-07-29 14:22:06,820 INFO Scoring level=table evidence=29492
+2026-07-29 14:22:07,218 INFO Scoring level=row evidence=7529
+2026-07-29 14:22:07,331 INFO Scoring level=cell evidence=28205
+2026-07-29 14:22:07,881 INFO Wrote outputs/federated/day75_queue_full_s42/test_metrics.json
+

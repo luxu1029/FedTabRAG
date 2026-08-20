@@ -1,0 +1,215 @@
+{
+  "teacher_or_kd_present": true,
+  "aggregation": "r_plus_u",
+  "clients_sequential": true,
+  "checkpoint_policy": "best_and_last",
+  "stage": "day8_smoke",
+  "features": "hierarchy,hard_negative,hierarchical_kd,local_queue",
+  "client_metrics": [
+    {
+      "round": 2,
+      "loss": 3.032921077683568,
+      "hier_loss": 3.000075588002801,
+      "hard_loss": 0.16413957625627518,
+      "kd_loss": 7.032079281543702e-05,
+      "kd_weight": 0.25,
+      "table_loss": 3.203446965664625,
+      "table_pos_sim": 0.75714111328125,
+      "table_neg_sim": 0.641693115234375,
+      "kd_table_loss": 7.116096094250679e-05,
+      "row_loss": 3.02627339027822,
+      "row_pos_sim": 0.7073974609375,
+      "row_neg_sim": 0.63214111328125,
+      "kd_row_loss": 7.529021240770817e-05,
+      "cell_loss": 2.9030082151293755,
+      "cell_pos_sim": 0.639984130859375,
+      "cell_neg_sim": 0.6078643798828125,
+      "kd_cell_loss": 6.700307130813599e-05,
+      "table_valid": 64,
+      "row_valid": 52,
+      "cell_valid": 52,
+      "hard_hits": 64,
+      "grad_norm_table": 0.07144600539289535,
+      "grad_norm_row": 0.049577711784451625,
+      "grad_norm_cell": 0.025757057045178614,
+      "grad_norm_hard": 0.11226912622521834,
+      "grad_norm_kd": 0.00017810380515287012,
+      "client": 0,
+      "examples": 64,
+      "seconds": 6.46937980002258,
+      "fp16_overflow_skips": 0,
+      "loss_first": 0.7165239453315735,
+      "loss_last": 3.5748674869537354,
+      "teacher_eval": true,
+      "teacher_no_grad": true,
+      "queue_candidates": 5712,
+      "queue_cross_client_violations": 0,
+      "queue_non_train_violations": 0,
+      "queue_final_sizes": {
+        "table": 81,
+        "row": 89,
+        "cell": 128
+      }
+    },
+    {
+      "round": 2,
+      "loss": 3.053377153351903,
+      "hier_loss": 3.0248750559985638,
+      "hard_loss": 0.14242275711148977,
+      "kd_loss": 7.030966366983193e-05,
+      "kd_weight": 0.25,
+      "table_loss": 3.273185335099697,
+      "table_pos_sim": 0.7811737060546875,
+      "table_neg_sim": 0.66168212890625,
+      "kd_table_loss": 8.073006756603718e-05,
+      "row_loss": 2.9358694963157177,
+      "row_pos_sim": 0.7263892389112904,
+      "row_neg_sim": 0.6379945816532258,
+      "kd_row_loss": 7.6991505920887e-05,
+      "cell_loss": 2.8517416529357433,
+      "cell_pos_sim": 0.6415385584677419,
+      "cell_neg_sim": 0.6134545110887096,
+      "kd_cell_loss": 5.7432567700743675e-05,
+      "table_valid": 64,
+      "row_valid": 48,
+      "cell_valid": 48,
+      "hard_hits": 64,
+      "grad_norm_table": 0.06525410060524241,
+      "grad_norm_row": 0.03771250290650813,
+      "grad_norm_cell": 0.026750038721063518,
+      "grad_norm_hard": 0.14257256287814182,
+      "grad_norm_kd": 5.105203066106689e-05,
+      "client": 1,
+      "examples": 64,
+      "seconds": 5.503683742019348,
+      "fp16_overflow_skips": 0,
+      "loss_first": 0.7731841206550598,
+      "loss_last": 3.5968358516693115,
+      "teacher_eval": true,
+      "teacher_no_grad": true,
+      "queue_candidates": 5600,
+      "queue_cross_client_violations": 0,
+      "queue_non_train_violations": 0,
+      "queue_final_sizes": {
+        "table": 86,
+        "row": 67,
+        "cell": 128
+      }
+    }
+  ],
+  "reliability": {
+    "clients": {
+      "0": {
+        "value": 0.9658858715588907,
+        "fallback": null,
+        "dev_tables": 204,
+        "components": {
+          "s_teds": 0.914823113558987,
+          "valid_html": 1.0,
+          "confidence": 0.9997831306764792
+        },
+        "eta": {
+          "s_teds": 0.4,
+          "valid_html": 0.4,
+          "confidence": 0.2
+        }
+      },
+      "1": {
+        "value": 0.9724792220463071,
+        "fallback": null,
+        "dev_tables": 176,
+        "components": {
+          "s_teds": 0.9313646566468229,
+          "valid_html": 1.0,
+          "confidence": 0.9996667969378895
+        },
+        "eta": {
+          "s_teds": 0.4,
+          "valid_html": 0.4,
+          "confidence": 0.2
+        }
+      }
+    },
+    "confidence_s_teds_spearman": 0.36502581381256005,
+    "confidence_enabled": true,
+    "correlation_threshold": 0.3,
+    "source": "outputs/unitable/structure_metrics_per_sample.jsonl",
+    "split": "dev"
+  },
+  "aggregation_rounds": [
+    {
+      "round": 2,
+      "mode": "r_plus_u",
+      "clients": [
+        0,
+        1
+      ],
+      "sample_counts": [
+        64,
+        64
+      ],
+      "reliability": [
+        0.9658858715588907,
+        0.9724792220463071
+      ],
+      "utility": [
+        0.2206093342553484,
+        0.2519517599839385
+      ],
+      "utility_details": [
+        {
+          "client": 0,
+          "value": 0.2206093342553484,
+          "eligible_queries": {
+            "table": 204,
+            "row": 158,
+            "cell": 158
+          }
+        },
+        {
+          "client": 1,
+          "value": 0.2519517599839385,
+          "eligible_queries": {
+            "table": 176,
+            "row": 140,
+            "cell": 140
+          }
+        }
+      ],
+      "utility_fallbacks": [
+        null,
+        null
+      ],
+      "quality": [
+        0.5932476029071195,
+        0.6122154910151227
+      ],
+      "raw": [
+        37.96784658605565,
+        39.181791424967855
+      ],
+      "raw_normalized": [
+        0.4921325305587386,
+        0.5078674694412613
+      ],
+      "clipped": [
+        0.4921325305587387,
+        0.5078674694412614
+      ],
+      "min_weight": 0.05,
+      "max_weight": 0.8,
+      "weight_sum": 1.0,
+      "uses_test": false
+    }
+  ],
+  "aggregation_uses_test": false,
+  "completed_rounds": 2,
+  "checkpoints": [
+    "best.pt",
+    "last.pt"
+  ],
+  "lora_parameter_bytes": 1179648,
+  "total_communication_bytes": 9437184,
+  "queue_boundary_ok": true,
+  "accepted": true
+}

@@ -1,0 +1,5 @@
+2026-08-04 17:48:14,701 INFO Starting deterministic manual-case export seed=42 per_group=30
+2026-08-04 17:48:18,902 INFO Wrote group=flat_win cases=30 path=outputs/diagnosis/manual_cases_flat_win.xlsx
+2026-08-04 17:48:18,951 INFO Wrote group=unitable_win cases=30 path=outputs/diagnosis/manual_cases_unitable_win.xlsx
+2026-08-04 17:48:18,999 INFO Wrote group=both_fail cases=30 path=outputs/diagnosis/manual_cases_both_fail.xlsx
+2026-08-04 17:48:19,307 INFO Manual-case export complete manifest=outputs/diagnosis/manual_cases_input_sha256.json

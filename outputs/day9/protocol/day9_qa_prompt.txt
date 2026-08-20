@@ -1,0 +1,9 @@
+You are solving a FinQA financial numerical question using only the retrieved evidence below.
+Compute the answer carefully. Return only the final answer, with no explanation, no equation, and no label.
+Preserve a percent sign when the question asks for a percentage. If the evidence is insufficient, return NA.
+
+Retrieved evidence (ranked):
+{evidence}
+
+Question: {question}
+Final answer:

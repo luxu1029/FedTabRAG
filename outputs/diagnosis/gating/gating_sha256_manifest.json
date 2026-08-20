@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "selection_split": "dev",
+  "test_accessed": false,
+  "inputs": [
+    {
+      "path": "outputs/retrieval/zero_shot_flat_dev.json",
+      "bytes": 5475701,
+      "sha256": "561fc76b83fe9c57e0cd5fac7ced0826a2c0dd937550fac57c2f82fecaeb8a70"
+    },
+    {
+      "path": "outputs/retrieval/zero_shot_predicted_structure_dev.json",
+      "bytes": 5463300,
+      "sha256": "102fdc2a9d49b94c171e0fd07a74acd6f0a3706a99122e482550e21c5d7cf59b"
+    },
+    {
+      "path": "outputs/diagnosis/pairwise_flat_unitable_dev.csv",
+      "bytes": 687078,
+      "sha256": "6c316937e2903e4722bcdab2fc6f5dc615635ceda6063bdece6308302b818542"
+    },
+    {
+      "path": "outputs/unitable/structure_metrics_per_sample.jsonl",
+      "bytes": 4143801,
+      "sha256": "f1b466d2141689c93faed63d3d2b4ea0b6b31e077396c6d5a8cbd9fa221d4fe9"
+    },
+    {
+      "path": "data/processed/evidence_map.jsonl",
+      "bytes": 35147703,
+      "sha256": "424ae482396d00d65990ab254dd6897848fac7b3976c995a069e9fca88dfe37f"
+    },
+    {
+      "path": "data/processed/federated/company_5clients.json",
+      "bytes": 390436,
+      "sha256": "0061850644e55155be0b64fa9ccff72c22f1b9bf97c257e082363c7017cdec80"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "outputs/diagnosis/gating/gating_dev_grid.csv",
+      "bytes": 19079,
+      "sha256": "be55cc5ab5e05f502617ed0c82ddbbcb318ab7cb0e16cd96060da7b63d64771a"
+    },
+    {
+      "path": "outputs/diagnosis/gating/gating_dev_best_config.json",
+      "bytes": 3042,
+      "sha256": "15a29db80e73494b1e0c215eaa9271d97db0c8b7b8d010bacef82d07419bca17"
+    },
+    {
+      "path": "outputs/diagnosis/gating/gating_dev_summary.md",
+      "bytes": 1094,
+      "sha256": "08b7e8f11eca71222b6a5a9936fdd43cb2bf006f775656ac2a84ed10f6aa5e4a"
+    }
+  ]
+}

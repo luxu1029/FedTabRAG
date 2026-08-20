@@ -1,0 +1,2 @@
+43780b0fdcab3ad9c2af64b72f124a86241a7c2f2f6a0bbcceaf4e327f4af339  third_party/unitable/experiments/unitable_weights/unitable_large_structure.pt
+e9bb4e4c4f731782357703ed44e3915822192784f4ba1780cdafcae16996fd3f  third_party/unitable/vocab/vocab_html.json

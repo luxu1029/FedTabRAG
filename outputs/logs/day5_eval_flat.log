@@ -1,0 +1,6 @@
+2026-07-28 10:21:08,008 INFO Encoding corpus=58724 queries=1147
+2026-07-28 10:21:57,505 INFO Scoring level=table evidence=29492
+2026-07-28 10:21:57,890 INFO Scoring level=row evidence=1147
+2026-07-28 10:21:57,931 INFO Scoring level=cell evidence=28085
+2026-07-28 10:21:58,450 INFO Wrote outputs/federated/fedrag_flat_s42/test_metrics.json
+

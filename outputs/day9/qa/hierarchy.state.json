@@ -1,0 +1,18 @@
+{
+  "method": "hierarchy",
+  "queries": 100,
+  "seed": 42,
+  "top_k": 5,
+  "llm": "qwen2.5:7b",
+  "temperature": 0,
+  "max_output_tokens": 128,
+  "prompt_sha256": "c39b5816d17264f52c5889ca790f3f1a408feec45bda7bde5df4a45fd6f38101",
+  "retrieval_sha256": "c4febc8e23a37f3d926f7f3dfefef742390e10dbec44baaa1e82d4fc0b0a4646",
+  "numerical_em": 0.02,
+  "program_accuracy": null,
+  "program_accuracy_reason": "no program predicted",
+  "errors": 0,
+  "elapsed_seconds_current_invocation": 24.635105221066624,
+  "output_sha256": "f48a427b2b89b46e7de4ad098a53ea2afb8c18907e8c195f83315f12d70895bf",
+  "resume_supported": true
+}

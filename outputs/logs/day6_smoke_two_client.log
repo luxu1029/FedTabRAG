@@ -1,0 +1,6 @@
+2026-07-28 10:57:53,378 INFO round=1 client=0 loss=0.45483 table=0.68567 row=0.37318 cell=0.35502 hard=0.14113
+2026-07-28 10:57:55,646 INFO round=1 client=1 loss=0.51132 table=0.65769 row=0.41511 cell=0.45202 hard=0.14617
+2026-07-28 10:57:57,735 INFO round=2 client=0 loss=0.60110 table=0.68563 row=0.43808 cell=0.46135 hard=0.15036
+2026-07-28 10:57:59,913 INFO round=2 client=1 loss=0.58646 table=0.66648 row=0.45399 cell=0.50050 hard=0.14250
+2026-07-28 10:57:59,993 INFO complete accepted=True
+

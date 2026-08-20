@@ -1,0 +1,6 @@
+2026-07-28 20:17:18,501 INFO Encoding corpus=65226 queries=1147
+2026-07-28 20:18:11,678 INFO Scoring level=table evidence=29492
+2026-07-28 20:18:12,067 INFO Scoring level=row evidence=7529
+2026-07-28 20:18:12,180 INFO Scoring level=cell evidence=28205
+2026-07-28 20:18:12,727 INFO Wrote outputs/federated/fedtabrag_hier_hard_kd_s42/test_metrics.json
+

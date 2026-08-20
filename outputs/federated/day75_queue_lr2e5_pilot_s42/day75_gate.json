@@ -1,0 +1,8 @@
+{
+  "best_score_exceeds_round1": true,
+  "two_consecutive_non_decreasing": false,
+  "row_or_cell_improved": true,
+  "table_not_degraded_over_10pct": true,
+  "queue_boundary_ok": true,
+  "passed": false
+}

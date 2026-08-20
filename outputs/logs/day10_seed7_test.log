@@ -1,0 +1,19 @@
+2026-08-03 14:05:00,906 INFO running /home/hj/anaconda3/envs/fedrag-test/bin/python src/federated/evaluate_fedrag.py --run-dir outputs/federated/day10_flat_s7 --checkpoint best --variant flat --partition data/processed/federated/company_5clients.json --output outputs/federated/day10_flat_s7/test_metrics.json --device cuda:0 --batch-size 128 --seed 7
+2026-08-03 14:05:02,885 INFO Encoding corpus=58724 queries=1147
+2026-08-03 14:05:53,226 INFO Scoring level=table evidence=29492
+2026-08-03 14:05:53,648 INFO Scoring level=row evidence=1147
+2026-08-03 14:05:53,693 INFO Scoring level=cell evidence=28085
+2026-08-03 14:05:54,256 INFO Wrote outputs/federated/day10_flat_s7/test_metrics.json
+2026-08-03 14:05:54,740 INFO running /home/hj/anaconda3/envs/fedrag-test/bin/python src/federated/evaluate_fedrag.py --run-dir outputs/federated/day10_unitable_s7 --checkpoint best --variant predicted_structure --partition data/processed/federated/company_5clients.json --output outputs/federated/day10_unitable_s7/test_metrics.json --device cuda:0 --batch-size 128 --seed 7
+2026-08-03 14:05:56,909 INFO Encoding corpus=65226 queries=1147
+2026-08-03 14:06:50,584 INFO Scoring level=table evidence=29492
+2026-08-03 14:06:51,001 INFO Scoring level=row evidence=7529
+2026-08-03 14:06:51,115 INFO Scoring level=cell evidence=28205
+2026-08-03 14:06:51,672 INFO Wrote outputs/federated/day10_unitable_s7/test_metrics.json
+2026-08-03 14:06:52,127 INFO running /home/hj/anaconda3/envs/fedrag-test/bin/python src/federated/evaluate_fedrag.py --run-dir outputs/federated/day10_r_plus_u_s7 --checkpoint best --variant predicted_structure --partition data/processed/federated/company_5clients.json --output outputs/federated/day10_r_plus_u_s7/test_metrics.json --device cuda:0 --batch-size 128 --seed 7
+2026-08-03 14:06:54,262 INFO Encoding corpus=65226 queries=1147
+2026-08-03 14:07:48,210 INFO Scoring level=table evidence=29492
+2026-08-03 14:07:48,615 INFO Scoring level=row evidence=7529
+2026-08-03 14:07:48,733 INFO Scoring level=cell evidence=28205
+2026-08-03 14:07:49,278 INFO Wrote outputs/federated/day10_r_plus_u_s7/test_metrics.json
+

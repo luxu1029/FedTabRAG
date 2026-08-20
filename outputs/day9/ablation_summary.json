@@ -1,0 +1,225 @@
+{
+  "seed": 42,
+  "sample_ids_sha256": "60633751a298baf2b1ea88b88527ca1b0d6da483a2c0b7c093d048d04dc800ec",
+  "sample_size": 100,
+  "protocol": {
+    "top_k": 5,
+    "llm": "qwen2.5:7b",
+    "temperature": 0,
+    "max_output_tokens": 128,
+    "seed": 42
+  },
+  "program_accuracy": null,
+  "program_accuracy_reason": "no method predicted a program",
+  "groups": {
+    "input_structure": [
+      "flat",
+      "gt_zero_shot",
+      "unitable"
+    ],
+    "learning_components": [
+      "unitable",
+      "hierarchy",
+      "hierarchy_hard",
+      "hierarchy_hard_kd"
+    ],
+    "aggregation": [
+      "fedavg_queue",
+      "r_only",
+      "u_only",
+      "r_plus_u"
+    ]
+  },
+  "methods": {
+    "flat": {
+      "variant": "flat",
+      "note": null,
+      "retrieval_recall@5": 0.53,
+      "retrieval_mrr@5": 0.29833333333333334,
+      "numerical_em": 0.07,
+      "qa_errors": 0,
+      "program_accuracy": null,
+      "retrieval_sha256": "60eb53fe4461b14b33e9843fffa92b49c1873af46edd010668409aef034d45de",
+      "qa_sha256": "83eec89bd207646c4bdea2c1cb05192d78a5a4df99d385593643ab53b51032d0",
+      "joint_error_counts": {
+        "format_matching_failure": 18,
+        "number_extraction_failure": 3,
+        "operation_failure": 14,
+        "retrieval_failure": 46,
+        "structure_localization_failure": 12,
+        "success": 7
+      }
+    },
+    "gt_zero_shot": {
+      "variant": "oracle_structure",
+      "note": "zero-shot oracle; no GT federated checkpoint exists",
+      "retrieval_recall@5": 0.5,
+      "retrieval_mrr@5": 0.31299999999999994,
+      "numerical_em": 0.06,
+      "qa_errors": 0,
+      "program_accuracy": null,
+      "retrieval_sha256": "18f5c80c6b6f0912f949f968a4c0a2e828b4775f821fff5fc2f5d54d8f581baa",
+      "qa_sha256": "da190835b83c5c698a2547fbad2715994379e0f13509fa4b51d045523d5ce071",
+      "joint_error_counts": {
+        "format_matching_failure": 7,
+        "number_extraction_failure": 1,
+        "operation_failure": 14,
+        "retrieval_failure": 48,
+        "structure_localization_failure": 24,
+        "success": 6
+      }
+    },
+    "unitable": {
+      "variant": "predicted_structure",
+      "note": null,
+      "retrieval_recall@5": 0.56,
+      "retrieval_mrr@5": 0.3721666666666667,
+      "numerical_em": 0.07,
+      "qa_errors": 0,
+      "program_accuracy": null,
+      "retrieval_sha256": "6aee541c45b1cd36a739b58972cfc5b44f32c844471fe71d9d3ae9bf4a9e5bee",
+      "qa_sha256": "4b34bf7769a26e9fa7bc357240963d5aeb3dbcb3d930ad7b874da13f0e356aa7",
+      "joint_error_counts": {
+        "format_matching_failure": 22,
+        "number_extraction_failure": 2,
+        "operation_failure": 16,
+        "retrieval_failure": 43,
+        "structure_localization_failure": 10,
+        "success": 7
+      }
+    },
+    "hierarchy": {
+      "variant": "predicted_structure",
+      "note": null,
+      "retrieval_recall@5": 0.22,
+      "retrieval_mrr@5": 0.12666666666666665,
+      "numerical_em": 0.02,
+      "qa_errors": 0,
+      "program_accuracy": null,
+      "retrieval_sha256": "c4febc8e23a37f3d926f7f3dfefef742390e10dbec44baaa1e82d4fc0b0a4646",
+      "qa_sha256": "f48a427b2b89b46e7de4ad098a53ea2afb8c18907e8c195f83315f12d70895bf",
+      "joint_error_counts": {
+        "format_matching_failure": 10,
+        "operation_failure": 4,
+        "retrieval_failure": 77,
+        "structure_localization_failure": 7,
+        "success": 2
+      }
+    },
+    "hierarchy_hard": {
+      "variant": "predicted_structure",
+      "note": null,
+      "retrieval_recall@5": 0.4,
+      "retrieval_mrr@5": 0.20549999999999996,
+      "numerical_em": 0.02,
+      "qa_errors": 0,
+      "program_accuracy": null,
+      "retrieval_sha256": "384478a49b936af65f0a1729017498132e7f94b037f0ca911024f94ec27b11af",
+      "qa_sha256": "ee705f211f2bc78eec95f987ce4025f782813bd0359ac9f93143b9d78f026a51",
+      "joint_error_counts": {
+        "format_matching_failure": 17,
+        "number_extraction_failure": 2,
+        "operation_failure": 10,
+        "retrieval_failure": 59,
+        "structure_localization_failure": 10,
+        "success": 2
+      }
+    },
+    "hierarchy_hard_kd": {
+      "variant": "predicted_structure",
+      "note": null,
+      "retrieval_recall@5": 0.4,
+      "retrieval_mrr@5": 0.19699999999999998,
+      "numerical_em": 0.02,
+      "qa_errors": 0,
+      "program_accuracy": null,
+      "retrieval_sha256": "319442bc50e5eea001619e96ec797993ac9e0a1abc9da052b3aeae0c211d0e3c",
+      "qa_sha256": "6491c701677fdf76bd3245bfd2b0f117f823f011135c9fae7d8227f2a189c549",
+      "joint_error_counts": {
+        "format_matching_failure": 17,
+        "number_extraction_failure": 2,
+        "operation_failure": 10,
+        "retrieval_failure": 59,
+        "structure_localization_failure": 10,
+        "success": 2
+      }
+    },
+    "fedavg_queue": {
+      "variant": "predicted_structure",
+      "note": null,
+      "retrieval_recall@5": 0.6,
+      "retrieval_mrr@5": 0.36550000000000005,
+      "numerical_em": 0.05,
+      "qa_errors": 0,
+      "program_accuracy": null,
+      "retrieval_sha256": "7d77406fc40a68b3db68aad235078ee6d0cc882993170dd60917249cc1ebe35e",
+      "qa_sha256": "faa799fcb1f258e502dcffaf0bf128378a819310379adc96e8a92c3f7d774d01",
+      "joint_error_counts": {
+        "format_matching_failure": 22,
+        "number_extraction_failure": 4,
+        "operation_failure": 18,
+        "retrieval_failure": 39,
+        "structure_localization_failure": 12,
+        "success": 5
+      }
+    },
+    "r_only": {
+      "variant": "predicted_structure",
+      "note": null,
+      "retrieval_recall@5": 0.6,
+      "retrieval_mrr@5": 0.36550000000000005,
+      "numerical_em": 0.05,
+      "qa_errors": 0,
+      "program_accuracy": null,
+      "retrieval_sha256": "206f31a3bdd38634211942ad2bcf16d8102bbb752804e9875dab2665665ced29",
+      "qa_sha256": "9b84410d3bfd046cb3bf96f72b43ff3c92e5ca8e0944e459695d234d15b13943",
+      "joint_error_counts": {
+        "format_matching_failure": 22,
+        "number_extraction_failure": 4,
+        "operation_failure": 18,
+        "retrieval_failure": 39,
+        "structure_localization_failure": 12,
+        "success": 5
+      }
+    },
+    "u_only": {
+      "variant": "predicted_structure",
+      "note": null,
+      "retrieval_recall@5": 0.61,
+      "retrieval_mrr@5": 0.36916666666666664,
+      "numerical_em": 0.05,
+      "qa_errors": 0,
+      "program_accuracy": null,
+      "retrieval_sha256": "383294ac907ee92b4c1ad68318daaa0e7f19af47def308e1ce2c0585e655cf64",
+      "qa_sha256": "6256dd661e16856e980498b8c3ed6e594b834f7bd0d56713b5cf87017337fa50",
+      "joint_error_counts": {
+        "format_matching_failure": 22,
+        "number_extraction_failure": 4,
+        "operation_failure": 18,
+        "retrieval_failure": 38,
+        "structure_localization_failure": 13,
+        "success": 5
+      }
+    },
+    "r_plus_u": {
+      "variant": "predicted_structure",
+      "note": null,
+      "retrieval_recall@5": 0.61,
+      "retrieval_mrr@5": 0.36416666666666664,
+      "numerical_em": 0.05,
+      "qa_errors": 0,
+      "program_accuracy": null,
+      "retrieval_sha256": "8c9a1ad9f40f0f5ae4ae3f67d206078add192bd66a0dafedeaaa7dce231ed670",
+      "qa_sha256": "4fe94d64455e17b4fefb2afb56fcfe27c5d0736e59fd7ab270d26378210c69b8",
+      "joint_error_counts": {
+        "format_matching_failure": 22,
+        "number_extraction_failure": 4,
+        "operation_failure": 18,
+        "retrieval_failure": 38,
+        "structure_localization_failure": 13,
+        "success": 5
+      }
+    }
+  },
+  "selection_or_question_edits": 0
+}

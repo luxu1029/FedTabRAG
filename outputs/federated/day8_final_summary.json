@@ -1,0 +1,136 @@
+{
+  "seed": 42,
+  "selection_split": "dev",
+  "test_policy": "one evaluation per frozen best; no test-based tuning",
+  "baselines": {
+    "day75_dev_best": 0.23749736594849535,
+    "unitable_test_weighted_ndcg": 0.229913557967246,
+    "flat_test_weighted_ndcg": 0.256153879
+  },
+  "runs": {
+    "fedavg": {
+      "run": "day75_queue_lr1e5_pilot_s42",
+      "best_round": 4,
+      "dev_weighted_ndcg": 0.23749736594849535,
+      "dev_table_ndcg": 0.33696068403450724,
+      "dev_row_ndcg": 0.3333199903868811,
+      "dev_cell_ndcg": 0.14021846405105917,
+      "dev_worst_ndcg": 0.1266723035200968,
+      "checkpoint_sha256": "44132ad9066bebbba5600683e1f66f1cbe678780ca9f83f413f4e77efa5eff7a",
+      "frozen_dir": "outputs/federated/day75_queue_lr1e5_pilot_s42/frozen_day8_best_round4",
+      "test": {
+        "table_ndcg@10": 0.34209274449679816,
+        "row_ndcg@10": 0.30801375697688016,
+        "cell_ndcg@10": 0.13118752427998207,
+        "weighted_ndcg@10": 0.2264164381324147,
+        "macro_weighted_ndcg@10": 0.22480764933151312,
+        "worst_client_weighted_ndcg@10": 0.19979821166073125,
+        "std_client_weighted_ndcg@10": 0.027858396069604476,
+        "per_client_weighted_ndcg@10": {
+          "0": 0.20001517889977893,
+          "1": 0.19979821166073125,
+          "2": 0.23500318438361525,
+          "3": 0.21501327458020006,
+          "4": 0.2742083971332401
+        },
+        "sha256": "99846f3d77a0945220560d1fcda46777cea53af97c0ac1ea5201e0fc856a8968",
+        "delta_vs_fedavg": 0.0
+      }
+    },
+    "r_only": {
+      "run": "day8_r_only_s42",
+      "best_round": 4,
+      "dev_weighted_ndcg": 0.23741696511984364,
+      "dev_table_ndcg": 0.3389973557700464,
+      "dev_row_ndcg": 0.33337299210363747,
+      "dev_cell_ndcg": 0.13921119266948623,
+      "dev_worst_ndcg": 0.1261467509292379,
+      "checkpoint_sha256": "1e648b7d70c8b821a2bb7917b37c5bc036f1981e49c51253f3c141db22ea315d",
+      "frozen_dir": "outputs/federated/day8_r_only_s42/frozen_day8_best_round4",
+      "test": {
+        "table_ndcg@10": 0.3420775288106891,
+        "row_ndcg@10": 0.30766868470668923,
+        "cell_ndcg@10": 0.13120004894959364,
+        "weighted_ndcg@10": 0.2263161356489414,
+        "macro_weighted_ndcg@10": 0.22472885502230827,
+        "worst_client_weighted_ndcg@10": 0.20008786718910865,
+        "std_client_weighted_ndcg@10": 0.027758987925999495,
+        "per_client_weighted_ndcg@10": {
+          "0": 0.20008786718910865,
+          "1": 0.20047401407228765,
+          "2": 0.23380832322476056,
+          "3": 0.21478554092226,
+          "4": 0.27448852970312465
+        },
+        "sha256": "cc4eca7d785014c6b1319549a49f3c20b806d27cd4b22218d440f179198e827d",
+        "delta_vs_fedavg": -0.00010030248347328574
+      }
+    },
+    "u_only": {
+      "run": "day8_u_only_s42",
+      "best_round": 4,
+      "dev_weighted_ndcg": 0.2378794002096452,
+      "dev_table_ndcg": 0.33862130892428943,
+      "dev_row_ndcg": 0.3330998115624388,
+      "dev_cell_ndcg": 0.1404503899121113,
+      "dev_worst_ndcg": 0.12622280943758682,
+      "checkpoint_sha256": "81fd951c6536fad83f84eeb3f9ceb8f3877ee4877df0fac044c5c4c6981bc1da",
+      "frozen_dir": "outputs/federated/day8_u_only_s42/frozen_day8_best_round4",
+      "test": {
+        "table_ndcg@10": 0.3423677052551554,
+        "row_ndcg@10": 0.30761246974536066,
+        "cell_ndcg@10": 0.13164124110899258,
+        "weighted_ndcg@10": 0.22657790252913557,
+        "macro_weighted_ndcg@10": 0.2249494353104752,
+        "worst_client_weighted_ndcg@10": 0.1991107596913069,
+        "std_client_weighted_ndcg@10": 0.027479530619178412,
+        "per_client_weighted_ndcg@10": {
+          "0": 0.20191931685525372,
+          "1": 0.1991107596913069,
+          "2": 0.23395019917054788,
+          "3": 0.21571278163212224,
+          "4": 0.2740541192031454
+        },
+        "sha256": "595e94672850a34af0d6d52912639cfd857684060a9af2bdf8f520008ab495ca",
+        "delta_vs_fedavg": 0.00016146439672087842
+      }
+    },
+    "r_plus_u": {
+      "run": "day8_r_plus_u_s42",
+      "best_round": 4,
+      "dev_weighted_ndcg": 0.23717485497450158,
+      "dev_table_ndcg": 0.33835854737903737,
+      "dev_row_ndcg": 0.3321317122609103,
+      "dev_cell_ndcg": 0.139727263640842,
+      "dev_worst_ndcg": 0.12585184492677043,
+      "checkpoint_sha256": "09842264748c035e4530aa2a5d1563783b859656ed7bc0e061ca38ed38a2b220",
+      "frozen_dir": "outputs/federated/day8_r_plus_u_s42/frozen_day8_best_round4",
+      "test": {
+        "table_ndcg@10": 0.3419709768505389,
+        "row_ndcg@10": 0.3078785338104235,
+        "cell_ndcg@10": 0.13152659236395134,
+        "weighted_ndcg@10": 0.22652105169521053,
+        "macro_weighted_ndcg@10": 0.22488989812483645,
+        "worst_client_weighted_ndcg@10": 0.19955300267642628,
+        "std_client_weighted_ndcg@10": 0.02762848840676175,
+        "per_client_weighted_ndcg@10": {
+          "0": 0.20122577660361352,
+          "1": 0.19955300267642628,
+          "2": 0.23464570088163322,
+          "3": 0.21493676489273783,
+          "4": 0.2740882455697714
+        },
+        "sha256": "80923a0531739c87e1bf191b3c9be45232d166b8f6d218d3d823dc4e9b1a964e",
+        "delta_vs_fedavg": 0.00010461356279584111
+      }
+    }
+  },
+  "decision": {
+    "dev_primary_improved": true,
+    "dev_improvement_stable_two_rounds": false,
+    "row_dev_clearly_improved": false,
+    "worst_client_dev_improved": false,
+    "passed_day8_gate": false,
+    "action": "pause expensive Day-9 training; diagnose row candidates, multi-positive weighting, and client sampling bias"
+  }
+}

@@ -1,0 +1,10 @@
+scope,method,metric,value,decision_use
+main,FedE4RAG-Flat,weighted_global_ndcg@10,0.25615365121310774,Flat strongest
+main,FedE4RAG-UniTable,weighted_global_ndcg@10,0.2299139335653528,Flat strongest
+main,FedTabRAG-Full(R+U),weighted_global_ndcg@10,0.22652105169521053,Flat strongest
+three_seed,FedE4RAG-Flat,mean_weighted_ndcg@10,0.2538526839405321,ranking stable across seeds
+three_seed,FedE4RAG-UniTable,mean_weighted_ndcg@10,0.228221661220825,ranking stable across seeds
+three_seed,FedTabRAG-Full(R+U),mean_weighted_ndcg@10,0.22674722919611176,ranking stable across seeds
+task6,structure_strategy,passing_candidates,0,FAIL_NO_DEV_STRATEGY
+qa100,all_methods,program_accuracy,NA,no method predicted a program
+qa_next,all_methods,gold_hit_wrong_pairs,468,72 unique queries

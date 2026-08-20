@@ -1,0 +1,4 @@
+2026-07-24 15:31:14,451 INFO Auditing data/raw/finqa/train.json
+2026-07-24 15:31:15,025 INFO Auditing data/raw/finqa/dev.json
+2026-07-24 15:31:15,221 INFO Auditing data/raw/finqa/test.json
+2026-07-24 15:31:15,318 INFO Wrote outputs/audit/finqa_audit.json and Markdown report

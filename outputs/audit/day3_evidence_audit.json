@@ -1,0 +1,28 @@
+{
+  "corpus_counts": {
+    "flat": 413975,
+    "oracle_structure": 458372,
+    "predicted_structure": 458841
+  },
+  "duplicate_evidence_ids": {
+    "flat": 0,
+    "oracle_structure": 0,
+    "predicted_structure": 0
+  },
+  "leakage_counts": {
+    "flat": 0,
+    "oracle_structure": 0,
+    "predicted_structure": 0
+  },
+  "leakage_examples": {
+    "flat": [],
+    "oracle_structure": [],
+    "predicted_structure": []
+  },
+  "cell_multiset_mismatch_count": 0,
+  "cell_multiset_mismatches": [],
+  "bad_reference_count": 0,
+  "bad_references": [],
+  "inspection_count": 50,
+  "passed": true
+}

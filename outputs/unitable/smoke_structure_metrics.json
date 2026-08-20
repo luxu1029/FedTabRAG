@@ -1,0 +1,48 @@
+{
+  "predictions": "data/interim/unitable_predictions/smoke_predictions.jsonl",
+  "manifest": "data/interim/render_manifest_smoke.jsonl",
+  "count": 100,
+  "prediction_count": 100,
+  "status_counts": {
+    "ok": 100
+  },
+  "missing_prediction_count": 0,
+  "valid_html_count": 100,
+  "valid_html_rate": 1.0,
+  "mean_s_teds": 0.9227723743905091,
+  "cell_count": {
+    "exact_count": 95,
+    "exact_rate": 0.95,
+    "mean_ratio": 1.022190476190476,
+    "mean_absolute_error": 0.34
+  },
+  "row_col_error": {
+    "mean_row_absolute_error": 0.05,
+    "mean_col_absolute_error": 0.12
+  },
+  "inference": {
+    "mean_elapsed_seconds": 0.1597496185003547,
+    "eos_rate": 1.0
+  },
+  "by_split": {
+    "dev": {
+      "count": 9,
+      "valid_html_rate": 1.0,
+      "mean_s_teds": 0.9347089549875928,
+      "cell_count_exact_rate": 1.0
+    },
+    "test": {
+      "count": 17,
+      "valid_html_rate": 1.0,
+      "mean_s_teds": 0.8272343857857847,
+      "cell_count_exact_rate": 0.7647058823529411
+    },
+    "train": {
+      "count": 74,
+      "valid_html_rate": 1.0,
+      "mean_s_teds": 0.94326854440276,
+      "cell_count_exact_rate": 0.9864864864864865
+    }
+  },
+  "invalid_samples": []
+}

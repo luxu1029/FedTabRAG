@@ -1,0 +1,48 @@
+{
+  "predictions": "data/interim/unitable_predictions/predictions.jsonl",
+  "manifest": "data/interim/render_manifest.jsonl",
+  "count": 8281,
+  "prediction_count": 8281,
+  "status_counts": {
+    "ok": 8281
+  },
+  "missing_prediction_count": 0,
+  "valid_html_count": 8281,
+  "valid_html_rate": 1.0,
+  "mean_s_teds": 0.9244421059464957,
+  "cell_count": {
+    "exact_count": 8201,
+    "exact_rate": 0.9903393309986717,
+    "mean_ratio": 1.0045088872404415,
+    "mean_absolute_error": 0.06412269049631687
+  },
+  "row_col_error": {
+    "mean_row_absolute_error": 0.004830334500664171,
+    "mean_col_absolute_error": 0.008815360463712112
+  },
+  "inference": {
+    "mean_elapsed_seconds": 0.1085158770669329,
+    "eos_rate": 1.0
+  },
+  "by_split": {
+    "dev": {
+      "count": 883,
+      "valid_html_rate": 1.0,
+      "mean_s_teds": 0.9246080064244879,
+      "cell_count_exact_rate": 0.9875424688561721
+    },
+    "test": {
+      "count": 1147,
+      "valid_html_rate": 1.0,
+      "mean_s_teds": 0.9224658394390737,
+      "cell_count_exact_rate": 0.977332170880558
+    },
+    "train": {
+      "count": 6251,
+      "valid_html_rate": 1.0,
+      "mean_s_teds": 0.9247812976857287,
+      "cell_count_exact_rate": 0.9931211006239001
+    }
+  },
+  "invalid_samples": []
+}

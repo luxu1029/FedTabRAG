@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "selection_split": "dev",
+  "test_accessed": false,
+  "inputs": [
+    {
+      "path": "outputs/retrieval/zero_shot_flat_dev.json",
+      "bytes": 5475701,
+      "sha256": "561fc76b83fe9c57e0cd5fac7ced0826a2c0dd937550fac57c2f82fecaeb8a70"
+    },
+    {
+      "path": "outputs/retrieval/zero_shot_predicted_structure_dev.json",
+      "bytes": 5463300,
+      "sha256": "102fdc2a9d49b94c171e0fd07a74acd6f0a3706a99122e482550e21c5d7cf59b"
+    },
+    {
+      "path": "data/processed/flat/queries_dev.jsonl",
+      "bytes": 268059,
+      "sha256": "ec0a51800a4390f28fabcaa727d3f6f0daf13c20fe9acf71a8d202cf9fb8b2df"
+    },
+    {
+      "path": "data/processed/predicted_structure/queries_dev.jsonl",
+      "bytes": 281304,
+      "sha256": "169d51ffb7f1c4a9600e36c39d6edb7ccde3a1cdfbe9a60eae8ba6f3ad2379fc"
+    },
+    {
+      "path": "data/processed/evidence_map.jsonl",
+      "bytes": 35147703,
+      "sha256": "424ae482396d00d65990ab254dd6897848fac7b3976c995a069e9fca88dfe37f"
+    },
+    {
+      "path": "data/processed/federated/company_5clients.json",
+      "bytes": 390436,
+      "sha256": "0061850644e55155be0b64fa9ccff72c22f1b9bf97c257e082363c7017cdec80"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "outputs/diagnosis/fusion/fusion_dev_grid.csv",
+      "bytes": 18031,
+      "sha256": "4e63f799de1c3eb210988090797bb4504a8353301f6d0beee9f5e43e534c731b"
+    },
+    {
+      "path": "outputs/diagnosis/fusion/fusion_dev_best_config.json",
+      "bytes": 5211,
+      "sha256": "a18d8a89229608797c0d52f39e29c49a9bbfffea1e0af9f0f4788f56d7d39b1d"
+    },
+    {
+      "path": "outputs/diagnosis/fusion/fusion_dev_summary.md",
+      "bytes": 1366,
+      "sha256": "fe5a3086bb4c435086d622d64599f5e8243ef250b72e397b45f6ebc8cefd696f"
+    }
+  ]
+}

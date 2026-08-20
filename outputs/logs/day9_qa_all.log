@@ -1,0 +1,122 @@
+2026-07-31 20:05:25,449 INFO starting method=flat
+2026-07-31 20:05:28,318 INFO method=flat completed=10/100
+2026-07-31 20:05:30,910 INFO method=flat completed=20/100
+2026-07-31 20:05:33,690 INFO method=flat completed=30/100
+2026-07-31 20:05:36,406 INFO method=flat completed=40/100
+2026-07-31 20:05:39,142 INFO method=flat completed=50/100
+2026-07-31 20:05:41,814 INFO method=flat completed=60/100
+2026-07-31 20:05:44,654 INFO method=flat completed=70/100
+2026-07-31 20:05:47,542 INFO method=flat completed=80/100
+2026-07-31 20:05:50,678 INFO method=flat completed=90/100
+2026-07-31 20:05:53,174 INFO method=flat completed=100/100
+2026-07-31 20:05:53,181 INFO finished method=flat numerical_em=0.0700
+2026-07-31 20:05:53,201 INFO starting method=gt_zero_shot
+2026-07-31 20:05:55,990 INFO method=gt_zero_shot completed=10/100
+2026-07-31 20:05:58,802 INFO method=gt_zero_shot completed=20/100
+2026-07-31 20:06:01,814 INFO method=gt_zero_shot completed=30/100
+2026-07-31 20:06:04,546 INFO method=gt_zero_shot completed=40/100
+2026-07-31 20:06:07,330 INFO method=gt_zero_shot completed=50/100
+2026-07-31 20:06:10,182 INFO method=gt_zero_shot completed=60/100
+2026-07-31 20:06:13,178 INFO method=gt_zero_shot completed=70/100
+2026-07-31 20:06:16,166 INFO method=gt_zero_shot completed=80/100
+2026-07-31 20:06:19,378 INFO method=gt_zero_shot completed=90/100
+2026-07-31 20:06:22,010 INFO method=gt_zero_shot completed=100/100
+2026-07-31 20:06:22,018 INFO finished method=gt_zero_shot numerical_em=0.0600
+2026-07-31 20:06:22,037 INFO starting method=unitable
+2026-07-31 20:06:24,841 INFO method=unitable completed=10/100
+2026-07-31 20:06:27,425 INFO method=unitable completed=20/100
+2026-07-31 20:06:30,138 INFO method=unitable completed=30/100
+2026-07-31 20:06:32,694 INFO method=unitable completed=40/100
+2026-07-31 20:06:35,246 INFO method=unitable completed=50/100
+2026-07-31 20:06:37,746 INFO method=unitable completed=60/100
+2026-07-31 20:06:40,610 INFO method=unitable completed=70/100
+2026-07-31 20:06:43,442 INFO method=unitable completed=80/100
+2026-07-31 20:06:46,322 INFO method=unitable completed=90/100
+2026-07-31 20:06:48,738 INFO method=unitable completed=100/100
+2026-07-31 20:06:48,745 INFO finished method=unitable numerical_em=0.0700
+2026-07-31 20:06:48,765 INFO starting method=hierarchy
+2026-07-31 20:06:51,362 INFO method=hierarchy completed=10/100
+2026-07-31 20:06:53,794 INFO method=hierarchy completed=20/100
+2026-07-31 20:06:56,202 INFO method=hierarchy completed=30/100
+2026-07-31 20:06:58,678 INFO method=hierarchy completed=40/100
+2026-07-31 20:07:01,302 INFO method=hierarchy completed=50/100
+2026-07-31 20:07:03,646 INFO method=hierarchy completed=60/100
+2026-07-31 20:07:06,165 INFO method=hierarchy completed=70/100
+2026-07-31 20:07:08,666 INFO method=hierarchy completed=80/100
+2026-07-31 20:07:11,178 INFO method=hierarchy completed=90/100
+2026-07-31 20:07:13,494 INFO method=hierarchy completed=100/100
+2026-07-31 20:07:13,501 INFO finished method=hierarchy numerical_em=0.0200
+2026-07-31 20:07:13,521 INFO starting method=hierarchy_hard
+2026-07-31 20:07:16,158 INFO method=hierarchy_hard completed=10/100
+2026-07-31 20:07:18,758 INFO method=hierarchy_hard completed=20/100
+2026-07-31 20:07:21,334 INFO method=hierarchy_hard completed=30/100
+2026-07-31 20:07:23,982 INFO method=hierarchy_hard completed=40/100
+2026-07-31 20:07:26,966 INFO method=hierarchy_hard completed=50/100
+2026-07-31 20:07:29,502 INFO method=hierarchy_hard completed=60/100
+2026-07-31 20:07:32,117 INFO method=hierarchy_hard completed=70/100
+2026-07-31 20:07:34,770 INFO method=hierarchy_hard completed=80/100
+2026-07-31 20:07:37,342 INFO method=hierarchy_hard completed=90/100
+2026-07-31 20:07:39,622 INFO method=hierarchy_hard completed=100/100
+2026-07-31 20:07:39,628 INFO finished method=hierarchy_hard numerical_em=0.0200
+2026-07-31 20:07:39,648 INFO starting method=hierarchy_hard_kd
+2026-07-31 20:07:42,326 INFO method=hierarchy_hard_kd completed=10/100
+2026-07-31 20:07:44,830 INFO method=hierarchy_hard_kd completed=20/100
+2026-07-31 20:07:47,438 INFO method=hierarchy_hard_kd completed=30/100
+2026-07-31 20:07:50,022 INFO method=hierarchy_hard_kd completed=40/100
+2026-07-31 20:07:52,966 INFO method=hierarchy_hard_kd completed=50/100
+2026-07-31 20:07:55,478 INFO method=hierarchy_hard_kd completed=60/100
+2026-07-31 20:07:58,070 INFO method=hierarchy_hard_kd completed=70/100
+2026-07-31 20:08:00,694 INFO method=hierarchy_hard_kd completed=80/100
+2026-07-31 20:08:03,306 INFO method=hierarchy_hard_kd completed=90/100
+2026-07-31 20:08:05,618 INFO method=hierarchy_hard_kd completed=100/100
+2026-07-31 20:08:05,625 INFO finished method=hierarchy_hard_kd numerical_em=0.0200
+2026-07-31 20:08:05,644 INFO starting method=fedavg_queue
+2026-07-31 20:08:08,426 INFO method=fedavg_queue completed=10/100
+2026-07-31 20:08:11,222 INFO method=fedavg_queue completed=20/100
+2026-07-31 20:08:14,042 INFO method=fedavg_queue completed=30/100
+2026-07-31 20:08:16,774 INFO method=fedavg_queue completed=40/100
+2026-07-31 20:08:19,450 INFO method=fedavg_queue completed=50/100
+2026-07-31 20:08:21,965 INFO method=fedavg_queue completed=60/100
+2026-07-31 20:08:24,542 INFO method=fedavg_queue completed=70/100
+2026-07-31 20:08:27,198 INFO method=fedavg_queue completed=80/100
+2026-07-31 20:08:29,914 INFO method=fedavg_queue completed=90/100
+2026-07-31 20:08:32,389 INFO method=fedavg_queue completed=100/100
+2026-07-31 20:08:32,395 INFO finished method=fedavg_queue numerical_em=0.0500
+2026-07-31 20:08:32,413 INFO starting method=r_only
+2026-07-31 20:08:35,182 INFO method=r_only completed=10/100
+2026-07-31 20:08:37,998 INFO method=r_only completed=20/100
+2026-07-31 20:08:40,822 INFO method=r_only completed=30/100
+2026-07-31 20:08:43,530 INFO method=r_only completed=40/100
+2026-07-31 20:08:46,202 INFO method=r_only completed=50/100
+2026-07-31 20:08:48,670 INFO method=r_only completed=60/100
+2026-07-31 20:08:51,266 INFO method=r_only completed=70/100
+2026-07-31 20:08:53,934 INFO method=r_only completed=80/100
+2026-07-31 20:08:56,650 INFO method=r_only completed=90/100
+2026-07-31 20:08:59,114 INFO method=r_only completed=100/100
+2026-07-31 20:08:59,121 INFO finished method=r_only numerical_em=0.0500
+2026-07-31 20:08:59,141 INFO starting method=u_only
+2026-07-31 20:09:01,946 INFO method=u_only completed=10/100
+2026-07-31 20:09:04,769 INFO method=u_only completed=20/100
+2026-07-31 20:09:07,594 INFO method=u_only completed=30/100
+2026-07-31 20:09:10,282 INFO method=u_only completed=40/100
+2026-07-31 20:09:12,947 INFO method=u_only completed=50/100
+2026-07-31 20:09:15,450 INFO method=u_only completed=60/100
+2026-07-31 20:09:18,054 INFO method=u_only completed=70/100
+2026-07-31 20:09:20,766 INFO method=u_only completed=80/100
+2026-07-31 20:09:23,458 INFO method=u_only completed=90/100
+2026-07-31 20:09:25,934 INFO method=u_only completed=100/100
+2026-07-31 20:09:25,941 INFO finished method=u_only numerical_em=0.0500
+2026-07-31 20:09:25,960 INFO starting method=r_plus_u
+2026-07-31 20:09:28,742 INFO method=r_plus_u completed=10/100
+2026-07-31 20:09:31,521 INFO method=r_plus_u completed=20/100
+2026-07-31 20:09:34,350 INFO method=r_plus_u completed=30/100
+2026-07-31 20:09:37,070 INFO method=r_plus_u completed=40/100
+2026-07-31 20:09:39,726 INFO method=r_plus_u completed=50/100
+2026-07-31 20:09:42,190 INFO method=r_plus_u completed=60/100
+2026-07-31 20:09:44,782 INFO method=r_plus_u completed=70/100
+2026-07-31 20:09:47,482 INFO method=r_plus_u completed=80/100
+2026-07-31 20:09:50,209 INFO method=r_plus_u completed=90/100
+2026-07-31 20:09:52,690 INFO method=r_plus_u completed=100/100
+2026-07-31 20:09:52,697 INFO finished method=r_plus_u numerical_em=0.0500
+2026-07-31 20:09:52,717 INFO all methods completed
+

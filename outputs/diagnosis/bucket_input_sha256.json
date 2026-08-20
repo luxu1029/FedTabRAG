@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "seed": 42,
+  "selection_policy": "dev defines quartiles; test explanatory only; no threshold selection",
+  "dev_steds_quartile_boundaries": [
+    0.9090909090909091,
+    0.9333333333333333,
+    0.9473684210526316
+  ],
+  "table_size_boundaries": {
+    "small_max_cells": 20,
+    "medium_max_cells": 50
+  },
+  "inputs": [
+    {
+      "path": "outputs/diagnosis/pairwise_flat_unitable_dev.csv",
+      "bytes": 687078,
+      "sha256": "6c316937e2903e4722bcdab2fc6f5dc615635ceda6063bdece6308302b818542"
+    },
+    {
+      "path": "outputs/diagnosis/pairwise_flat_unitable_test.csv",
+      "bytes": 893166,
+      "sha256": "3c68eada8fbdb2cb7033176211642e1264805d66db91cdb47dc0fe04db993671"
+    },
+    {
+      "path": "outputs/unitable/structure_metrics_per_sample.jsonl",
+      "bytes": 4143801,
+      "sha256": "f1b466d2141689c93faed63d3d2b4ea0b6b31e077396c6d5a8cbd9fa221d4fe9"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "outputs/diagnosis/buckets/pairwise_with_structure_dev.csv",
+      "bytes": 765553,
+      "sha256": "f16642a4b15fc0c7889250fb9537720708a8c0bc5dfa9f279170d1d1acb3a8c0"
+    },
+    {
+      "path": "outputs/diagnosis/buckets/bucket_by_steds_dev.csv",
+      "bytes": 1725,
+      "sha256": "851261097fa7263dd7faccc08606419227a21f9d2458f8560a167891cf04d776"
+    },
+    {
+      "path": "outputs/diagnosis/buckets/bucket_by_cell_count_dev.csv",
+      "bytes": 1012,
+      "sha256": "e972fbc4046c0edd2734463c549c55117512cb3dfcd5a46318fe0e715e5ecb48"
+    },
+    {
+      "path": "outputs/diagnosis/buckets/bucket_by_table_size_dev.csv",
+      "bytes": 1368,
+      "sha256": "383d08eeb7ce2d9e634a68343bb1315f691b56ff9f022dbc8befca540976755f"
+    },
+    {
+      "path": "outputs/diagnosis/buckets/bucket_by_question_type_dev.csv",
+      "bytes": 1487,
+      "sha256": "a9326c37f6e6ed4df03e992ac1346b833df29ca81bc4c48fa45959922b9e8904"
+    },
+    {
+      "path": "outputs/diagnosis/buckets/bucket_by_program_type_dev.csv",
+      "bytes": 2987,
+      "sha256": "2077286df713444c285d829b349a7d46cf948fef786c9c1a52a247f52d4a66fa"
+    },
+    {
+      "path": "outputs/diagnosis/buckets/bucket_by_evidence_level_dev.csv",
+      "bytes": 1108,
+      "sha256": "4d76ec5a63b6bfb627b7d37dcd2d54e2de8603406e7c7361d0a137c43d1d8be9"
+    },
+    {
+      "path": "outputs/diagnosis/buckets/pairwise_with_structure_test.csv",
+      "bytes": 995944,
+      "sha256": "014ba20c08103309946ad07c21bf76af3af04a8de2682cad6a8e5d6115679c60"
+    },
+    {
+      "path": "outputs/diagnosis/buckets/bucket_by_steds_test.csv",
+      "bytes": 1558,
+      "sha256": "95b7b8e85f2b918f590d73027f15b2e2b44d17ecfb20af0c77a5e166146b1626"
+    },
+    {
+      "path": "outputs/diagnosis/buckets/bucket_by_cell_count_test.csv",
+      "bytes": 1056,
+      "sha256": "17eaef20813d73d156a27ab3c6217dcbb72d1a53fd6c56128ed3c735299a91f8"
+    },
+    {
+      "path": "outputs/diagnosis/buckets/bucket_by_table_size_test.csv",
+      "bytes": 1476,
+      "sha256": "90da437deb52e6b2b75c84259f91dbb126e82658fb14bf5e4133b109fd5ad332"
+    },
+    {
+      "path": "outputs/diagnosis/buckets/bucket_by_question_type_test.csv",
+      "bytes": 1483,
+      "sha256": "c6587f3226a4aa53c28185b83c607348994c088e3ac99a9e96af13515a05755d"
+    },
+    {
+      "path": "outputs/diagnosis/buckets/bucket_by_program_type_test.csv",
+      "bytes": 2828,
+      "sha256": "7e3b62b6e0dca65e2705a76c5389f2aae248efc8cfbbe014c4ced7f512a77af6"
+    },
+    {
+      "path": "outputs/diagnosis/buckets/bucket_by_evidence_level_test.csv",
+      "bytes": 1101,
+      "sha256": "e6cc782867bcb25bd9c67bac03087bb54721897e1c5a3d906f5504420d54549f"
+    },
+    {
+      "path": "outputs/diagnosis/diagnosis_summary.md",
+      "bytes": 1101,
+      "sha256": "f8174b3294622349807e8adbbc4c373a60ddec582bed9b1c33fa46e1a03873ed"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+2026-07-27 09:38:35,704 INFO Prepared 1000/8281 samples
+2026-07-27 09:38:36,274 INFO Prepared 2000/8281 samples
+2026-07-27 09:38:37,089 INFO Prepared 3000/8281 samples
+2026-07-27 09:38:37,686 INFO Prepared 4000/8281 samples
+2026-07-27 09:38:38,279 INFO Prepared 5000/8281 samples
+2026-07-27 09:38:39,215 INFO Prepared 6000/8281 samples
+2026-07-27 09:38:39,808 INFO Prepared 7000/8281 samples
+2026-07-27 09:38:40,390 INFO Prepared 8000/8281 samples
+2026-07-27 09:38:51,396 INFO Wrote flat records=413975
+2026-07-27 09:39:03,631 INFO Wrote oracle_structure records=458372
+2026-07-27 09:39:15,629 INFO Wrote predicted_structure records=458841

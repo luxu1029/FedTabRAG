@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "seed": 42,
+  "per_group": 30,
+  "selection_uses_model_performance": true,
+  "selection_is_deterministic_and_preregistered": true,
+  "automatic_error_conclusion": false,
+  "selection_rules": {
+    "flat_win": "winner=flat_win; delta_ndcg ascending; query_id ascending tie-break",
+    "unitable_win": "winner=unitable_win; delta_ndcg descending; query_id ascending tie-break",
+    "both_fail": "winner=both_fail; summed NDCG ascending, then best rank descending, query_id"
+  },
+  "inputs": [
+    {
+      "path": "outputs/diagnosis/pairwise_flat_unitable_test.csv",
+      "bytes": 893166,
+      "sha256": "3c68eada8fbdb2cb7033176211642e1264805d66db91cdb47dc0fe04db993671"
+    },
+    {
+      "path": "outputs/retrieval/zero_shot_flat.json",
+      "bytes": 7006434,
+      "sha256": "d7c1dfb6d1b28d8833d71698fd827a239526cd34ae3e1d4df6251d9a78a2e862"
+    },
+    {
+      "path": "outputs/retrieval/zero_shot_predicted_structure.json",
+      "bytes": 6990459,
+      "sha256": "5a7231998edade25c5fc4ba1e9b84f3566801bfc4efd60a87e54ecee03edc74c"
+    },
+    {
+      "path": "data/processed/flat/corpus.jsonl",
+      "bytes": 258943544,
+      "sha256": "ce2a2739667986e56898b929118991ff36d1959a6f19f2d7baae5131b57c61cb"
+    },
+    {
+      "path": "data/processed/predicted_structure/corpus.jsonl",
+      "bytes": 292897769,
+      "sha256": "e2168e1ac0c5abc25c231394fdea659ff6f9d625f0c5a8200beb74b7786dcc55"
+    },
+    {
+      "path": "outputs/unitable/structure_metrics_per_sample.jsonl",
+      "bytes": 4143801,
+      "sha256": "f1b466d2141689c93faed63d3d2b4ea0b6b31e077396c6d5a8cbd9fa221d4fe9"
+    },
+    {
+      "path": "data/interim/unitable_predictions/predictions.jsonl",
+      "bytes": 23664367,
+      "sha256": "c661068929a2709c80221e04ef738d4dee5b87f3a5ed567b7acadef65f08b095"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "outputs/diagnosis/manual_cases_flat_win.xlsx",
+      "rows": 30,
+      "bytes": 26831,
+      "sha256": "5f4540051980596d72ada184ceb5c4f6427be927e30dced5126aa5a60d77593a"
+    },
+    {
+      "path": "outputs/diagnosis/manual_cases_unitable_win.xlsx",
+      "rows": 30,
+      "bytes": 26531,
+      "sha256": "63165680b54eb4138a9f30c232335ed4c4a25ef76fd3e25f0f71501322501a0f"
+    },
+    {
+      "path": "outputs/diagnosis/manual_cases_both_fail.xlsx",
+      "rows": 30,
+      "bytes": 25923,
+      "sha256": "8f39648cfbfa902774eb886ccf2c6ab99f45fcd61272c54bd6de44c43b221e6f"
+    }
+  ]
+}
